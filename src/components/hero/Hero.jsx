@@ -10,7 +10,7 @@ function hero() {
           <h1 className="mb-5 text-5xl mt-12 sm:text-7xl font-bold col-span-1 text-white sm:text-left">
             Kickto <br></br> Realverse
           </h1>
-          <img src={shoes} className="w-full  h-full col-span-1 sm:scale-150 " />
+          <img src={shoes} className="w-full  h-full col-span-1 sm:scale-110 " />
           <div className="col-span-1 sm:text-left   sm:pl-12   ">
             <h2 className="text-3xl font-bold text-white">A Revolution in Fitness</h2>
             <p className="mb-5 sm:max-w-xs text-white">

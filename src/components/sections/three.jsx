@@ -8,8 +8,8 @@ import run2 from "../../assets/images/run2.png";
 function hero() {
   return (
     <div className="hero min-h-screen   text-white ">
-      <div className="hero-content   grid sm:grid-cols-3   gap-4">
-        <div className="p-6 text-3xl font-semibold  border-gray-300 border rounded-xl h-full align-middle items-center col-span-2 flex-col bg-white bg-opacity-10">
+      <div className="hero-content   grid  grid-cols-3    gap-4">
+        <div className="p-6 w-full text-3xl font-semibold  border-gray-300 border rounded-xl h-full align-middle items-center col-span-3 md:col-span-2 flex-col bg-white bg-opacity-10">
           <div className="justify-between flex">
             <p>Get your NFT shoes to begin!</p>
             <div className="rounded-full bg-slate-800 h-10 w-10 flex align-middle items-center pl-2.5 mr-2   font-bold">
@@ -23,10 +23,10 @@ function hero() {
           </div>
         </div>
 
-        <div className="p-6 pb-0 text-3xl font-semibold  border-gray-300 border rounded-xl h-full align-middle items-center col-span-3 sm:col-span-1  flex-col bg-white bg-opacity-10">
+        <div className="p-6 pb-0 text-3xl font-semibold  border-gray-300 border rounded-xl h-full align-middle items-center col-span-3 md:col-span-1  flex-col bg-white bg-opacity-10">
           <div className="justify-between flex">
             <p>Our in-app marketplace for your perfect shoes</p>
-            <div className="rounded-full bg-slate-800 h-10 w-10 flex align-middle items-center pl-2.5 mr-2   font-bold">
+            <div className="rounded-full bg-slate-800 h-10 w-12 flex align-middle items-center pl-2.5 mr-2   font-bold">
               <p>2</p>
             </div>{" "}
           </div>
@@ -36,15 +36,15 @@ function hero() {
             Own more shoes with time to grow on the platform. You can sell your
             old shoes on the same marketplace.
           </div>
-          <img src={shoehalf} className="h-96 w-full pt-6" />
+          <img src={shoehalf} className="h-96 w-max pt-6 mx-auto" />
         </div>
 
         <div className="  pb-0 text-3xl font-semibold  border-gray-300 border rounded-xl h-full align-middle items-center col-span-3 flex-col bg-white bg-opacity-10">
           <div className="grid grid-cols-3 ">
-            <div className="col-span-3 sm:col-span-1 bg-orange-200 rounded-l-xl bg-opacity-10 pt-4">
+            <div className="col-span-3 md:col-span-1 bg-orange-200 rounded-l-xl bg-opacity-10 pt-4 md:text-center">
               <p className="px-6  ">Sneakers Details</p>
-              <div className="flex-col text-base font-semibold mt-24  space-y-2">
-                <p className="hover:bg-orange-700 cursor-pointer  p-6 rounded-md">
+              <div className="flex-col text-base font-semibold md:mt-24  space-y-2 mt-4 mx-12">
+                <p className="hover:bg-orange-700 cursor-pointer  p-6 rounded-md ">
                   Higher Quality sockets boost attribute
                 </p>
 

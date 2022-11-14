@@ -17,7 +17,6 @@ function App() {
     <Two/>
     <Three/>
     <Footer/></div>
-     
     </>
     );
 }
