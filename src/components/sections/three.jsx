@@ -21,7 +21,7 @@ function hero() {
         <div className="p-6 w-full text-3xl font-semibold bg-blur-pattern  border-gray-300 border rounded-xl h-full align-middle items-center col-span-3 md:col-span-2 flex-col bg-white bg-opacity-10">
           <div className="justify-between flex">
             <p>Get your NFT shoes to begin!</p>
-            <div className="rounded-full bg-slate-800 h-10 w-10 flex align-middle items-center pl-2.5 mr-2   font-bold">
+            <div className="rounded-full bg-slate-800 h-10 w-10 flex align-middle items-center text-base px-4 mr-2   font-bold">
               <p>1</p>
             </div>{" "}
           </div>
@@ -53,7 +53,7 @@ function hero() {
         <div className="p-6 pb-0 text-3xl font-semibold  border-gray-300 border rounded-xl h-full align-middle items-center col-span-3 md:col-span-1  flex-col bg-white bg-opacity-10">
           <div className="justify-between flex">
             <p>Our in-app marketplace for your perfect shoes</p>
-            <div className="rounded-full bg-slate-800 h-10 w-12 flex align-middle items-center pl-2.5 mr-2   font-bold">
+            <div className="rounded-full bg-slate-800 h-10 w-12 flex align-middle items-center text-base px-4  mr-2   font-bold">
               <p>2</p>
             </div>{" "}
           </div>
@@ -120,9 +120,9 @@ function hero() {
         <div className="py-6 pb-0 text-3xl font-semibold bg-blur-pattern  border-gray-300 border rounded-xl h-full align-middle items-center col-span-3  md:col-span-1 flex-col bg-white bg-opacity-10">
           <div className="justify-between flex px-6">
             <p>Our in-app marketplace for your perfect shoes</p>
-            <div className="rounded-full bg-slate-800 h-10 w-10 flex align-middle items-center pl-2.5 mr-2   font-bold">
+            <div className="rounded-full bg-slate-800 h-10 w-10 flex align-middle items-center  px-4  mr-2 text-base font-bold">
               <p>2</p>
-            </div>{" "}
+            </div> 
           </div>
           <div className="text-base font-normal pt-4 px-6">
             Choose from our wide variety of NFT shoes, the ones best suited to
@@ -142,7 +142,7 @@ function hero() {
               <p>
                 Keep track of your <br></br>daily fitness routine
               </p>
-              <div className="rounded-full bg-slate-800 h-10 w-10 flex align-middle items-center pl-2.5 mr-2   font-bold">
+              <div className="rounded-full bg-slate-800 h-10 w-10 flex align-middle items-center text-base px-4 mr-2   font-bold">
                 <p>1</p>
               </div>{" "}
             </div>

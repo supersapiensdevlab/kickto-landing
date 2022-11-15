@@ -3,7 +3,7 @@ import shoe from "../../assets/images/shoe1.png";
 import icon from "../../assets/images/icon1.png";
 function hero() {
   return (
-    <div className="hero min-h-screen   text-white ">
+    <div className="hero     text-white ">
       <div className="hero-content   grid  grid-cols-2  space-y-4 gap-4">
         <div className="grid grid-cols-2 grid-rows-2 gap-4 col-span-2 md:col-span-1">
           <div className="p-6 border-gray-300 border rounded-xl h-full align-middle items-center sm:col-span-1 col-span-1 flex-col bg-white bg-opacity-10">
