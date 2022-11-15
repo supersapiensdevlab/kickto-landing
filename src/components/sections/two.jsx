@@ -56,7 +56,7 @@ function hero() {
 Come, be a part of a fitness journey like no other. 
 
           </p>
-          <button className="btn  text-white hover:bg-orange-300  bg-orange-400 md:w-max  p-4   w-full px-12">Get Started</button>
+          <button className="btn  text-white hover:bg-orange-300  bg-orange-500 md:w-max  p-4   w-full px-12">Get Started</button>
         </div>
       </div>
     </div>

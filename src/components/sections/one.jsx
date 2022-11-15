@@ -9,7 +9,7 @@ function hero() {
         <div className="col-span-1"></div>
         <div className="relative">
           <img src={shoeMobile} className="" />
-          <img src={mobile} className="absolute -mt-96 ml-96" />
+          <img src={mobile} className="absolute -mt-96 ml-96 hidden" />
         </div>
       </div>
       <div className="hero min-h-screen   text-white ">
@@ -26,9 +26,9 @@ function hero() {
               sneakers, each designed with a unique motive. Choose yours and get
               ready to earn more at every step.
             </p>
-            <div className="grid grid-cols-2 gap-4 space-y-4">
+            <div className="grid grid-cols-2 gap-4  ">
               <div className="col-span-1">
-                <h1 className="text-xl font-bold">Mechanics</h1>
+                <h1 className="text-xl font-extrabold">Mechanics</h1>
                 <p className="py-2 max-w-xs">
                   With Kickto NFT shoes, each user gets to earn every time they
                   step out of their home for a run. Every step counts and as
@@ -37,7 +37,7 @@ function hero() {
                 </p>
               </div>
               <div className="col-span-1">
-                <h1 className="text-xl font-bold">Mission</h1>
+                <h1 className="text-xl font-extrabold">Mission</h1>
                 <p className="py-2 max-w-xs">
                   Our motive with Kickto is to make fitness lucrative. With most
                   people stuck in a sedentary lifestyle, we wish to encourage
@@ -46,7 +46,7 @@ function hero() {
               </div>
             </div>
             <div className="col-span-1">
-              <h1 className="text-xl font-bold">Technology</h1>
+              <h1 className="text-xl font-extrabold">Technology</h1>
               <p className="py-2  ">
                 The Kickto Realverse is set to revolutionize the modern fitness
                 space with Web 3 platforms. Our apps allow our users to become
@@ -54,8 +54,8 @@ function hero() {
               </p>
             </div>
           </div>
-          <div className="border rounded-2xl h-full align-middle items-center col-span-2 md:col-span-1 flex bg-white bg-opacity-10">
-            <img src={shoe} className="" />
+          <div className="border rounded-2xl h-max py-12 align-middle items-center col-span-2 md:col-span-1 flex bg-white bg-opacity-10">
+            <img src={shoe} className="mx-auto" />
           </div>
         </div>
       </div>
