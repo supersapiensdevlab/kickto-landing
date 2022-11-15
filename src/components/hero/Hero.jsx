@@ -4,10 +4,10 @@ import blurElements from "../../assets/images/blur-elements.png";
 function hero() {
   return (
     <div className="hero min-h-screen bg-blur-pattern  ">
-      <div className="hero-overlay bg-opacity-60"></div>
+      <div className="hero-overlay bg-opacity-0"></div>
       <div className="hero-content text-center text-neutral-content">
         <div className="  grid sm:grid-flow-col sm:grid-cols-3  items-center align-middle">
-          <h1 className="mb-5 text-5xl mt-12 sm:text-7xl font-bold col-span-1 text-white sm:text-left">
+          <h1 className="mb-5 text-5xl mt-12 sm:text-7xl font-bold col-span-1 text-white sm:text-left italic">
             Kickto <br></br> Realverse
           </h1>
           <img src={shoes} className="w-full  h-full col-span-1 sm:scale-110 " />

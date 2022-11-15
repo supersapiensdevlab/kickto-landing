@@ -47,7 +47,7 @@ function hero() {
             </div>
           </div>
         </div>
-        <div className="col-span-2  md:col-span-1 ">
+        <div className="col-span-2  md:col-span-1 md:ml-12 space-y-2">
           <h1 className="text-5xl font-bold">
           Start Your <br></br>Fitness Journey
           </h1>

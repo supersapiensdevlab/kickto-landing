@@ -13,8 +13,8 @@ import Footer from "./components/footer/footer";
 function App() {
   return (
    
-   <> <Navbar/>
-   <div className='bg-black '>
+   <><Navbar/>
+   <div className='bg-black  '>
     <Hero/>
     <div className='px-4'>
     <One/>
