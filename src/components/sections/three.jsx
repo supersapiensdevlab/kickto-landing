@@ -182,6 +182,7 @@ function hero() {
             </div>
           </div>
         </div>
+        
       </div>
     </div>
   );

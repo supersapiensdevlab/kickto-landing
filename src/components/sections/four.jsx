@@ -8,7 +8,7 @@ import shoe4 from "../../assets/images/shoe4.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Keyboard, Autoplay, Pagination, Navigation } from "swiper";
-
+import roadmap from "../../assets/vectors/roadmap.svg"
 function four() {
     const carasoleData = [
          { image: shoe2, altImg: "img1", role: "Runners", speed:"6-10 km/hr" },
@@ -68,6 +68,10 @@ function four() {
               </SwiperSlide>
             ))}{" "}
           </Swiper>
+
+          <div>
+            <img src={roadmap}/>
+          </div>
     </div>
   );
 }
