@@ -14,7 +14,7 @@ function navbar(){
       <li><a>Marketplace</a></li>  
       </ul>
     </div>
-    <img src={logo} className="h-16 w-36 sm:ml-24"/>
+    <img src={logo} className="h-16 w-36 lg:ml-24"/>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal p-0">

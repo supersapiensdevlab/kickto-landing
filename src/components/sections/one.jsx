@@ -12,8 +12,8 @@ function hero() {
           <img src={mobile} className="absolute -mt-96 ml-96 hidden" />
         </div>
       </div>
-      <div className="hero min-h-screen   text-white ">
-        <div className="hero-content   grid sm:grid-cols-2  ">
+      <div className="hero min-h-screen   text-white px-4">
+        <div className="   grid sm:grid-cols-2  ">
           <div className="col-span-2 md:col-span-1 ">
             <h1 className="text-5xl font-bold">What is Kickto?</h1>
             <p className="py-6">
@@ -54,7 +54,7 @@ function hero() {
               </p>
             </div>
           </div>
-          <div className="border bg-blur-pattern  rounded-2xl h-max py-12 align-middle items-center col-span-2 md:col-span-1 flex bg-white bg-opacity-10">
+          <div className="border bg-blur-pattern mt-20 mx-6 rounded-2xl h-max py-12 align-middle items-center col-span-2 md:col-span-1 flex bg-white bg-opacity-10">
             <img src={shoe} className="mx-auto" />
           </div>
         </div>

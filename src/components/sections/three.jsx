@@ -132,7 +132,7 @@ function hero() {
           </div>
           <img
             src={shoe3}
-            className="h-max w-full  translate -rotate-[30deg] mb-12 md:mt-12"
+            className="h-max w-max aspect-auto  translate -rotate-[30deg] mb-12 sm:mt-12 pr-4"
           />
         </div>
 
