@@ -54,7 +54,7 @@ function hero() {
               </p>
             </div>
           </div>
-          <div className="border bg-blur-pattern mt-20 mx-6 rounded-2xl h-max py-12 align-middle items-center col-span-2 md:col-span-1 flex bg-white bg-opacity-10">
+          <div className="border bg-blur-pattern mt-20 md:mx-6 rounded-2xl h-max py-12 align-middle items-center col-span-2 md:col-span-1 flex bg-white bg-opacity-10">
             <img src={shoe} className="mx-auto" />
           </div>
         </div>
