@@ -11,14 +11,14 @@ function hero() {
             <p className="text-3xl font-bold items-center text-center   text-primary">Download Now</p>
             <p className="text-md italic items-center text-center text-black/80 ">Install the KICKTO App</p>
             <div class="flex justify-center my-4">
-                    <div class="flex items-center   w-auto rounded-lg px-4 py-2 w-52 mx-2 bg-primary/20 hover:bg-primary hover:text-black/80 cursor-pointer">
+                    <div class="flex items-center   w-auto rounded-lg px-4 py-2 w-52 mx-2 bg-primary/20 hover:bg-primary/60 hover:text-black/80 cursor-pointer">
                         <img src="https://cdn-icons-png.flaticon.com/512/888/888857.png" class="w-7 md:w-8"/>
                         <div class="text-left ml-3">
                             <p class='text-xs text-slate-800/80'>Download on </p>
                             <p class="text-sm md:text-base text-black/80"> Google Play Store </p>
                         </div>
                     </div>
-                    <div class="flex items-center   w-auto rounded-lg px-4 py-2 w-44 mx-2 bg-primary/20 hover:bg-primary hover:text-black/80 cursor-pointer">
+                    <div class="flex items-center   w-auto rounded-lg px-4 py-2 w-44 mx-2 bg-primary/20 hover:bg-primary/60 hover:text-black/80 cursor-pointer">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Apple_logo_white.svg" class="w-7 md:w-8"/>
                         <div class="text-left ml-3">
                             <p class='text-xs text-slate-800/80'>Download on </p>
