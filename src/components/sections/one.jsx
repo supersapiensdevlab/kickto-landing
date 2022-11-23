@@ -8,7 +8,7 @@ function hero() {
       <div className="grid grid-cols-3 px-4">  
         <div className="bg-primary/20 rounded-3xl w-full col-span-3 border border-primary  h-3/4  grid md:grid-cols-2 grid-cols-1">
           <div className="flex flex-col  md:mt-20 mt-8 text-left">
-            <p className="text-3xl font-bold items-center text-center text-black/80 ">Download Now</p>
+            <p className="text-3xl font-bold items-center text-center   text-primary">Download Now</p>
             <p className="text-md italic items-center text-center text-black/80 ">Install the KICKTO App</p>
             <div class="flex justify-center my-4">
                     <div class="flex items-center   w-auto rounded-lg px-4 py-2 w-52 mx-2 bg-primary/20 hover:bg-primary hover:text-black/80 cursor-pointer">
@@ -37,7 +37,7 @@ function hero() {
       <div className="hero    text-black/80 px-4">
         <div className="   grid sm:grid-cols-2  ">
           <div className="col-span-2 md:col-span-1 ">
-            <h1 className="text-5xl font-bold">What is Kickto?</h1>
+            <h1 className="text-5xl font-bold text-primary">What is Kickto?</h1>
             <p className="py-6">
               Kickto is a revolutionary Web 3 platform that brings together
               fitness and earning. Kickto allows you to make every step count
@@ -50,7 +50,7 @@ function hero() {
             </p>
             <div className="grid grid-cols-2 gap-4  ">
               <div className="col-span-1">
-                <h1 className="text-xl font-extrabold">Mechanics</h1>
+                <h1 className="text-xl font-extrabold text-primary">Mechanics</h1>
                 <p className="py-2 max-w-xs">
                   With Kickto NFT shoes, each user gets to earn every time they
                   step out of their home for a run. Every step counts and as
@@ -59,7 +59,7 @@ function hero() {
                 </p>
               </div>
               <div className="col-span-1">
-                <h1 className="text-xl font-extrabold">Mission</h1>
+                <h1 className="text-xl font-extrabold text-primary">Mission</h1>
                 <p className="py-2 max-w-xs">
                   Our motive with Kickto is to make fitness lucrative. With most
                   people stuck in a sedentary lifestyle, we wish to encourage
@@ -68,7 +68,7 @@ function hero() {
               </div>
             </div>
             <div className="col-span-1">
-              <h1 className="text-xl font-extrabold">Technology</h1>
+              <h1 className="text-xl font-extrabold text-primary">Technology</h1>
               <p className="py-2  ">
                 The Kickto Realverse is set to revolutionize the modern fitness
                 space with Web 3 platforms. Our apps allow our users to become

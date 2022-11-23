@@ -5,7 +5,7 @@ function hero() {
   return (
     <div className="hero     text-black/80 ">
       <div className="hero-content   grid  grid-cols-2  space-y-4 gap-4">
-        <div className="grid grid-cols-2 grid-rows-2 gap-4 col-span-2 md:col-span-1">
+        <div className="grid grid-cols-1 grid-rows-4 gap-4 col-span-2 md:col-span-1">
           <div className="p-6 border-gray-300 border rounded-xl h-full align-middle items-center sm:col-span-1 col-span-1 flex-col bg-white bg-opacity-10">
             <div className="w-full justify-between flex-col space-y-6">
               <div className="rounded-full bg-primary h-8 w-8 flex align-middle items-center pl-3 mr-2 -mt-10 font-bold text-white">
@@ -13,7 +13,7 @@ function hero() {
               </div>
 
               <p>Download Crypto exchange & Crypto Wallet App</p>
-              <img src={icon} className="h-8 w-8" />
+              <img src={icon} className="h-8 w-8 text-primary" />
             </div>
           </div>
           <div className="p-6 border-gray-300 border rounded-xl h-full align-middle items-center  sm:col-span-1 col-span-1  flex-col bg-white bg-opacity-10">
@@ -48,7 +48,7 @@ function hero() {
           </div>
         </div>
         <div className="col-span-2  md:col-span-1 md:ml-12 space-y-2">
-          <h1 className="text-5xl font-bold">
+          <h1 className="text-5xl font-bold text-primary">
           Start Your <br></br>Fitness Journey
           </h1>
           <p className="py-6">
