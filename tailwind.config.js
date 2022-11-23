@@ -6,8 +6,11 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'blur-pattern': "url('/src/assets/images/blur-elements.png')",
+        'blur-pattern': "url('/src/assets/images/blur-elements-light-purple.png')",
         'footer-texture': "url('/img/footer-texture.png')",
+      },
+      colors:{
+        primary:"#7b3fe4"
       }
     },
   },

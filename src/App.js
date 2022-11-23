@@ -14,7 +14,7 @@ function App() {
   return (
    
    <><Navbar/>
-   <div className='bg-black  '>
+   <div className='bg-white  '>
     <Hero/>
     <div className='px-4'>
     <One/>

@@ -1,9 +1,9 @@
-import logo from "../../assets/images/kickto-logo-text.svg";
+import logo from "../../assets/images/kickto-logo-text-alt.svg";
 function navbar(){
 
 
   return(
-<div className="navbar  fixed  text-white bg-orange-300 backdrop-blur bg-opacity-5 z-50">
+<div className="navbar  fixed  text-black/80 bg-orange-300 backdrop-blur bg-opacity-5 z-50">
   <div className="navbar-start  ">
     <div className="dropdown">
       <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -24,7 +24,7 @@ function navbar(){
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn bg-orange-500 text-white">Download</a>
+    <a className="btn btn-primary rounded-full  hover:scale-95 text-white">Download</a>
   </div>
 </div>)
 }

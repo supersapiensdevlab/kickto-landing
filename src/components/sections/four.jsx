@@ -8,7 +8,7 @@ import shoe4 from "../../assets/images/shoe4.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Keyboard, Autoplay, Pagination, Navigation } from "swiper";
-import roadmap from "../../assets/vectors/roadmap.svg";
+import roadmap from "../../assets/vectors/roadmap-alt.svg";
 import arrow from "../../assets/vectors/arrow.svg";
 
 function four() {
@@ -19,8 +19,8 @@ function four() {
   ];
 
   return (
-    <div className=" min-h-screen w-full  text-white ">
-      <p className="text-5xl text-white font-semibold text-left md:text-center mt-6 mb-4 mx-4">
+    <div className=" min-h-screen w-full  text-black/80 ">
+      <p className="text-5xl text-black/80 font-semibold text-left md:text-center mt-6 mb-4 mx-4">
         Sneakers
       </p>
       <Swiper
@@ -59,14 +59,14 @@ function four() {
       >
         {carasoleData.map((data) => (
           <SwiperSlide className="flex flex-col justify-center  h-56 w-56  p-4">
-            <div className="flex flex-col justify-center items-center  h-full w-full bg-orange-400/10 border border-opacity-30 border-orange-400 rounded-xl p-8">
+            <div className="flex flex-col justify-center items-center  h-full w-full bg-primary/10 border border-opacity-30 border-primary rounded-xl p-8">
               <img
                 src={data.image}
                 alt={data.altImg}
                 className="object-center -rotate-12"
               />
               <div className="justify-between flex w-full align-middle  mt-12">
-                <p className="text-white text-center font-bold text-2xl caption w-fit italic capitalize ">
+                <p className="text-black/80 text-center font-bold text-2xl caption w-fit italic capitalize ">
                   {data.role}
                 </p>
                 <p className="font-bold  align-middle  caption w-fit italic opacity-50 pt-2">
@@ -78,7 +78,7 @@ function four() {
           </SwiperSlide>
         ))}{" "}
       </Swiper>
-      <p className="text-5xl text-white font-semibold text-left md:text-center mt-6 mb-4 mx-4">
+      <p className="text-5xl text-black/80 font-semibold text-left md:text-center mt-6 mb-4 mx-4">
         Roadmap
       </p>
 
@@ -87,21 +87,21 @@ function four() {
       </div>
 
 <div className="my-8">
-      <p className="text-5xl text-white font-semibold text-left md:text-center mt-6 mb-4 mx-4">
+      <p className="text-5xl text-black/80 font-semibold text-left md:text-center mt-6 mb-4 mx-4">
         Tokenomics
       </p>
       <div className="text-center items-center flex flex-col">
-        <div className="bg-orange-400/10 rounded-xl w-max  px-6 py-2  text-xl border border-orange-800/30">
+        <div className="bg-primary/10 rounded-xl w-max  px-6 py-2  text-xl border border-primary/30">
           In-app marketplace
         </div>
         <img src={arrow} className="fill-white h-24 my-4" />
 
-        <div className="bg-orange-400/10 rounded-xl w-max  px-6 py-2  text-xl border border-orange-800/30">
+        <div className="bg-primary/10 rounded-xl w-max  px-6 py-2  text-xl border border-primary/30">
           Move to earn{" "}
         </div>
         <img src={arrow} className="fill-white h-24 my-4" />
 
-        <div className="bg-orange-400/10 rounded-xl w-max  px-6 py-2  text-xl border border-orange-800/30">
+        <div className="bg-primary/10 rounded-xl w-max  px-6 py-2  text-xl border border-primary/30">
           In-app wallet / swap{" "}
         </div>
       </div></div>

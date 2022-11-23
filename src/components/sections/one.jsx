@@ -6,23 +6,23 @@ function hero() {
   return (
     <div className="md:px-12">
       <div className="grid grid-cols-3 px-4">  
-        <div className="bg-orange-400/20 rounded-3xl w-full col-span-3 border border-orange-500  h-3/4  grid md:grid-cols-2 grid-cols-1">
+        <div className="bg-primary/20 rounded-3xl w-full col-span-3 border border-primary  h-3/4  grid md:grid-cols-2 grid-cols-1">
           <div className="flex flex-col  md:mt-20 mt-8 text-left">
-            <p className="text-3xl font-bold items-center text-center text-white ">Download Now</p>
-            <p className="text-md italic items-center text-center text-white ">Install the KICKTO App</p>
+            <p className="text-3xl font-bold items-center text-center text-black/80 ">Download Now</p>
+            <p className="text-md italic items-center text-center text-black/80 ">Install the KICKTO App</p>
             <div class="flex justify-center my-4">
-                    <div class="flex items-center   w-auto rounded-lg px-4 py-2 w-52 mx-2 bg-orange-400/20 hover:bg-orange-400 cursor-pointer">
+                    <div class="flex items-center   w-auto rounded-lg px-4 py-2 w-52 mx-2 bg-primary/20 hover:bg-primary hover:text-black/80 cursor-pointer">
                         <img src="https://cdn-icons-png.flaticon.com/512/888/888857.png" class="w-7 md:w-8"/>
                         <div class="text-left ml-3">
-                            <p class='text-xs text-gray-200'>Download on </p>
-                            <p class="text-sm md:text-base text-white"> Google Play Store </p>
+                            <p class='text-xs text-slate-800/80'>Download on </p>
+                            <p class="text-sm md:text-base text-black/80"> Google Play Store </p>
                         </div>
                     </div>
-                    <div class="flex items-center   w-auto rounded-lg px-4 py-2 w-44 mx-2 bg-orange-400/20 hover:bg-orange-400 cursor-pointer">
+                    <div class="flex items-center   w-auto rounded-lg px-4 py-2 w-44 mx-2 bg-primary/20 hover:bg-primary hover:text-black/80 cursor-pointer">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Apple_logo_white.svg" class="w-7 md:w-8"/>
                         <div class="text-left ml-3">
-                            <p class='text-xs text-gray-200'>Download on </p>
-                            <p class="text-sm md:text-base text-white"> Apple Store </p>
+                            <p class='text-xs text-slate-800/80'>Download on </p>
+                            <p class="text-sm md:text-base text-black/80"> Apple Store </p>
                         </div>
                     </div>
                 </div>
@@ -34,7 +34,7 @@ function hero() {
           
         </div>
       </div>
-      <div className="hero    text-white px-4">
+      <div className="hero    text-black/80 px-4">
         <div className="   grid sm:grid-cols-2  ">
           <div className="col-span-2 md:col-span-1 ">
             <h1 className="text-5xl font-bold">What is Kickto?</h1>
