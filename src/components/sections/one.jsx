@@ -6,7 +6,7 @@ function hero() {
   return (
     <div className=" ">
       <div className="grid grid-cols-3 px-4">  
-        <div className="bg-primary/20 align-middle items-center md:w-4/5 rounded-3xl mx-auto col-span-3 border border-primary   h-3/4  grid md:grid-cols-2 grid-cols-1">
+        <div className="bg-primary/20 align-middle items-center  lg:w-4/5 rounded-3xl mx-auto col-span-3 border border-primary   h-3/4  grid md:grid-cols-2 grid-cols-1">
           <div className="flex flex-col    text-left">
             <p className="text-3xl font-bold items-center text-center   text-primary">Download Now</p>
             <p className="text-md italic items-center text-center text-black/80 ">Install the KICKTO App</p>
