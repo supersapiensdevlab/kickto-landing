@@ -1,13 +1,13 @@
 import shoe from "../../assets/images/shoe1.png";
 import shoeMobile from "../../assets/images/shoe-mobile.svg";
-import mobile from "../../assets/images/mobile.png";
+import mobile from "../../assets/images/mobile-alt.png";
 
 function hero() {
   return (
-    <div className="md:px-12">
+    <div className=" ">
       <div className="grid grid-cols-3 px-4">  
-        <div className="bg-primary/20 rounded-3xl w-full col-span-3 border border-primary  h-3/4  grid md:grid-cols-2 grid-cols-1">
-          <div className="flex flex-col  md:mt-20 mt-8 text-left">
+        <div className="bg-primary/20 align-middle items-center md:w-4/5 rounded-3xl mx-auto col-span-3 border border-primary   h-3/4  grid md:grid-cols-2 grid-cols-1">
+          <div className="flex flex-col    text-left">
             <p className="text-3xl font-bold items-center text-center   text-primary">Download Now</p>
             <p className="text-md italic items-center text-center text-black/80 ">Install the KICKTO App</p>
             <div class="flex justify-center my-4">
@@ -27,15 +27,15 @@ function hero() {
                     </div>
                 </div>
           </div>
-        <img src={mobile} className="  mx-auto md:-mt-32" />
+        <img src={mobile} className=" w-1/2  mx-auto md:-mt-32 drop-shadow-2xl" />
         </div>
         <div className="relative">
           <img src={shoeMobile} className="w-full h-96 hidden " />
           
         </div>
       </div>
-      <div className="hero    text-black/80 px-4">
-        <div className="   grid sm:grid-cols-2  ">
+      <div className="hero    text-black/80  ">
+        <div className=" hero-content  grid sm:grid-cols-2  ">
           <div className="col-span-2 md:col-span-1 ">
             <h1 className="text-5xl font-bold text-primary">What is Kickto?</h1>
             <p className="py-6">

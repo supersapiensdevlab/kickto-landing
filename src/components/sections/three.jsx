@@ -1,5 +1,6 @@
 import shoe from "../../assets/images/shoe1.png";
 import shoe2 from "../../assets/images/shoe2.png";
+import Lottie from "lottie-react";
 
 import shoe3 from "../../assets/images/shoe3.png";
 
@@ -11,8 +12,11 @@ import vector4 from "../../assets/vectors/shoe602.png";
 import icon from "../../assets/images/icon1.png";
 import shoehalf from "../../assets/images/shoes-half.png";
 import coins from "../../assets/images/coins.png";
-import run from "../../assets/images/run.png";
+// import run from "../../assets/images/run.png";
 import run2 from "../../assets/images/run2.png";
+import run from "../../assets/run.json";
+import cat from "../../assets/cat.json";
+import social from "../../assets/social.json";
 
 function hero() {
   return (
@@ -38,11 +42,11 @@ function hero() {
             <div className="flex flex-col   mx-auto">
               <img src={vector2} className="md:h-24 " />
               <p className="text-base text-center font-light mt-2">Hiker</p>
-            </div>{" "}
+            </div>
             <div className="flex flex-col   mx-auto">
               <img src={vector3} className="md:h-24 " />
               <p className="text-base text-center font-light mt-2">Hiker</p>
-            </div>{" "}
+            </div>
             <div className="flex flex-col   mx-auto">
               <img src={vector4} className="md:h-24 " />
               <p className="text-base text-center font-light mt-2">Hiker</p>
@@ -68,7 +72,7 @@ function hero() {
 
         <div className="  pb-0 text-3xl font-semibold  border-gray-300 border rounded-xl h-full align-middle items-center col-span-3 flex-col bg-white bg-opacity-10">
           <div className="grid grid-cols-3 ">
-            <div className="col-span-3 md:col-span-1 bg-orange-200 rounded-l-xl bg-opacity-10 pt-4 md:text-left text-center">
+            <div className="col-span-3 md:col-span-1 bg-primary/20 rounded-l-xl bg-opacity-10 pt-4 md:text-left text-center">
               <p className="px-6 text-primary ">Sneakers Details</p>
               <div className="flex-col text-base font-semibold md:mt-24  space-y-2 mt-4 lg:mx-4 md:mx-0 mx-12 mb-8">
                 <p className="hover:bg-primary hover:text-white cursor-pointer  p-4 rounded-lg ">
@@ -122,7 +126,7 @@ function hero() {
             <p>Our in-app marketplace for your perfect shoes</p>
             <div className="rounded-full bg-primary h-10 w-10 flex align-middle items-center  px-4  mr-2 text-white text-base font-bold">
               <p>2</p>
-            </div> 
+            </div>
           </div>
           <div className="text-base font-normal pt-4 px-6">
             Choose from our wide variety of NFT shoes, the ones best suited to
@@ -154,35 +158,36 @@ function hero() {
           </div>
 
           <div className="mt-4 sm:mt-0 p-4  text-3xl font-semibold grid grid-cols-3 border-gray-300 border rounded-xl h-full align-middle items-center col-span-2  bg-white bg-opacity-10">
-            <div className="px-4 sm:mr-3 mb-2 sm:mb-0 col-span-3 sm:col-span-1 flex flex-col bg-primary bg-opacity-10 pt-4 h-56 sm:h-96 rounded-lg align-middle items-center ">
-              <div className="sm:pt-24 ">
-                <img src={coins} className="mx-auto" />
+            <div className="px-4 sm:mr-3 mb-2 sm:mb-0 col-span-3 sm:col-span-1 flex flex-col bg-primary bg-opacity-10 pt-4   sm:h-96 rounded-lg align-middle items-center ">
+              <div className="  ">
                 <p className="text-base mt-4">
                   Share your daily fitness on social channels
-                </p>
+                </p>{" "}
+                <div className="w-full h-fit">
+                <Lottie  className="m-4  max-w-xs" animationData={run} speed={2} loop={true} /></div>
               </div>
             </div>
 
-            <div className="px-4 mb-2 sm:mb-0 sm:mr-3 col-span-3 sm:col-span-1 flex flex-col bg-primary bg-opacity-10 pt-4 h-56 sm:h-96 rounded-lg align-middle items-center ">
-              <div className="sm:pt-24">
-                <p className="text-base">
+            <div className=" px-4 mb-2 sm:mb-0 sm:mr-3 col-span-3 sm:col-span-1 flex flex-col bg-primary bg-opacity-10 pt-4   sm:h-96 rounded-lg align-middle items-center ">
+              <div className=" ">
+                <p className="text-base mt-4">
                   Invite your friends to increase your token profit
                 </p>{" "}
-                <img src={run} className="mx-auto mt-4" />
+                <Lottie animationData={cat} loop={true} />{" "}
               </div>
             </div>
 
-            <div className="px-4 col-span-3 sm:col-span-1 flex flex-col bg-primary bg-opacity-10 pt-4 h-56 sm:h-96 rounded-lg align-middle items-center ">
-              <div className="sm:pt-24 ">
-                <img src={run2} className="mx-auto" />
+            <div className="px-4 col-span-3 sm:col-span-1 flex flex-col bg-primary bg-opacity-10 pt-4   sm:h-96 rounded-lg align-middle items-center ">
+              <div className="  ">
+             
                 <p className="text-base mt-4">
                   Share your daily fitness on social channels
                 </p>
+                <Lottie animationData={social} loop={true} />{" "}
               </div>
             </div>
           </div>
         </div>
-        
       </div>
     </div>
   );
