@@ -1,16 +1,22 @@
 import shoe from "../../assets/images/shoe1.png";
 import shoeMobile from "../../assets/images/shoe-mobile.svg";
-import mobile from "../../assets/images/mobile-alt.png";
+import mobile from "../../assets/images/mobile-frame.png";
 
 function hero() {
   return (
     <div className=" ">
       <div className="grid grid-cols-3 px-4">  
         <div className="bg-primary/20 align-middle items-center  lg:w-4/5 rounded-3xl mx-auto col-span-3 border border-primary   h-3/4  grid md:grid-cols-2 grid-cols-1">
-          <div className="flex flex-col    text-left">
-            <p className="text-3xl font-bold items-center text-center   text-primary">Download Now</p>
-            <p className="text-md italic items-center text-center text-black/80 ">Install the KICKTO App</p>
-            <div class="flex justify-center my-4">
+          <div className="flex flex-col  mt-6 md:-mt-16  text-left">
+            <p  data-aos="fade-in" 
+    data-aos-duration="500"
+    data-aos-easing="ease-in-out"  className="text-3xl font-bold items-center text-center   text-primary">Download Now</p>
+            <p  data-aos="fade-in" 
+    data-aos-duration="500"
+    data-aos-easing="ease-in-out"  className="text-md italic items-center text-center text-black/80 ">Install the KICKTO App</p>
+            <div  data-aos="fade-in" 
+    data-aos-duration="500"
+    data-aos-easing="ease-in-out"  class="flex justify-center my-4">
                     <div class="flex items-center   w-auto rounded-lg px-4 py-2 w-52 mx-2 bg-primary/20 hover:bg-primary/60 hover:text-black/80 cursor-pointer">
                         <img src="https://cdn-icons-png.flaticon.com/512/888/888857.png" class="w-7 md:w-8"/>
                         <div class="text-left ml-3">
@@ -27,7 +33,7 @@ function hero() {
                     </div>
                 </div>
           </div>
-        <img src={mobile} className=" w-1/2  mx-auto md:-mt-32 drop-shadow-2xl" />
+        <img  src={mobile} className=" w-1/2 rotate-[5deg]     mx-auto md:-mt-32 drop-shadow-2xl" />
         </div>
         <div className="relative">
           <img src={shoeMobile} className="w-full h-96 hidden " />
@@ -37,8 +43,14 @@ function hero() {
       <div className="hero    text-black/80  ">
         <div className=" hero-content  grid sm:grid-cols-2  ">
           <div className="col-span-2 md:col-span-1 ">
-            <h1 className="text-5xl font-bold text-primary">What is Kickto?</h1>
-            <p className="py-6">
+            <h1 data-aos="fade-up" 
+    data-aos-duration="500"
+    data-aos-easing="ease-in-out"  
+    className="text-5xl font-bold text-primary">What is Kickto?</h1>
+            <p data-aos="fade-up" 
+    data-aos-duration="500"
+    data-aos-delay="200"
+    data-aos-easing="ease-in-out"  className="py-6">
               Kickto is a revolutionary Web 3 platform that brings together
               fitness and earning. Kickto allows you to make every step count
               with their amazing NFT sneakers that allow you earn KICKTO tokens
@@ -49,7 +61,10 @@ function hero() {
               ready to earn more at every step.
             </p>
             <div className="grid grid-cols-2 gap-4  ">
-              <div className="col-span-1">
+              <div data-aos="fade-up" 
+    data-aos-duration="500"
+    data-aos-delay="200"
+    data-aos-easing="ease-in-out" className="col-span-1">
                 <h1 className="text-xl font-extrabold text-primary">Mechanics</h1>
                 <p className="py-2 max-w-xs">
                   With Kickto NFT shoes, each user gets to earn every time they
@@ -58,7 +73,10 @@ function hero() {
                   new or sell the old ones on the market place.
                 </p>
               </div>
-              <div className="col-span-1">
+              <div data-aos="fade-up" 
+    data-aos-duration="500"
+    data-aos-delay="200"
+    data-aos-easing="ease-in-out" className="col-span-1">
                 <h1 className="text-xl font-extrabold text-primary">Mission</h1>
                 <p className="py-2 max-w-xs">
                   Our motive with Kickto is to make fitness lucrative. With most
@@ -67,7 +85,10 @@ function hero() {
                 </p>
               </div>
             </div>
-            <div className="col-span-1">
+            <div data-aos="fade-up" 
+    data-aos-duration="500"
+    data-aos-delay="200"
+    data-aos-easing="ease-in-out" className="col-span-1">
               <h1 className="text-xl font-extrabold text-primary">Technology</h1>
               <p className="py-2  ">
                 The Kickto Realverse is set to revolutionize the modern fitness
@@ -76,7 +97,10 @@ function hero() {
               </p>
             </div>
           </div>
-          <div className="border bg-blur-pattern mt-20 md:mx-6 rounded-2xl h-max py-12 align-middle items-center col-span-2 md:col-span-1 flex bg-white bg-opacity-10">
+          <div data-aos="fade-out" 
+    data-aos-duration="500"
+    data-aos-delay="200"
+    data-aos-easing="ease-in-out" className="border bg-blur-pattern mt-20 md:mx-6 rounded-2xl h-max py-12 align-middle items-center col-span-2 md:col-span-1 flex bg-white bg-opacity-10">
             <img src={shoe} className="mx-auto" />
           </div>
         </div>

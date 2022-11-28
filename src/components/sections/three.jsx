@@ -4,13 +4,13 @@ import Lottie from "lottie-react";
 
 import shoe3 from "../../assets/images/shoe3.png";
 
-import vector from "../../assets/vectors/shoe599.png";
+import vector from "../../assets/vectors/Sequence.gif";
 import vector2 from "../../assets/vectors/shoe600.png";
 import vector3 from "../../assets/vectors/shoe601.png";
 import vector4 from "../../assets/vectors/shoe602.png";
 
 import icon from "../../assets/images/icon1.png";
-import shoehalf from "../../assets/images/shoes-half.png";
+import shoehalf from "../../assets/images/mobile-frame-half.png";
 import coins from "../../assets/images/coins.png";
 // import run from "../../assets/images/run.png";
 import run2 from "../../assets/images/run2.png";
@@ -22,7 +22,11 @@ function hero() {
   return (
     <div className="hero min-h-screen   text-black/80 ">
       <div className="hero-content   grid  grid-cols-3    gap-4">
-        <div className="p-6 w-full text-3xl font-semibold bg-blur-pattern  border-gray-300 border rounded-xl h-full align-middle items-center col-span-3 md:col-span-2 flex-col bg-white bg-opacity-10">
+        <div data-aos="fade-right" 
+    data-aos-duration="500"
+    data-aos-delay="200"
+    data-aos-offset="400"
+    data-aos-easing="ease-in-out" className="p-6 w-full text-3xl font-semibold bg-blur-pattern  border-gray-300 border rounded-xl h-full align-middle items-center col-span-3 md:col-span-2 flex-col bg-white bg-opacity-10">
           <div className="justify-between flex text-primary">
             <p>Get your NFT shoes to begin!</p>
             <div className="rounded-full bg-primary h-10 w-10 flex align-middle items-center text-white px-4 text-base   font-bold">
@@ -36,7 +40,7 @@ function hero() {
           </div>
           <div className="grid grid-cols-2 items-center align-baseline w-full   md:mt-36 p-6 gap-12">
             <div className="flex flex-col   mx-auto">
-              <img src={vector} className="md:h-24 " />
+              <img src={vector} className="md:h-52 " />
               <p className="text-base text-center font-light mt-2">Hiker</p>
             </div>
             <div className="flex flex-col   mx-auto">
@@ -54,7 +58,10 @@ function hero() {
           </div>
         </div>
 
-        <div className="p-6 pb-0 text-3xl font-semibold  border-gray-300 border rounded-xl h-full align-middle items-center col-span-3 md:col-span-1  flex-col bg-white bg-opacity-10">
+        <div data-aos="fade-left" 
+    data-aos-duration="500"
+    data-aos-offset="400"
+    data-aos-easing="ease-in-out" className="p-6 pb-0 text-3xl font-semibold  border-gray-300 border rounded-xl h-full align-middle items-center col-span-3 md:col-span-1  flex-col bg-white bg-opacity-10">
           <div className="justify-between flex text-primary">
             <p>Our in-app marketplace for your perfect shoes</p>
             <div className="rounded-full bg-primary h-10 w-12 flex align-middle items-center text-white text-base px-4  mr-2   font-bold">
@@ -67,10 +74,13 @@ function hero() {
             Own more shoes with time to grow on the platform. You can sell your
             old shoes on the same marketplace.
           </div>
-          <img src={shoehalf} className="  w-max pt-6 mx-auto" />
+          <img src={shoehalf} className=" h-max w-max  mt-auto pt-16 align-bottom mx-auto" />
         </div>
 
-        <div className="  pb-0 text-3xl font-semibold  border-gray-300 border rounded-xl h-full align-middle items-center col-span-3 flex-col bg-white bg-opacity-10">
+        <div data-aos="fade-in" 
+    data-aos-duration="500"
+    data-aos-offset="400"
+    data-aos-easing="ease-in-out"  className="  pb-0 text-3xl font-semibold  border-gray-300 border rounded-xl h-full align-middle items-center col-span-3 flex-col bg-white bg-opacity-10">
           <div className="grid grid-cols-3 ">
             <div className="col-span-3 md:col-span-1 bg-primary/20 rounded-l-xl bg-opacity-10 pt-4 md:text-left text-center">
               <p className="px-6 text-primary ">Sneakers Details</p>
@@ -121,7 +131,10 @@ function hero() {
           </div>
         </div>
 
-        <div className="py-6 pb-0 text-3xl font-semibold bg-blur-pattern  border-gray-300 border rounded-xl h-full align-middle items-center col-span-3  md:col-span-1 flex-col bg-white bg-opacity-10">
+        <div data-aos="fade-right" 
+    data-aos-duration="500"
+    data-aos-offset="400"
+    data-aos-easing="ease-in-out" className="py-6 pb-0 text-3xl font-semibold bg-blur-pattern  border-gray-300 border rounded-xl h-full align-middle items-center col-span-3  md:col-span-1 flex-col bg-white bg-opacity-10">
           <div className="justify-between flex px-6 text-primary">
             <p>Our in-app marketplace for your perfect shoes</p>
             <div className="rounded-full bg-primary h-10 w-10 flex align-middle items-center  px-4  mr-2 text-white text-base font-bold">
@@ -140,8 +153,11 @@ function hero() {
           />
         </div>
 
-        <div className="col-span-3 md:col-span-2 ">
-          <div className="p-6 text-3xl font-semibold mb-4 border-gray-300 border rounded-xl h-full align-middle items-center col-span-2 flex-col bg-white bg-opacity-10">
+        <div  className="col-span-3 md:col-span-2 ">
+          <div data-aos="fade-up" 
+    data-aos-duration="500"
+    data-aos-offset="400"
+    data-aos-easing="ease-in-out" className="p-6 text-3xl font-semibold mb-4 border-gray-300 border rounded-xl h-full align-middle items-center col-span-2 flex-col bg-white bg-opacity-10">
             <div className="justify-between flex mb-2 text-primary">
               <p>
                 Keep track of your <br></br>daily fitness routine
@@ -157,7 +173,10 @@ function hero() {
             </div>
           </div>
 
-          <div className="mt-4 sm:mt-0 p-4  text-3xl font-semibold grid grid-cols-3 border-gray-300 border rounded-xl h-full align-middle items-center col-span-2  bg-white bg-opacity-10">
+          <div data-aos="fade-up" 
+    data-aos-duration="500"
+    data-aos-offset="200"
+    data-aos-easing="ease-in-out" className="mt-4 sm:mt-0 p-4  text-3xl font-semibold grid grid-cols-3 border-gray-300 border rounded-xl h-full align-middle items-center col-span-2  bg-white bg-opacity-10">
             <div className="px-4 sm:mr-3 mb-2 sm:mb-0 col-span-3 sm:col-span-1 flex flex-col bg-primary bg-opacity-10 pt-4   sm:h-96 rounded-lg align-middle items-center ">
               <div className="  ">
                 <p className="text-base mt-4">

@@ -20,7 +20,7 @@ function App() {
     <One/>
     <Two/>
     <Three/>
-    <Four/></div>
+    </div><Four/>
     <Footer/></div>
     </>
     );
