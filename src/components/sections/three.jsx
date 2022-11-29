@@ -4,10 +4,10 @@ import Lottie from "lottie-react";
 
 import shoe3 from "../../assets/images/shoe3.png";
 
-import vector from "../../assets/vectors/Sequence.gif";
-import vector2 from "../../assets/vectors/shoe600.png";
-import vector3 from "../../assets/vectors/shoe601.png";
-import vector4 from "../../assets/vectors/shoe602.png";
+import vector from "../../assets/gif/shoes.gif";
+import vector2 from "../../assets/gif/shoes2.gif";
+import vector3 from "../../assets/gif/shoes3.gif";
+import vector4 from "../../assets/gif/shoes4.gif";
 
 import icon from "../../assets/images/icon1.png";
 import shoehalf from "../../assets/images/mobile-frame-half.png";
@@ -17,8 +17,14 @@ import run2 from "../../assets/images/run2.png";
 import run from "../../assets/run.json";
 import cat from "../../assets/cat.json";
 import social from "../../assets/social.json";
+import { useState } from "react";
+ 
+function Three() {
 
-function hero() {
+
+  const [shoeStat,setShoeStat] = useState(0);
+
+
   return (
     <div className="hero min-h-screen   text-black/80 ">
       <div className="hero-content   grid  grid-cols-3    gap-4">
@@ -38,22 +44,22 @@ function hero() {
             pick the ones you like and switch that GPS on to begin your Kickto
             Journey.
           </div>
-          <div className="grid grid-cols-2 items-center align-baseline w-full   md:mt-36 p-6 gap-12">
+          <div className="grid grid-cols-2 items-center align-baseline w-full    p-6 gap-12">
             <div className="flex flex-col   mx-auto">
               <img src={vector} className="md:h-52 " />
-              <p className="text-base text-center font-light mt-2">Hiker</p>
+               
             </div>
             <div className="flex flex-col   mx-auto">
-              <img src={vector2} className="md:h-24 " />
-              <p className="text-base text-center font-light mt-2">Hiker</p>
+              <img src={vector2} className="md:h-52 " />
+               
             </div>
             <div className="flex flex-col   mx-auto">
-              <img src={vector3} className="md:h-24 " />
-              <p className="text-base text-center font-light mt-2">Hiker</p>
+              <img src={vector3} className="md:h-52 " />
+               
             </div>
             <div className="flex flex-col   mx-auto">
-              <img src={vector4} className="md:h-24 " />
-              <p className="text-base text-center font-light mt-2">Hiker</p>
+              <img src={vector4} className="md:h-52 " />
+               
             </div>
           </div>
         </div>
@@ -76,25 +82,24 @@ function hero() {
           </div>
           <img src={shoehalf} className=" h-max w-max  mt-auto pt-16 align-bottom mx-auto" />
         </div>
-
         <div data-aos="fade-in" 
-    data-aos-duration="500"
-    data-aos-offset="400"
-    data-aos-easing="ease-in-out"  className="  pb-0 text-3xl font-semibold  border-gray-300 border rounded-xl h-full align-middle items-center col-span-3 flex-col bg-white bg-opacity-10">
+            data-aos-duration="500"
+            data-aos-offset="400"  
+            data-aos-easing="ease-in-out"  className="  pb-0 text-3xl font-semibold  border-gray-300 border rounded-xl h-full align-middle items-center col-span-3 flex-col bg-white bg-opacity-10">
           <div className="grid grid-cols-3 ">
             <div className="col-span-3 md:col-span-1 bg-primary/20 rounded-l-xl bg-opacity-10 pt-4 md:text-left text-center">
               <p className="px-6 text-primary ">Sneakers Details</p>
               <div className="flex-col text-base font-semibold md:mt-24  space-y-2 mt-4 lg:mx-4 md:mx-0 mx-12 mb-8">
-                <p className="hover:bg-primary hover:text-white cursor-pointer  p-4 rounded-lg ">
-                  Higher Quality sockets boost attribute
+                <p onMouseOver={()=>setShoeStat(1)} className="hover:bg-primary hover:text-white cursor-pointer  p-4 rounded-lg ">
+                 Feature 1
                 </p>
 
-                <p className="hover:bg-primary hover:text-white cursor-pointer  p-4 rounded-lg">
-                  Higher Quality sockets boost attribute
+                <p onMouseOver={()=>setShoeStat(2)} className="hover:bg-primary hover:text-white cursor-pointer  p-4 rounded-lg">
+                  Feature 2
                 </p>
 
-                <p className="hover:bg-primary hover:text-white cursor-pointer  p-4 rounded-lg">
-                  Higher Quality sockets boost attribute
+                <p onMouseOver={()=>setShoeStat(3)} className="hover:bg-primary hover:text-white cursor-pointer  p-4 rounded-lg">
+                  Feature 3
                 </p>
               </div>
             </div>
@@ -106,22 +111,22 @@ function hero() {
                   <div className="border bg-pink-600 rounded-full h-6 w-6"></div>
                   <div className="border bg-violet-600 rounded-full h-6 w-6"></div>
                 </div>
-                <div className="flex-col">
+                <div className="flex-col mt-6">
                   <div className="flex align-middle items-center justify-between">
-                    <p className="text-base">Performance</p>
-                    <div className="rounded-lg w-52 h-2 bg-primary mx-2"></div>
+                    <p className="text-base">Performance </p>
+                    <div className={`rounded-lg w-${shoeStat+1}/6 h-2 bg-primary mx-2`}></div>
                   </div>
                   <div className="flex align-middle items-center justify-between">
                     <p className="text-base">Fortune</p>
-                    <div className="rounded-lg w-52 h-2 bg-primary mx-2"></div>
+                    <div className={`rounded-lg w-${shoeStat+2}/6 h-2 bg-primary mx-2`}></div>
                   </div>
                   <div className="flex align-middle items-center justify-between">
                     <p className="text-base">Joy</p>
-                    <div className="rounded-lg w-52 h-2 bg-primary mx-2"></div>
+                    <div className={`rounded-lg w-${shoeStat+1}/6 h-2 bg-primary mx-2`}></div>
                   </div>
                   <div className="flex align-middle items-center justify-between">
                     <p className="text-base">Duration</p>
-                    <div className="rounded-lg w-52 h-2 bg-primary mx-2"></div>
+                    <div className={`rounded-lg w-${shoeStat+3}/6 h-2 bg-primary mx-2`}></div>
                   </div>
                 </div>
               </div>
@@ -212,4 +217,4 @@ function hero() {
   );
 }
 
-export default hero;
+export default Three;
