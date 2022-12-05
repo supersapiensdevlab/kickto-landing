@@ -64,7 +64,7 @@ function hero() {
               <div data-aos="fade-up" 
     data-aos-duration="500"
     data-aos-delay="200"
-    data-aos-easing="ease-in-out" className="col-span-1">
+    data-aos-easing="ease-in-out" className="col-span-1 hidden">
                 <h1 className="text-xl font-extrabold text-primary">Mechanics</h1>
                 <p className="py-2 max-w-xs">
                   With Kickto NFT shoes, each user gets to earn every time they
@@ -76,7 +76,7 @@ function hero() {
               <div data-aos="fade-up" 
     data-aos-duration="500"
     data-aos-delay="200"
-    data-aos-easing="ease-in-out" className="col-span-1">
+    data-aos-easing="ease-in-out" className="col-span-1 hidden">
                 <h1 className="text-xl font-extrabold text-primary">Mission</h1>
                 <p className="py-2 max-w-xs">
                   Our motive with Kickto is to make fitness lucrative. With most
@@ -88,7 +88,7 @@ function hero() {
             <div data-aos="fade-up" 
     data-aos-duration="500"
     data-aos-delay="200"
-    data-aos-easing="ease-in-out" className="col-span-1">
+    data-aos-easing="ease-in-out" className="col-span-1 hidden">
               <h1 className="text-xl font-extrabold text-primary">Technology</h1>
               <p className="py-2  ">
                 The Kickto Realverse is set to revolutionize the modern fitness

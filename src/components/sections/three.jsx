@@ -1,6 +1,7 @@
 import shoe from "../../assets/images/shoe1.png";
 import shoe2 from "../../assets/images/shoe2.png";
 import Lottie from "lottie-react";
+import lottie from 'lottie-web';
 
 import shoe3 from "../../assets/images/shoe3.png";
 
@@ -92,12 +93,10 @@ function Three() {
               <div className="flex-col text-base font-semibold md:mt-24  space-y-2 mt-4 lg:mx-4 md:mx-0 mx-12 mb-8">
                 <p onMouseOver={()=>setShoeStat(1)} className="hover:bg-primary hover:text-white cursor-pointer  p-4 rounded-lg ">
                  Feature 1
-                </p>
-
+                </p> 
                 <p onMouseOver={()=>setShoeStat(2)} className="hover:bg-primary hover:text-white cursor-pointer  p-4 rounded-lg">
                   Feature 2
-                </p>
-
+                </p> 
                 <p onMouseOver={()=>setShoeStat(3)} className="hover:bg-primary hover:text-white cursor-pointer  p-4 rounded-lg">
                   Feature 3
                 </p>

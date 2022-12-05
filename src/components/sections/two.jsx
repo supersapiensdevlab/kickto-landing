@@ -1,7 +1,9 @@
 import shoe from "../../assets/images/shoe1.png";
 import arrow from "../../assets/vectors/arrow.svg";
-
+import cloud from "../../assets/lotties/cloud.json";
 import icon from "../../assets/images/icon1.png";
+import { defineElement } from 'lord-icon-element';
+
 function hero() {
   return (
     <div className="hero     text-black/80 ">
@@ -45,7 +47,7 @@ function hero() {
 
           <div data-aos="fade-right" 
     data-aos-duration="500"
-    data-aos-delay="800"
+    data-aos-delay="400"
     data-aos-easing="ease-in-out" className="group hover:bg-purple-100 hover:text-white hover:drop-shadow-md p-6 border-gray-300 border rounded-xl h-full align-middle items-center sm:col-span-2 col-span-1 flex-col bg-white bg-opacity-10">
             <div className="w-full justify-between flex-col space-y-6">
               <div className="rounded-full group-hover:bg-primary group-hover:text-white group-hover:drop-shadow-md   group-hover:border-primary bg-primary h-8 w-8 group-hover:w-max flex align-middle items-center transition-transform duration-700 px-3 mr-2 -mt-10 font-bold text-white">
@@ -58,10 +60,10 @@ function hero() {
           </div>
 
           <img  src={arrow} className="fill-white h-16   mx-auto sm:-rotate-90 sm:hidden lg:block" />
-
+         
           <div data-aos="fade-right" 
     data-aos-duration="500"
-    data-aos-delay="1500"
+    data-aos-delay="1000"
     data-aos-easing="ease-in-out" className="group hover:bg-purple-100 hover:text-white hover:drop-shadow-md p-6 border-gray-300 border rounded-xl h-full align-middle items-center sm:col-span-2 col-span-1 flex-col bg-white bg-opacity-10">
             <div className="w-full justify-between flex-col space-y-6">
               <div className="rounded-full group-hover:bg-primary group-hover:text-white group-hover:drop-shadow-md   group-hover:border-primary bg-primary h-8 w-8 group-hover:w-max flex align-middle items-center transition-transform duration-700 px-3 mr-2 -mt-10 font-bold text-white">
@@ -77,7 +79,7 @@ function hero() {
 
           <div data-aos="fade-right" 
     data-aos-duration="500"
-    data-aos-delay="2000"
+    data-aos-delay="1500"
     data-aos-easing="ease-in-out" className="group hover:bg-purple-100 hover:text-white hover:drop-shadow-md p-6 border-gray-300 border rounded-xl h-full align-middle items-center sm:col-span-2 col-span-1 flex-col bg-white bg-opacity-10">
             <div className="w-full justify-between flex-col space-y-6">
               <div className="rounded-full group-hover:bg-primary group-hover:text-white group-hover:drop-shadow-md   group-hover:border-primary bg-primary h-8 w-8 group-hover:w-max flex align-middle items-center transition-transform duration-700 px-3 mr-2 -mt-10 font-bold text-white">
