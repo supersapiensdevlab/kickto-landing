@@ -1,4 +1,4 @@
-import shoes from "../../assets/images/shoe-nft.png";
+import shoes from "../../assets/images/shoe-nft.webp";
 import blurElements from "../../assets/images/blur-elements.png";
 
 function hero() {
