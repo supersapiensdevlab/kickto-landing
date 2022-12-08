@@ -4,7 +4,7 @@ import shoe2 from "../../assets/images/shoe2.png";
 
 import shoe3 from "../../assets/images/shoe3.png";
 import shoe4 from "../../assets/images/shoe4.png";
-
+import tokenomics from "../../assets/Kickto Shoe Tree.png"
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Keyboard, Autoplay, Pagination, Navigation } from "swiper";
@@ -19,8 +19,8 @@ function four() {
   ];
 
   return (
-    <div className=" min-h-screen w-full  text-black/80 ">
-      <p className="text-5xl text-black/80 font-semibold text-left md:text-center mt-6 mb-4 mx-4">
+    <div className=" min-h-screen w-full  text-primary/80 mt-24">
+      <p className="text-5xl text-primary/80 font-semibold text-left md:text-center mt-6 mb-4 mx-4">
         Sneakers
       </p>
       <Swiper
@@ -77,7 +77,7 @@ function four() {
           </SwiperSlide>
         ))} 
       </Swiper>
-      <p className="text-5xl text-black/80 font-semibold text-left md:text-center mt-6 mb-4 mx-4">
+      <p className="text-5xl text-primary/80 font-semibold text-left md:text-center mt-24 mb-4 mx-4">
         Roadmap
       </p>
 
@@ -85,13 +85,20 @@ function four() {
         <img src={roadmap} className="w-full" />
       </div>
 
+
+     
+
       <div className="my-8">
         <p className="text-5xl text-black/80 font-semibold text-left md:text-center mt-6 mb-4 mx-4">
           Tokenomics
         </p>
-        <div className="text-center items-center flex flex-col">
+        <div className="w-full py-6 lg:px-12">
+        <img src={tokenomics} className="w-full" />
+      </div>
+
+        <div className="text-center items-center flex flex-col hidden">
           <div className="bg-primary/10 rounded-xl w-max  px-6 py-2  text-xl border border-primary/30">
-            In-app marketplace
+            Buy Token
           </div>
           <img src={arrow} className="fill-white h-24 my-4" />
 

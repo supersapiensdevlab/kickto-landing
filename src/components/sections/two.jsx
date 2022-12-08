@@ -39,7 +39,7 @@ function hero() {
         </div>
         <div className="grid grid-cols-1  sm:grid-cols-5 md:grid-cols-5 lg:grid-cols-11 grid-rows-flow gap-4 col-span-2 md:col-span-1 align-middle items-center">
           <div
-            data-aos="fade-right"
+            data-aos="fade-in"
             data-aos-duration="500"
             data-aos-delay="100"
             data-aos-easing="ease-in-out"
@@ -65,7 +65,7 @@ function hero() {
           />
 
           <div
-            data-aos="fade-right"
+            data-aos="fade-in"
             data-aos-duration="500"
             data-aos-delay="400"
             data-aos-easing="ease-in-out"
@@ -91,7 +91,7 @@ function hero() {
           />
 
           <div
-            data-aos="fade-right"
+            data-aos="fade-in"
             data-aos-duration="500"
             data-aos-delay="1000"
             data-aos-easing="ease-in-out"
@@ -117,7 +117,7 @@ function hero() {
           />
 
           <div
-            data-aos="fade-right"
+            data-aos="fade-in"
             data-aos-duration="500"
             data-aos-delay="1500"
             data-aos-easing="ease-in-out"

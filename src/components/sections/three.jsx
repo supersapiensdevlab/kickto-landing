@@ -11,7 +11,7 @@ import vector3 from "../../assets/gif/shoes3.gif";
 import vector4 from "../../assets/gif/shoes4.gif";
 
 import icon from "../../assets/images/icon1.png";
-import shoehalf from "../../assets/images/mobile-frame-half.png";
+import shoehalf from "../../assets/images/shoes-half.png";
 import coins from "../../assets/images/coins.png";
 // import run from "../../assets/images/run.png";
 import run2 from "../../assets/images/run2.png";
@@ -86,8 +86,8 @@ function Three() {
         <div data-aos="fade-in" 
             data-aos-duration="500"
             data-aos-offset="400"  
-            data-aos-easing="ease-in-out"  className="  pb-0 text-3xl font-semibold  border-gray-300 border rounded-xl h-full align-middle items-center col-span-3 flex-col bg-white bg-opacity-10">
-          <div className="grid grid-cols-3 ">
+            data-aos-easing="ease-in-out"  className="   text-3xl font-semibold  border-gray-300 border rounded-xl mt-12 align-middle items-center col-span-3 flex-col bg-white bg-opacity-10">
+          <div className="grid grid-cols-3  ">
             <div className="col-span-3 md:col-span-1 bg-primary/20 rounded-l-xl bg-opacity-10 pt-4 md:text-left text-center">
               <p className="px-6 text-primary ">Sneakers Details</p>
               <div className="flex-col text-base font-semibold md:mt-24  space-y-2 mt-4 lg:mx-4 md:mx-0 mx-12 mb-8">
@@ -138,7 +138,7 @@ function Three() {
         <div data-aos="fade-right" 
     data-aos-duration="500"
     data-aos-offset="400"
-    data-aos-easing="ease-in-out" className="py-6 pb-0 text-3xl font-semibold bg-blur-pattern  border-gray-300 border rounded-xl h-full align-middle items-center col-span-3  md:col-span-1 flex-col bg-white bg-opacity-10">
+    data-aos-easing="ease-in-out" className="py-6 pb-0 text-3xl font-semibold bg-blur-pattern  border-gray-300 border rounded-xl mt-12 align-middle items-center col-span-3  md:col-span-1 flex-col bg-white bg-opacity-10">
           <div className="justify-between flex px-6 text-primary">
             <p>Our in-app marketplace for your perfect shoes</p>
             <div className="rounded-full bg-primary h-10 w-10 flex align-middle items-center  px-4  mr-2 text-white text-base font-bold">
@@ -161,7 +161,7 @@ function Three() {
           <div data-aos="fade-up" 
     data-aos-duration="500"
     data-aos-offset="400"
-    data-aos-easing="ease-in-out" className="p-6 text-3xl font-semibold mb-4 border-gray-300 border rounded-xl h-full align-middle items-center col-span-2 flex-col bg-white bg-opacity-10">
+    data-aos-easing="ease-in-out" className="p-6 text-3xl font-semibold mb-4 border-gray-300 border rounded-xl mt-12 align-middle items-center col-span-2 flex-col bg-white bg-opacity-10">
             <div className="justify-between flex mb-2 text-primary">
               <p>
                 Keep track of your <br></br>daily fitness routine
