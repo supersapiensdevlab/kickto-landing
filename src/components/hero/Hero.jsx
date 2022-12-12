@@ -3,7 +3,7 @@ import blurElements from "../../assets/images/blur-elements.png";
 
 function hero() {
   return (
-    <div className="hero min-h-screen bg-blur-pattern  ">
+    <div className="hero min-h-screen bg-blur-pattern  h-screen">
       <div className="hero-overlay bg-opacity-0"></div>
       <div className="hero-content text-center text-neutral-content">
         <div className="  grid   lg:grid-cols-2 grid-cols-1  items-center align-middle p-4">

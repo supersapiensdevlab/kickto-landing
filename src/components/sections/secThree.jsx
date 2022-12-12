@@ -6,9 +6,9 @@ import { defineElement } from "lord-icon-element";
 
 function hero() {
   return (
-    <div className="hero     text-black/80 ">
+    <div className="hero  h-screen   text-black/80 ">
       <div className="hero-content   flex flex-col  space-y-4  ">
-        <div className="col-span-1  md:col-span-1 mt-4">
+        <div className="col-span-1  md:col-span-1 ">
           <h1
             data-aos="fade-right"
             data-aos-duration="500"
