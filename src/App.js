@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import "@splidejs/react-splide/css";
-
+import React from "react";
 import Navbar from "./components/navbar/Navbar";
 import Hero from "./components/hero/Hero";
 import One from "./components/sections/one";
@@ -74,19 +74,32 @@ function App() {
         
           <SixHalf />
         
-        
-          <Seven />
+          <div className="h-screen">
+        <Tokenomics/>
+        </div>
         
         
           <Footer />
         
-        
-        <div className="h-screen">
-        <Tokenomics/>
-        </div>
+          <SplashScreen/>
+       
        
     </>
   );
 }
 
+// Component for Splash Screen
+class SplashScreen extends React.Component {
+  render() {
+    const style = {top: 0,
+      bottom: 0,
+      right: 0,
+      left: 0, 
+      position: 'fixed'};
+
+    return (
+      <img src="https://via.placeholder.com/350x150" className="z-50 h-full w-screen hidden" style={style}/>
+    );
+  }
+}
 export default App;

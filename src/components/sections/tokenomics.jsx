@@ -5,52 +5,75 @@ import ReactFlow, {
   applyNodeChanges,
   applyEdgeChanges,
 } from "reactflow";
-import "reactflow/dist/style.css";
+import "reactflow/dist/base.css";
+import "./CustomNode.js";
+import CustomNode from "./CustomNode";
+import tractor from "../../assets/icons/Farming.png"
+import coin from "../../assets/icons/coin.png"
+import marketplace from "../../assets/icons/marketplace.png"
+import staking from "../../assets/icons/staking.png"
+import user from "../../assets/icons/user.png"
+
+const nodeTypes = {
+  custom: CustomNode,
+};
 
 const initialNodes = [
   {
     id: "1",
-    data: { label: "User" },
-    position: { x: 512, y: 0 },
-    type: "input",
+    position: { x: 480, y: 0 },
+    type: "custom",
+    data: { name: "User", job: "CEO", emoji: "😎", image: user },
   },
   {
     id: "2",
-    data: { label: "DEX" },
-    position: { x: 150, y: 100 },
+    type: "custom",
+    data: { name: "DEX", job: "CEO", emoji: "😎", image: coin },
+    position: { x: 150, y: 200 },
   },
   {
     id: "3",
-    data: { label: "Staking" },
-    position: { x: 250, y: 200 },
+    type: "custom",
+    data: { name: "Staking", job: "CEO", emoji: "😎", image: staking },
+    position: { x: 250, y: 300 },
   },
   {
     id: "4",
-    data: { label: "Liquidity" },
-    position: { x: 50, y: 200 },
+    type: "custom",
+    data: { name: "Liquidity", job: "CEO", emoji: "😎", image: tractor },
+
+    position: { x: 50, y: 300 },
   },
   {
     id: "5",
-    data: { label: "Farming" },
-    position: { x: 10, y: 300 },
+    type: "custom",
+    data: { name: "Farming", job: "CEO", emoji: "😎", image: tractor },
+
+    position: { x: 10, y: 400 },
   },
 
   {
     id: "6",
-    data: { label: "NFT Marketplace" },
-    position: { x: 800, y: 100 },
+    type: "custom",
+    data: { name: "NFT Marketplace", job: "CEO", emoji: "😎", image: marketplace },
+
+    position: { x: 750, y: 200 },
   },
 
   {
     id: "7",
-    data: { label: "Buy NFT" },
-    position: { x: 700, y: 300 },
+    type: "custom",
+    data: { name: "Buy NFT", job: "CEO", emoji: "😎" },
+
+    position: { x: 700, y: 400 },
   },
 
   {
     id: "8",
-    data: { label: "Stake NFT" },
-    position: { x: 900, y: 300 },
+    type: "custom",
+    data: { name: "Stake NFT", job: "CEO", emoji: "😎" },
+
+    position: { x: 900, y: 400 },
   },
 ];
 
@@ -119,8 +142,11 @@ function Flow() {
     []
   );
 
-  return (
-    <div style={{ height: "100%" }}>
+  return (<>
+  <p className="text-5xl text-black/80 font-semibold text-left md:text-center   mt-24  mx-4">
+          Tokenomics
+        </p>
+    <div className="w-screen h-screen "  >
       <ReactFlow
         nodes={nodes}
         onNodesChange={onNodesChange}
@@ -128,8 +154,11 @@ function Flow() {
         zoomOnScroll={false}
         preventScrolling={false}
         onEdgesChange={onEdgesChange}
+        nodeTypes={nodeTypes}
+        fitView
+        fitViewOptions={ {  padding:  0.5 }    }
       ></ReactFlow>
-    </div>
+    </div></>
   );
 }
 

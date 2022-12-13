@@ -424,3 +424,11 @@ svg.active .svg-elem-14 {
     min-height: 40px;
   }
 }
+
+.react-flow__panel {
+  display: none;
+}
+
+.react-flow__attribution {
+  display: none!important;
+}
