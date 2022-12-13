@@ -21,7 +21,9 @@
     "react-tsparticles": "^2.6.0",
     "reactflow": "^11.3.3",
     "swiper": "^8.4.4",
+    "three": "^0.147.0",
     "tsparticles": "^2.6.0",
+    "vanta": "^0.5.24",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

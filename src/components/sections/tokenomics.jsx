@@ -5,8 +5,7 @@ import ReactFlow, {
   applyNodeChanges,
   applyEdgeChanges,
 } from "reactflow";
-import "reactflow/dist/base.css";
-import "./CustomNode.js";
+import "reactflow/dist/base.css"; 
 import CustomNode from "./CustomNode";
 import tractor from "../../assets/icons/Farming.png"
 import coin from "../../assets/icons/coin.png"
@@ -29,35 +28,34 @@ const initialNodes = [
     id: "2",
     type: "custom",
     data: { name: "DEX", job: "CEO", emoji: "😎", image: coin },
-    position: { x: 150, y: 200 },
+    position: { x: 300, y: 200 },
   },
   {
     id: "3",
     type: "custom",
     data: { name: "Staking", job: "CEO", emoji: "😎", image: staking },
-    position: { x: 250, y: 300 },
+    position: { x: 375, y: 300 },
   },
   {
     id: "4",
     type: "custom",
     data: { name: "Liquidity", job: "CEO", emoji: "😎", image: tractor },
 
-    position: { x: 50, y: 300 },
+    position: { x: 175, y: 300 },
   },
   {
     id: "5",
     type: "custom",
     data: { name: "Farming", job: "CEO", emoji: "😎", image: tractor },
 
-    position: { x: 10, y: 400 },
+    position: { x: 177, y: 400 },
   },
 
   {
     id: "6",
     type: "custom",
-    data: { name: "NFT Marketplace", job: "CEO", emoji: "😎", image: marketplace },
-
-    position: { x: 750, y: 200 },
+    data: { name: "NFT Marketplace", job: "CEO", emoji: "😎", image: marketplace }, 
+    position: { x: 600 , y: 200 },
   },
 
   {
@@ -65,7 +63,7 @@ const initialNodes = [
     type: "custom",
     data: { name: "Buy NFT", job: "CEO", emoji: "😎" },
 
-    position: { x: 700, y: 400 },
+    position: { x: 550, y: 400 },
   },
 
   {
@@ -73,7 +71,7 @@ const initialNodes = [
     type: "custom",
     data: { name: "Stake NFT", job: "CEO", emoji: "😎" },
 
-    position: { x: 900, y: 400 },
+    position: { x: 750, y: 400 },
   },
 ];
 
@@ -153,10 +151,11 @@ function Flow() {
         edges={edges}
         zoomOnScroll={false}
         preventScrolling={false}
+        panOnDrag={false}
         onEdgesChange={onEdgesChange}
         nodeTypes={nodeTypes}
         fitView
-        fitViewOptions={ {  padding:  0.5 }    }
+        fitViewOptions={ {  padding:  0.3 }    }
       ></ReactFlow>
     </div></>
   );

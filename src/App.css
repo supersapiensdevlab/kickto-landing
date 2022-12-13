@@ -425,10 +425,17 @@ svg.active .svg-elem-14 {
   }
 }
 
-.react-flow__panel {
-  display: none;
-}
-
+ 
 .react-flow__attribution {
   display: none!important;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: #7b3fe4;
+}
+
+::selection {
+  color: white;
+  background: #7b3fe4;
 }

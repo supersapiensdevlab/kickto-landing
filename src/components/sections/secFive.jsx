@@ -24,12 +24,9 @@ function Three() {
   const [shoeStat, setShoeStat] = useState(0);
 
   return (
-    <div className="hero min-h-screen   text-black/80 ">
+    <div className="hero min-h-screen   text-black/80 p-4">
       <div
-        data-aos="fade-in"
-        data-aos-duration="500"
-        data-aos-offset="400"
-        data-aos-easing="ease-in-out"
+       
         className="   text-3xl font-semibold  border-gray-300 border rounded-xl align-middle items-center col-span-3 flex-col bg-white bg-opacity-10"
       >
         <div className="grid grid-cols-3  ">

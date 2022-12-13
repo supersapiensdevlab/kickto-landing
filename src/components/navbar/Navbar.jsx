@@ -1,4 +1,7 @@
 import logo from "../../assets/images/kickto-logo-text-alt.svg";
+import logoWhite from "../../assets/images/kickto-logo-text-white.svg";
+import logoPurpleWhite from "../../assets/images/kickto-logo-text-alt-stroke.svg";
+
 function navbar() {
   return (
     <div className="navbar  fixed  text-black/80 bg-primary backdrop-blur bg-opacity-5 z-50 lg:px-24">
@@ -23,7 +26,7 @@ function navbar() {
           <ul
             tabIndex={0}
             className="menu menu-compact dropdown-content  p-2 shadow bg-purple-100 mt-6
-          backdrop-blur-md rounded-box w-52"
+          backdrop-blur-md rounded-box w-52  "
           >
             <li>
               <a className="hover:bg-primary hover:text-white">Whitepaper</a>
@@ -43,11 +46,11 @@ function navbar() {
           </ul>
         </div>
         <div className="flex">
-          <img src={logo} className="h-16 w-36  " />
+          <img src={logoWhite} className="h-16 w-36 hidden  " />
             
         </div>
       </div>
-      <div className="navbar-end hidden  ">
+      <div className="navbar-center hidden  ">
         <ul className="menu menu-horizontal p-0">
           <li>
             <a>Whitepaper</a>
@@ -62,15 +65,15 @@ function navbar() {
           </li>
         </ul>
       </div>
-      <div className="navbar-end gap-2">
-        <div>
+      <div className="navbar-end gap-2 hidden md:flex   ">
+      <div> <a className="btn bg-primary   border-none hover:scale-95 text-white ">
+          Marketplace
+        </a></div>  <div>
       <a className="btn  bg-transparent text-white gradient-border  border-none hover:scale-95 hover:text-white  btn-block "
          href="https://kickto-dex.netlify.app/" target="_blank">
               DEX
             </a></div>
-       <div> <a className="btn bg-primary   border-none hover:scale-95 text-white ">
-          Marketplace
-        </a></div>
+     
        
       </div>
     </div>

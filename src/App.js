@@ -35,55 +35,48 @@ function App() {
   const particlesLoaded = useCallback(async (container) => {
     await console.log(container);
   }, []);
-
+  const [showElement,setShowElement] = React.useState(true)
+  useEffect(()=>{
+    setTimeout(function() {
+      setShowElement(false)
+         }, 3000);
+       },
+   [])
   return (
+
+    
     <>
       {/* <video width="320" height="240" autoPlay loop>
           <source src={anim} type="video/mp4"/> 
         </video> */}
       <Navbar />
-       
-        
-          <Hero />
-        
 
-        
-          <One />
-        
+      <Hero />
 
-        
-          <Two />
-        
+      <One />
 
-        
-          <Three />
-        
+      <Two />
 
-        
-          <Four />
-        
-        
-          <Five />
-        
-        
-          <FiveHalf />
-        
-        
-          <Six />
-        
-        
-          <SixHalf />
-        
-          <div className="h-screen">
-        <Tokenomics/>
-        </div>
-        
-        
-          <Footer />
-        
-          <SplashScreen/>
-       
-       
+      <Three />
+
+      <Four />
+
+      <Five />
+
+      <FiveHalf />
+
+      <Six />
+
+      <SixHalf />
+
+      <div className="h-screen">
+        <Tokenomics />
+      </div>
+
+      <Footer />
+
+       {/* <SplashScreen  className={`${showElement?"opacity-100":"opacity-0"}`} />   */}
+
     </>
   );
 }
@@ -91,14 +84,13 @@ function App() {
 // Component for Splash Screen
 class SplashScreen extends React.Component {
   render() {
-    const style = {top: 0,
-      bottom: 0,
-      right: 0,
-      left: 0, 
-      position: 'fixed'};
+    const style = { top: 0, bottom: 0, right: 0, left: 0, position: "fixed" };
 
     return (
-      <img src="https://via.placeholder.com/350x150" className="z-50 h-full w-screen hidden" style={style}/>
+      <div className="w-full h-full  "  >
+      <video width="320" height="240" autoPlay  src={anim} style={style} className="w-screen bg-white h-full z-50"> 
+           
+        </video></div>
     );
   }
 }

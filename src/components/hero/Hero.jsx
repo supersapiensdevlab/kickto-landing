@@ -1,26 +1,99 @@
 import shoes from "../../assets/images/shoe-nft.webp";
 import blurElements from "../../assets/images/blur-elements.png";
+import React, { useState, useEffect, useRef } from "react";
+import HALO from "vanta/dist/vanta.halo.min";
+import DOTS from "vanta/dist/vanta.dots.min";
 
-function hero() {
+import * as THREE from "three";
+import logoWhite from "../../assets/images/kickto-logo-text-white.png";
+
+function Hero() {
+  const [vantaEffect, setVantaEffect] = useState(null);
+  const [vantaEffect2, setVantaEffect2] = useState(null);
+
+  const myRef = useRef(null);
+  const myRef2 = useRef(null);
+
+  useEffect(() => {
+    if (!vantaEffect) {
+      setVantaEffect( HALO({
+        el: myRef.current,
+        mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0x8ca035,
+  backgroundColor: "#7b3fe4",
+      }))
+    } 
+
+    if (!vantaEffect2) {
+      setVantaEffect2( DOTS({
+        el: myRef2.current,
+        mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0xffffff,
+  backgroundColor: "#7b3fe4", 
+  showLines: false
+
+      }))
+    }
+    return () => {
+      if (vantaEffect2) vantaEffect2.destroy();
+      if (vantaEffect) vantaEffect.destroy();
+
+    };
+  }, [vantaEffect]);
+
   return (
-    <div className="hero min-h-screen bg-blur-pattern  h-screen">
+    <div className="hero min-h-screen bg-transparent  h-screen">
       <div className="hero-overlay bg-opacity-0"></div>
-      <div className="hero-content text-center text-neutral-content">
+      <div className="hero-content text-center text-neutral-content z-50">
         <div className="  grid   lg:grid-cols-2 grid-cols-1  items-center align-middle p-4">
-          <div><h1 data-aos="fade-right" 
-    data-aos-duration="500"
-    data-aos-easing="ease-in-out"
-     className="mb-5 sm:mb-0 text-5xl mt-12 sm:text-9xl font-bold col-span-1  text-primary sm:text-left italic">
-            Kickto  
-            
-          </h1><p data-aos="fade-right" 
-    data-aos-duration="500"
-    data-aos-easing="ease-in-out" className=" text-lg sm:text-left text-primary">A revolution in Walk 2 Earn</p></div>
-          <img  src={shoes} className="w-4/5   h-full   lg:scale-150  rotate-[30deg]  p-6" />
-          <div data-aos="fade-left" 
-    data-aos-duration="500"
-    data-aos-easing="ease-in-out" className="col-span-1 sm:text-left hidden  lg:pl-12   ">
-            <h2 className="text-3xl font-bold text-black/80 text-primary">A Revolution in Walk2Earn</h2>
+          <div>
+            {/* <h1
+              data-aos="fade-right"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-out"
+              className="mb-5 sm:mb-0 -mt-24  sm:mt-12  text-7xl md:text-9xl font-bold col-span-1 drop-shadow-md text-white sm:text-left italic"
+            >
+              Kickto
+            </h1>
+             */}
+                       <img data-aos="fade-right"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-out" src={logoWhite} className="h-64 w-full col-span-1 drop-shadow-md px-8" />
+
+            <p
+              data-aos="fade-right"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-out"
+              className=" text-lg sm:text-left text-white drop-shadow-md hidden"
+            >
+              A revolution in Walk 2 Earn
+            </p>
+          </div>
+          <img
+            src={shoes}
+            className=" sm:w-4/5 scale-150  h-full   lg:scale-150  rotate-[30deg]  p-6"
+          />
+          <div
+            data-aos="fade-left"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+            className="col-span-1 sm:text-left hidden  lg:pl-12   "
+          >
+            <h2 className="text-3xl font-bold text-black/80 text-primary">
+              A Revolution in Walk2Earn
+            </h2>
             <p className="mb-5 hidden lg:max-w-xs text-black/80">
               Kickto is changing the way people perceive fitness, making you
               rich while you get fit. With Kickto NFT sneakers, you earn while
@@ -29,8 +102,11 @@ function hero() {
           </div>
         </div>
       </div>
+      <div ref={myRef} className="w-screen h-screen hidden"> sd</div>
+      <div ref={myRef2} className="w-screen h-screen"> sd</div>
+
     </div>
   );
 }
 
-export default hero;
+export default Hero;
