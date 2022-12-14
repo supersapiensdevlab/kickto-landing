@@ -5,7 +5,7 @@ import HALO from "vanta/dist/vanta.halo.min";
 import DOTS from "vanta/dist/vanta.dots.min";
 
 import * as THREE from "three";
-import logoWhite from "../../assets/images/kickto-logo-text-white.png";
+import logoWhite from "../../assets/images/kickto-logo-text-white.svg";
 
 function Hero() {
   const [vantaEffect, setVantaEffect] = useState(null);
@@ -102,8 +102,8 @@ function Hero() {
           </div>
         </div>
       </div>
-      <div ref={myRef} className="w-screen h-screen "> sd</div>
-      <div ref={myRef2} className="w-screen h-screen hidden"> sd</div>
+      <div ref={myRef} className="w-screen h-screen "> </div>
+      <div ref={myRef2} className="w-screen h-screen hidden"> </div>
 
     </div>
   );

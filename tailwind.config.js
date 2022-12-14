@@ -11,7 +11,16 @@ module.exports = {
       },
       colors:{
         primary:"#7b3fe4"
-      }
+      },
+      animation: {
+        border: 'border 4s ease infinite',
+      },
+      keyframes: {
+        border: {
+          '0%, 100%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' },
+        },
+      },
     },
   },
   plugins: [require("daisyui")],

@@ -40,6 +40,8 @@ const Fullpage = () => (
   <ReactFullpage
     //fullpage options
     licenseKey={"YOUR_KEY_HERE"}
+    scrollBar={false}
+    fadingEffect={true}
     scrollingSpeed={1000} /* Options here */
     render={({ state, fullpageApi }) => {
       return (<>

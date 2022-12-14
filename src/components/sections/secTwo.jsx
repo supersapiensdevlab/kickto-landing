@@ -1,4 +1,4 @@
-import shoe from "../../assets/images/shoe1.png";
+import shoe from "../../assets/images/shoe2.png";
 import shoeMobile from "../../assets/images/shoe-mobile.svg";
 import mobile from "../../assets/images/mobile-alt.png";
 import { FullPage, Slide } from "react-full-page";
@@ -72,8 +72,9 @@ function hero() {
             
             className="border bg-blur-pattern mt-20 md:mx-6 rounded-2xl h-max py-12 align-middle items-center col-span-2 md:col-span-1 flex bg-white bg-opacity-10"
           >
-            <img src={shoe} className="mx-auto" />
+            <img src={shoe} className="mx-auto p-5" />
           </div>
+  
         </div>
       </div> 
   );

@@ -34,7 +34,7 @@ function hero() {
         <div className="grid grid-cols-1  sm:grid-cols-5 md:grid-cols-5 lg:grid-cols-11 grid-rows-flow gap-4 col-span-2 md:col-span-1 align-middle items-center">
           <div
             
-            className="group hover:bg-purple-100 hover:text-white hover:drop-shadow-md p-6 border-gray-300 border rounded-xl h-full align-middle items-center sm:col-span-2 col-span-1 flex-col bg-white bg-opacity-10"
+            className="group hover:bg-purple-100 hover:text-white hover:drop-shadow-md p-6 border-gray-300/30 border rounded-xl h-full align-middle items-center sm:col-span-2 col-span-1 flex-col bg-white bg-opacity-10"
           >
             <div className="w-full justify-between flex-col space-y-6">
               <div className="rounded-full  group-hover:bg-primary group-hover:text-white group-hover:drop-shadow-md   group-hover:border-primary bg-primary h-8 w-8 group-hover:w-max flex align-middle items-center transition-transform duration-700 px-3 mr-2 -mt-10 font-bold text-white">
@@ -57,7 +57,7 @@ function hero() {
 
           <div
            
-            className="group hover:bg-purple-100 hover:text-white hover:drop-shadow-md p-6 border-gray-300 border rounded-xl h-full align-middle items-center sm:col-span-2 col-span-1 flex-col bg-white bg-opacity-10"
+            className="group hover:bg-purple-100 hover:text-white hover:drop-shadow-md p-6 border-gray-300/30 border rounded-xl h-full align-middle items-center sm:col-span-2 col-span-1 flex-col bg-white bg-opacity-10"
           >
             <div className="w-full justify-between flex-col space-y-6">
               <div className="rounded-full group-hover:bg-primary group-hover:text-white group-hover:drop-shadow-md   group-hover:border-primary bg-primary h-8 w-8 group-hover:w-max flex align-middle items-center transition-transform duration-700 px-3 mr-2 -mt-10 font-bold text-white">
@@ -80,7 +80,7 @@ function hero() {
 
           <div
             
-            className="group hover:bg-purple-100 hover:text-white hover:drop-shadow-md p-6 border-gray-300 border rounded-xl h-full align-middle items-center sm:col-span-2 col-span-1 flex-col bg-white bg-opacity-10"
+            className="group hover:bg-purple-100 hover:text-white hover:drop-shadow-md p-6 border-gray-300/30 border rounded-xl h-full align-middle items-center sm:col-span-2 col-span-1 flex-col bg-white bg-opacity-10"
           >
             <div className="w-full justify-between flex-col space-y-6">
               <div className="rounded-full group-hover:bg-primary group-hover:text-white group-hover:drop-shadow-md   group-hover:border-primary bg-primary h-8 w-8 group-hover:w-max flex align-middle items-center transition-transform duration-700 px-3 mr-2 -mt-10 font-bold text-white">
@@ -103,14 +103,14 @@ function hero() {
 
           <div
             
-            className="group hover:bg-purple-100 hover:text-white hover:drop-shadow-md p-6 border-gray-300 border rounded-xl h-full align-middle items-center sm:col-span-2 col-span-1 flex-col bg-white bg-opacity-10"
+            className="group hover:bg-purple-100 hover:text-white hover:drop-shadow-md p-6 border-gray-300/30 border rounded-xl h-full align-middle items-center sm:col-span-2 col-span-1 flex-col bg-white bg-opacity-10"
           >
             <div className="w-full justify-between flex-col space-y-6">
               <div className="rounded-full group-hover:bg-primary group-hover:text-white group-hover:drop-shadow-md   group-hover:border-primary bg-primary h-8 w-8 group-hover:w-max flex align-middle items-center transition-transform duration-700 px-3 mr-2 -mt-10 font-bold text-white">
                 <p className="flex">
                   <span className="group-hover:block hidden">Step&nbsp;</span>4
                 </p>
-              </div>{" "}
+              </div> 
               <p className="group-hover:text-primary">
                 Download Crypto exchange & Crypto Wallet App
               </p>
