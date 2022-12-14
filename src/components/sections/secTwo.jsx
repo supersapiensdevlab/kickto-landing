@@ -2,13 +2,46 @@ import shoe from "../../assets/images/shoe2.png";
 import shoeMobile from "../../assets/images/shoe-mobile.svg";
 import mobile from "../../assets/images/mobile-alt.png";
 import { FullPage, Slide } from "react-full-page";
+import DOTS from "vanta/dist/vanta.dots.min";
+import React, { useState, useEffect, useRef } from "react";
 
-function hero() {
+function Hero() {
+   const [vantaEffect, setVantaEffect] = useState(null);
+ 
+  const myRef = useRef(null);
+ 
+  useEffect(() => {
+    if (!vantaEffect) {
+      setVantaEffect( DOTS({
+        el: myRef.current,
+        mouseControls: true,
+  touchControls: false,
+  gyroControls: true,
+  minHeight: 200.00,
+  minWidth: 100.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0x7b3fe4,
+  backgroundColor: "#7b3fe4",
+  backgroundAlpha:0,
+  showLines:false,
+  spacing: 49.00,
+
+      }))
+    
+}
+return () => {
+   if (vantaEffect) vantaEffect.destroy();
+
+};
+}, [vantaEffect]);
   return (
     
-      <div className="hero h-screen   text-black/80  ">
-        <div className=" hero-content  grid grid-cols-2   ">
-          <div className="col-span-2 md:col-span-1 ">
+      <div  className="hero h-screen   text-black/80  ">
+                <div ref={myRef} className="w-screen h-screen  ">  </div>
+
+        <div   className=" hero-content  grid grid-cols-2   ">
+          <div  className="col-span-2 md:col-span-1 ">
             <h1 
               className="text-5xl font-bold text-primary"
             >
@@ -70,14 +103,15 @@ function hero() {
           </div>
           <div
             
-            className="border bg-blur-pattern mt-20 md:mx-6 rounded-2xl h-max py-12 align-middle items-center col-span-2 md:col-span-1 flex bg-white bg-opacity-10"
+            className="drop-shadow-md border bg-blur-pattern mt-20 md:mx-6 rounded-2xl h-max py-12 align-middle items-center col-span-2 md:col-span-1 flex bg-white bg-opacity-10"
           >
             <img src={shoe} className="mx-auto p-5" />
           </div>
-  
+          
+
         </div>
       </div> 
   );
 }
 
-export default hero;
+export default Hero;

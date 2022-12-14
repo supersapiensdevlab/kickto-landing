@@ -26,6 +26,8 @@ function four() {
       </p>
       <div className="w-full py-12">
         <img src={roadmap} className="w-full" />
+        <div id="my-div"></div>
+
       </div>
     </div>
   );

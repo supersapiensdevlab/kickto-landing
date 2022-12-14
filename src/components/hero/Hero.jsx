@@ -1,8 +1,7 @@
 import shoes from "../../assets/images/shoe-nft.webp";
 import blurElements from "../../assets/images/blur-elements.png";
 import React, { useState, useEffect, useRef } from "react";
-import HALO from "vanta/dist/vanta.halo.min";
-import DOTS from "vanta/dist/vanta.dots.min";
+import TRUNK from "vanta/dist/vanta.trunk.min";
 
 import * as THREE from "three";
 import logoWhite from "../../assets/images/kickto-logo-text-white.svg";
@@ -15,34 +14,22 @@ function Hero() {
   const myRef2 = useRef(null);
 
   useEffect(() => {
-    if (!vantaEffect) {
-      setVantaEffect( HALO({
-        el: myRef.current,
-        mouseControls: true,
-  touchControls: true,
-  gyroControls: false,
-  minHeight: 200.00,
-  minWidth: 200.00,
-  scale: 1.00,
-  scaleMobile: 1.00,
-  color: 0x8ca035,
-  backgroundColor: "#7b3fe4",
-      }))
-    } 
+ 
 
     if (!vantaEffect2) {
-      setVantaEffect2( DOTS({
+      setVantaEffect2( TRUNK({
         el: myRef2.current,
         mouseControls: true,
-  touchControls: true,
-  gyroControls: false,
-  minHeight: 200.00,
-  minWidth: 200.00,
-  scale: 1.00,
-  scaleMobile: 1.00,
-  color: 0xffffff,
-  backgroundColor: "#7b3fe4", 
-  showLines: false
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: 0xFFFFFF,
+        backgroundColor: "#7b3fe4",
+        spacing: 1.00,
+        backgroundAlpha:1,
 
       }))
     }
@@ -54,9 +41,8 @@ function Hero() {
   }, [vantaEffect]);
 
   return (
-    <div className="hero min-h-screen bg-transparent  h-screen">
-      <div className="hero-overlay bg-opacity-0"></div>
-      <div className="hero-content text-center text-neutral-content z-50">
+    <div className="hero min-h-screen bg-transparent  h-screen ">
+       <div className="hero-content text-center text-neutral-content z-50">
         <div className="  grid   lg:grid-cols-2 grid-cols-1  items-center align-middle p-4">
           <div>
             {/* <h1
@@ -69,8 +55,9 @@ function Hero() {
             </h1>
              */}
                        <img data-aos="fade-right"
-              data-aos-duration="500"
-              data-aos-easing="ease-in-out" src={logoWhite} className="h-64 w-full col-span-1 drop-shadow-md px-8" />
+              data-aos-duration="1000"
+              data-aos-delay="1500"
+              data-aos-easing="ease-in-out" src={logoWhite} className=" h-64 w-full col-span-1 drop-shadow-md px-12 sm:px-8 " />
 
             <p
               data-aos="fade-right"
@@ -83,7 +70,11 @@ function Hero() {
           </div>
           <img
             src={shoes}
-            className=" sm:w-4/5 scale-150  h-full   lg:scale-150  rotate-[30deg]  p-6"
+            data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-delay="1500"
+              data-aos-easing="ease-in-out"
+            className="  w-full   h-full  sm:block hidden lg:scale-150   sm:p-6"
           />
           <div
             data-aos="fade-left"
@@ -102,9 +93,11 @@ function Hero() {
           </div>
         </div>
       </div>
-      <div ref={myRef} className="w-screen h-screen "> </div>
-      <div ref={myRef2} className="w-screen h-screen hidden"> </div>
-
+      
+      <div ref={myRef} className="w-screen h-screen  "> </div>
+      <div data-aos="fade-in"
+              data-aos-duration="1000" 
+              data-aos-easing="ease-in-out" ref={myRef2} className="w-screen h-screen  "> </div>
     </div>
   );
 }
