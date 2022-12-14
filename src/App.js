@@ -23,75 +23,83 @@ import AnimatedCursor from "react-animated-cursor";
 import { FullPage, Slide } from "react-full-page";
 import anim from "./assets/videos/anim.m4v";
 import Tokenomics from "./components/sections/tokenomics";
-function App() {
-  const particlesInit = useCallback(async (engine) => {
-    console.log(engine);
-    // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    // starting from v2 you can add only the features you need reducing the bundle size
-    await loadFull(engine);
-  }, []);
 
-  const particlesLoaded = useCallback(async (container) => {
-    await console.log(container);
-  }, []);
-  const [showElement,setShowElement] = React.useState(true)
-  useEffect(()=>{
-    setTimeout(function() {
-      setShowElement(false)
-         }, 3000);
-       },
-   [])
-  return (
+import ReactFullpage from "@fullpage/react-fullpage";
 
-    
-    <>
-      {/* <video width="320" height="240" autoPlay loop>
-          <source src={anim} type="video/mp4"/> 
-        </video> */}
-      <Navbar />
+const anchors = ["firstPage", "secondPage", "thirdPage"];
 
-      <Hero />
+//const [showElement,setShowElement] = React.useState(true)
+// useEffect(()=>{
+//   setTimeout(function() {
+//     setShowElement(false)
+//        }, 3000);
+//      },
+//  [])
 
-      <One />
+const Fullpage = () => (
+  <ReactFullpage
+    //fullpage options
+    licenseKey={"YOUR_KEY_HERE"}
+    scrollingSpeed={1000} /* Options here */
+    render={({ state, fullpageApi }) => {
+      return (<>
+        <ReactFullpage.Wrapper><Navbar />
+          <div className="section">
+            <>
+              {/* <video width="320" height="240" autoPlay loop>
+              <source src={anim} type="video/mp4"/> 
+            </video> */}
+              
 
-      <Two />
+              <Hero />
+              <One />
+              {/* <SplashScreen  className={`${showElement?"opacity-100":"opacity-0"}`} />   */}
+            </>
+          </div>
+         
+          <div className="section">
+            <Two />
+          </div>
+          <div className="section">
+            <Three />
+          </div>
+          <div className="section">
+            <Four />
+          </div>
+          <div className="section">
+            <Five />
+          </div>
+          <div className="section">
+            <FiveHalf />
+          </div>
+          <div className="section">
+            <Six />
+          </div>
+          <div className="section">
+            <SixHalf />
+          </div>
+          <div className="section">
+            <Tokenomics />
+            <Footer/>
+          </div>
+        </ReactFullpage.Wrapper>
+        </>
+      );
+    }}
+  />
+);
 
-      <Three />
+// // Component for Splash Screen
+// class SplashScreen extends React.Component {
+//   render() {
+//     const style = { top: 0, bottom: 0, right: 0, left: 0, position: "fixed" };
 
-      <Four />
+//     return (
+//       <div className="w-full h-full  "  >
+//       <video width="320" height="240" autoPlay  src={anim} style={style} className="w-screen bg-white h-full z-50">
 
-      <Five />
-
-      <FiveHalf />
-
-      <Six />
-
-      <SixHalf />
-
-      <div className="h-screen">
-        <Tokenomics />
-      </div>
-
-      <Footer />
-
-       {/* <SplashScreen  className={`${showElement?"opacity-100":"opacity-0"}`} />   */}
-
-    </>
-  );
-}
-
-// Component for Splash Screen
-class SplashScreen extends React.Component {
-  render() {
-    const style = { top: 0, bottom: 0, right: 0, left: 0, position: "fixed" };
-
-    return (
-      <div className="w-full h-full  "  >
-      <video width="320" height="240" autoPlay  src={anim} style={style} className="w-screen bg-white h-full z-50"> 
-           
-        </video></div>
-    );
-  }
-}
-export default App;
+//         </video></div>
+//     );
+//   }
+// }
+export default Fullpage;

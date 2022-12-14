@@ -10,17 +10,13 @@ function hero() {
       <div className="hero-content   flex flex-col  space-y-4  ">
         <div className="col-span-1  md:col-span-1 ">
           <h1
-            data-aos="fade-right"
-            data-aos-duration="500"
-            data-aos-easing="ease-in-out"
+            
             className="text-5xl font-bold text-primary"
           >
             Start Your Fitness Journey
           </h1>
           <p
-            data-aos="fade-right"
-            data-aos-duration="500"
-            data-aos-easing="ease-in-out"
+            
             className="py-6"
           >
             Your journey to beneficial fitness is just a few clicks away. With
@@ -29,9 +25,7 @@ function hero() {
             Come, be a part of a fitness journey like no other.
           </p>
           <button
-            data-aos="fade-right"
-            data-aos-duration="500"
-            data-aos-easing="ease-in-out"
+            
             className="btn   rounded-full border-none hover:scale-95 hover:bg-primary  bg-primary md:w-max  p-4 text-white  w-full px-12"
           >
             Get Started
@@ -39,10 +33,7 @@ function hero() {
         </div>
         <div className="grid grid-cols-1  sm:grid-cols-5 md:grid-cols-5 lg:grid-cols-11 grid-rows-flow gap-4 col-span-2 md:col-span-1 align-middle items-center">
           <div
-            data-aos="fade-in"
-            data-aos-duration="500"
-            data-aos-delay="100"
-            data-aos-easing="ease-in-out"
+            
             className="group hover:bg-purple-100 hover:text-white hover:drop-shadow-md p-6 border-gray-300 border rounded-xl h-full align-middle items-center sm:col-span-2 col-span-1 flex-col bg-white bg-opacity-10"
           >
             <div className="w-full justify-between flex-col space-y-6">
@@ -65,10 +56,7 @@ function hero() {
           />
 
           <div
-            data-aos="fade-in"
-            data-aos-duration="500"
-            data-aos-delay="400"
-            data-aos-easing="ease-in-out"
+           
             className="group hover:bg-purple-100 hover:text-white hover:drop-shadow-md p-6 border-gray-300 border rounded-xl h-full align-middle items-center sm:col-span-2 col-span-1 flex-col bg-white bg-opacity-10"
           >
             <div className="w-full justify-between flex-col space-y-6">
@@ -91,10 +79,7 @@ function hero() {
           />
 
           <div
-            data-aos="fade-in"
-            data-aos-duration="500"
-            data-aos-delay="1000"
-            data-aos-easing="ease-in-out"
+            
             className="group hover:bg-purple-100 hover:text-white hover:drop-shadow-md p-6 border-gray-300 border rounded-xl h-full align-middle items-center sm:col-span-2 col-span-1 flex-col bg-white bg-opacity-10"
           >
             <div className="w-full justify-between flex-col space-y-6">
@@ -117,10 +102,7 @@ function hero() {
           />
 
           <div
-            data-aos="fade-in"
-            data-aos-duration="500"
-            data-aos-delay="1500"
-            data-aos-easing="ease-in-out"
+            
             className="group hover:bg-purple-100 hover:text-white hover:drop-shadow-md p-6 border-gray-300 border rounded-xl h-full align-middle items-center sm:col-span-2 col-span-1 flex-col bg-white bg-opacity-10"
           >
             <div className="w-full justify-between flex-col space-y-6">

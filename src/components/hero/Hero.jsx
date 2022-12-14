@@ -102,8 +102,8 @@ function Hero() {
           </div>
         </div>
       </div>
-      <div ref={myRef} className="w-screen h-screen hidden"> sd</div>
-      <div ref={myRef2} className="w-screen h-screen"> sd</div>
+      <div ref={myRef} className="w-screen h-screen "> sd</div>
+      <div ref={myRef2} className="w-screen h-screen hidden"> sd</div>
 
     </div>
   );

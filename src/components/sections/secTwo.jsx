@@ -5,23 +5,17 @@ import { FullPage, Slide } from "react-full-page";
 
 function hero() {
   return (
-    <div className="h-screen ">
-      <div className="hero    text-black/80  ">
-        <div className=" hero-content  grid sm:grid-cols-2  ">
+    
+      <div className="hero h-screen   text-black/80  ">
+        <div className=" hero-content  grid grid-cols-2   ">
           <div className="col-span-2 md:col-span-1 ">
-            <h1
-              data-aos="fade-up"
-              data-aos-duration="500"
-              data-aos-easing="ease-in-out"
+            <h1 
               className="text-5xl font-bold text-primary"
             >
               What is Kickto?
             </h1>
             <p
-              data-aos="fade-up"
-              data-aos-duration="500"
-              data-aos-delay="200"
-              data-aos-easing="ease-in-out"
+         
               className="py-6"
             >
               Kickto is a revolutionary Web 3 platform that brings together
@@ -35,10 +29,7 @@ function hero() {
             </p>
             <div className="grid grid-cols-2 gap-4  ">
               <div
-                data-aos="fade-up"
-                data-aos-duration="500"
-                data-aos-delay="200"
-                data-aos-easing="ease-in-out"
+                 
                 className="col-span-1 hidden"
               >
                 <h1 className="text-xl font-extrabold text-primary">
@@ -52,10 +43,7 @@ function hero() {
                 </p>
               </div>
               <div
-                data-aos="fade-up"
-                data-aos-duration="500"
-                data-aos-delay="200"
-                data-aos-easing="ease-in-out"
+                 
                 className="col-span-1 hidden"
               >
                 <h1 className="text-xl font-extrabold text-primary">Mission</h1>
@@ -67,10 +55,7 @@ function hero() {
               </div>
             </div>
             <div
-              data-aos="fade-up"
-              data-aos-duration="500"
-              data-aos-delay="200"
-              data-aos-easing="ease-in-out"
+         
               className="col-span-1 hidden"
             >
               <h1 className="text-xl font-extrabold text-primary">
@@ -84,17 +69,13 @@ function hero() {
             </div>
           </div>
           <div
-            data-aos="fade-out"
-            data-aos-duration="500"
-            data-aos-delay="200"
-            data-aos-easing="ease-in-out"
+            
             className="border bg-blur-pattern mt-20 md:mx-6 rounded-2xl h-max py-12 align-middle items-center col-span-2 md:col-span-1 flex bg-white bg-opacity-10"
           >
             <img src={shoe} className="mx-auto" />
           </div>
         </div>
-      </div>
-    </div>
+      </div> 
   );
 }
 

@@ -29,11 +29,7 @@ function Three() {
   return (
     <div className="hero min-h-screen   text-black/80 ">
       <div className="hero-content   grid  grid-cols-3    gap-4">
-        <div data-aos="fade-right" 
-    data-aos-duration="500"
-    data-aos-delay="200"
-    data-aos-offset="400"
-    data-aos-easing="ease-in-out" className="p-6 w-full text-3xl font-semibold bg-blur-pattern  border-gray-300 border rounded-xl h-full align-middle items-center col-span-3 md:col-span-2 flex-col bg-white bg-opacity-10">
+        <div  className="p-6 w-full text-3xl font-semibold bg-blur-pattern  border-gray-300 border rounded-xl h-full align-middle items-center col-span-3 md:col-span-2 flex-col bg-white bg-opacity-10">
           <div className="justify-between flex text-primary">
             <p>Get your NFT shoes to begin!</p>
             <div className="rounded-full bg-primary h-10 w-10 flex align-middle items-center text-white px-4 text-base   font-bold">
@@ -65,10 +61,7 @@ function Three() {
           </div>
         </div>
 
-        <div data-aos="fade-left" 
-    data-aos-duration="500"
-    data-aos-offset="400"
-    data-aos-easing="ease-in-out" className="p-6 pb-0 text-3xl font-semibold  border-gray-300 border rounded-xl h-full align-middle items-center col-span-3 md:col-span-1  flex-col bg-white bg-opacity-10">
+        <div   className="p-6 pb-0 text-3xl font-semibold  border-gray-300 border rounded-xl h-full align-middle items-center col-span-3 md:col-span-1  flex-col bg-white bg-opacity-10">
           <div className="justify-between flex text-primary">
             <p>Our in-app marketplace for your perfect shoes</p>
             <div className="rounded-full bg-primary h-10 w-12 flex align-middle items-center text-white text-base px-4  mr-2   font-bold">

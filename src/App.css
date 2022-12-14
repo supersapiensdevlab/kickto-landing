@@ -439,3 +439,10 @@ svg.active .svg-elem-14 {
   color: white;
   background: #7b3fe4;
 }
+
+.fp-watermark {
+  display: none !important;
+}
+.fp-watermark > a {
+  display: none !important;
+}
