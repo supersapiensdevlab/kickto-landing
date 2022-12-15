@@ -29,116 +29,103 @@ import { motion, useMotionValue, useSpring } from "framer-motion";
 
 const anchors = ["firstPage", "secondPage", "thirdPage"];
 
-
-
-
-
 const FullpageClass = () => (
   <ReactFullpage
     //fullpage options
     licenseKey={"YOUR_KEY_HERE"}
     scrollBar={false}
     fadingEffect={true}
-    scrollingSpeed={1000} /* Options here */
+    scrollingSpeed={700} /* Options here */
     render={({ state, fullpageApi }) => {
       return (
-        <><Navbar/>
+        <>
+          <Navbar />
           <ReactFullpage.Wrapper>
-             
-          
-              <div className="section  ">
-                <Hero />
-                <One />
-              </div>
+            <div className="section  ">
+              <Hero />
+              <One />
+            </div>
 
-              <div className="section">
-                <Two />
-              </div>
-              <div className="section">
-                <Three />
-              </div>
-             
-              <div className="section">
-                <Four />
-              </div>
-              <div className="section">
-                <Five />
-              </div>
-              <div className="section">
-                <FiveHalf />
-              </div>
-              <div className="section">
-                <Six />
-              </div>
-               
-              <div className="section">
-                <Tokenomics />
-                <Footer />
-              </div>
-            
+            <div className="section">
+              <Two />
+            </div>
+            <div className="section">
+              <Three />
+            </div>
+
+            <div className="section">
+              <Four />
+            </div>
+            <div className="section">
+              <Five />
+            </div>
+            <div className="section">
+              <FiveHalf />
+            </div>
+            <div className="section">
+              <Six />
+            </div>
+
+            <div className="section">
+              <Tokenomics />
+           
+            </div>
+            <div className="section">
+              <Roadmap />
+              <Footer />
+            </div>
+
+         
           </ReactFullpage.Wrapper>
-          
-          
         </>
       );
     }}
   />
 );
- 
+
 function App() {
- 
   const size = useWindowSize();
-  const [showElement,setShowElement] = useState(true);
-  useEffect(()=>{
-    setTimeout(function() {
-      setShowElement(false)
-         }, 3000);
-       },
-   [])
-  
-  return (<>
-  
+  const [showElement, setShowElement] = useState(true);
+  useEffect(() => {
+    setTimeout(function () {
+      setShowElement(false);
+    }, 3000);
+  }, []);
 
-   
-    
-    {size.width<512?<div  >
-       
-    <Navbar/>
-             
-                <Hero />
-                 <One/> 
+  return (
+    <>
+      {size.width < 512 ? (
+        <div>
+          <Navbar />
 
-             
-                <Two />
-              
-             
-                <Three /> 
-             
-                <Four />
-              
-             
-                <Five />
-              
-             
-                <FiveHalf />
-              
-             
-                <Six />
-              
-             
-                <SixHalf />
-              
-             
-                <Tokenomics />
-                <Footer />
-              </div>:<div  >
-    <FullpageClass/>{console.log(size)}</div>}
-    
-              
+          <Hero />
+          <One />
+
+          <Two />
+
+          <Three />
+
+          <Four />
+
+          <Five />
+
+          <FiveHalf />
+
+          <Six />
+
+          <SixHalf />
+
+          <Tokenomics />
+          <Footer />
+        </div>
+      ) : (
+        <div>
+          <FullpageClass />
+        </div>
+      )}
     </>
-  )
+  );
 }
-
 
 // Hook
 function useWindowSize() {
@@ -173,11 +160,16 @@ class SplashScreen extends React.Component {
     const style = { top: 0, bottom: 0, right: 0, left: 0, position: "fixed" };
 
     return (
-      <div className="w-full h-full  "  >
-        
-      <video width="320" height="240" autoPlay  src={anim} style={style} className="w-screen bg-white h-full z-50">
-
-        </video></div>
+      <div className="w-full h-full  ">
+        <video
+          width="320"
+          height="240"
+          autoPlay
+          src={anim}
+          style={style}
+          className="w-screen bg-white h-full z-50"
+        ></video>
+      </div>
     );
   }
 }

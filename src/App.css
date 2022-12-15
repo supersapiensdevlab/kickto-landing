@@ -459,3 +459,11 @@ svg.active .svg-elem-14 {
 /* * {
   cursor: none;
 } */
+
+
+@media (min-width: 768px) {
+  .hero-title {
+      font-size: 10rem/* 128px */;
+      line-height: 1;
+  }
+}
