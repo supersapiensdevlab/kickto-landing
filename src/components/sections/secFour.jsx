@@ -5,10 +5,10 @@ import lottie from 'lottie-web';
 
 import shoe3 from "../../assets/images/shoe3.png";
 
-import vector from "../../assets/gif/shoes.gif";
-import vector2 from "../../assets/gif/shoes2.gif";
-import vector3 from "../../assets/gif/shoes3.gif";
-import vector4 from "../../assets/gif/shoes4.gif";
+import vector from "../../assets/vectors/shoe599.png";
+import vector2 from "../../assets/vectors/shoe600.png";
+import vector3 from "../../assets/vectors/shoe601.png";
+import vector4 from "../../assets/vectors/shoe602.png";
 
 import icon from "../../assets/images/icon1.png";
 import shoehalf from "../../assets/images/shoes-half.png";
@@ -18,18 +18,18 @@ import run2 from "../../assets/images/run2.png";
 import run from "../../assets/run.json";
 import cat from "../../assets/cat.json";
 import social from "../../assets/social.json";
-import { useState } from "react";
+import { useState,useEffect,useRef } from "react";
  
 function Three() {
 
 
   const [shoeStat,setShoeStat] = useState(0);
-
-
+ 
   return (
     <div className="hero min-h-screen   text-black/80 ">
       <div className="hero-content   grid  grid-cols-3    gap-4">
         <div  className="p-6 w-full text-3xl font-semibold bg-blur-pattern  border-gray-300/30 border rounded-xl h-full align-middle items-center col-span-3 md:col-span-2 flex-col bg-white bg-opacity-10">
+ 
           <div className="justify-between flex text-primary">
             <p>Get your NFT shoes to begin!</p>
             <div className="rounded-full bg-primary h-10 w-10 flex align-middle items-center text-white px-4 text-base   font-bold">
@@ -41,21 +41,21 @@ function Three() {
             pick the ones you like and switch that GPS on to begin your Kickto
             Journey.
           </div>
-          <div className="grid grid-cols-2 items-center align-baseline w-full    p-6 gap-12">
+          <div className="grid grid-cols-2 items-center   mt-36 w-full     p-6 gap-12">
             <div className="flex flex-col   mx-auto">
-              <img src={vector} className="md:h-52 " />
+              <img src={vector} className="md:h-32 " />
                
             </div>
             <div className="flex flex-col   mx-auto">
-              <img src={vector2} className="md:h-52 " />
+              <img src={vector2} className="md:h-32 " />
                
             </div>
             <div className="flex flex-col   mx-auto">
-              <img src={vector3} className="md:h-52 " />
+              <img src={vector3} className="md:h-32 " />
                
             </div>
             <div className="flex flex-col   mx-auto">
-              <img src={vector4} className="md:h-52 " />
+              <img src={vector4} className="md:h-32 " />
                
             </div>
           </div>

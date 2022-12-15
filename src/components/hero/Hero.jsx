@@ -94,7 +94,7 @@ function Hero() {
         </div>
       </div>
       
-      <div ref={myRef} className="w-screen h-screen  "> </div>
+      <div ref={myRef} className="w-screen h-screen hidden md:block "> </div>
       <div data-aos="fade-in"
               data-aos-duration="1000" 
               data-aos-easing="ease-in-out" ref={myRef2} className="w-screen h-screen  "> </div>

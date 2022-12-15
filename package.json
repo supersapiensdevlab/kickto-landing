@@ -11,6 +11,8 @@
     "@testing-library/user-event": "^13.5.0",
     "aos": "^3.0.0-beta.6",
     "daisyui": "^2.38.1",
+    "framer-motion": "^2.6.5",
+    "gsap": "^3.10.4",
     "kursor": "^0.1.6",
     "lord-icon-element": "^4.0.1",
     "lottie-react": "^2.3.1",
@@ -22,12 +24,12 @@
     "react-scripts": "5.0.1",
     "react-tsparticles": "^2.6.0",
     "reactflow": "^11.3.3",
+    "scrollmagic": "^2.0.8",
+    "scrollmagic-plugins": "^1.0.8",
     "swiper": "^8.4.4",
     "three": "^0.147.0",
     "tsparticles": "^2.6.0",
     "vanta": "^0.5.24",
-
-    "framer-motion": "^2.6.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

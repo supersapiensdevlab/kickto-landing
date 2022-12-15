@@ -20,7 +20,7 @@ function four() {
     <div className=" min-h-screen w-full  text-primary/80  ">
         
       <div className="">
-        <p className="text-5xl text-black/80 font-semibold text-left md:text-center    mx-4">
+        <p className="text-5xl text-primary font-semibold text-left md:text-center    mx-4">
           Tokenomics
         </p>
         <div className="w-full py-6 lg:px-12">

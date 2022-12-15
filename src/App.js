@@ -23,7 +23,7 @@ import AnimatedCursor from "react-animated-cursor";
 import { FullPage, Slide } from "react-full-page";
 import anim from "./assets/videos/anim.m4v";
 import Tokenomics from "./components/sections/tokenomics";
-
+import Roadmap from "./components/sections/Roadmap";
 import ReactFullpage from "@fullpage/react-fullpage";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 
@@ -42,10 +42,10 @@ const FullpageClass = () => (
     scrollingSpeed={1000} /* Options here */
     render={({ state, fullpageApi }) => {
       return (
-        <>
+        <><Navbar/>
           <ReactFullpage.Wrapper>
              
-          <Navbar/>
+          
               <div className="section  ">
                 <Hero />
                 <One />
@@ -57,6 +57,7 @@ const FullpageClass = () => (
               <div className="section">
                 <Three />
               </div>
+             
               <div className="section">
                 <Four />
               </div>
@@ -69,9 +70,7 @@ const FullpageClass = () => (
               <div className="section">
                 <Six />
               </div>
-              <div className="section">
-                <SixHalf />
-              </div>
+               
               <div className="section">
                 <Tokenomics />
                 <Footer />
@@ -103,20 +102,17 @@ function App() {
    
     
     {size.width<512?<div  >
-      
-{showElement?<SplashScreen/>:null}
+       
     <Navbar/>
              
                 <Hero />
-                 <One/>
-              {console.log(size)}
+                 <One/> 
 
              
                 <Two />
               
              
-                <Three />
-              
+                <Three /> 
              
                 <Four />
               

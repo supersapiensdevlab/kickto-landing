@@ -55,7 +55,7 @@ setInterval(() => {
         <div className="  text-3xl font-semibold  border-gray-300/30   rounded-3xl align-middle items-center col-span-3 flex-col bg-white  ">
           <div className="grid grid-cols-3 border-0 ">
             <div className="col-span-3 md:col-span-1 bg-primary sm:rounded-l-3xl sm:rounded-tr-none rounded-t-3xl   pt-4 md:text-left text-center">
-              <p className="px-6 text-white text-center ">Sneakers Details</p>
+              <p className="px-6 text-white text-center mt-12">Sneakers Details</p>
               <div className="flex-col text-base font-semibold md:mt-24  space-y-2 mt-4 lg:mx-4 md:mx-0 mx-12 mb-8 text-primary text-center">
                 <p
                   onMouseOver={() => setShoeStat(1)}

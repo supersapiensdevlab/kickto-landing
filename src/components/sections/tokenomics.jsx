@@ -61,7 +61,7 @@ const initialNodes = [
   {
     id: "7",
     type: "custom",
-    data: { name: "Buy NFT", job: "CEO", emoji: "😎" },
+    data: { name: "Buy NFT", job: "CEO", emoji: "😎", image: marketplace },
 
     position: { x: 550, y: 400 },
   },
@@ -69,7 +69,7 @@ const initialNodes = [
   {
     id: "8",
     type: "custom",
-    data: { name: "Stake NFT", job: "CEO", emoji: "😎" },
+    data: { name: "Stake NFT", job: "CEO", emoji: "😎", image: staking },
 
     position: { x: 750, y: 400 },
   },
@@ -141,7 +141,7 @@ function Flow() {
   );
 
   return (<>
-  <p className="text-5xl text-black/80 font-semibold text-left md:text-center   mt-24  mx-4">
+  <p className="text-5xl text-primary font-semibold text-left md:text-center   mt-24  mx-4">
           Tokenomics
         </p>
     <div className="w-screen h-screen "  >
