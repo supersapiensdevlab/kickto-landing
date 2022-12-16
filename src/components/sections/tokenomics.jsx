@@ -140,11 +140,11 @@ function Flow() {
     []
   );
 
-  return (<>
-  <p className="text-5xl text-primary font-semibold text-left md:text-center   mt-24  mx-4">
+  return (<div className=" md:h-screen">
+  <p className="text-5xl text-primary font-semibold text-center   mt-24  mx-4">
           Tokenomics
         </p>
-    <div className="w-screen h-screen "  >
+    <div className="w-full  tokonomics" style={{height:'30rem'}} >
       <ReactFlow
         nodes={nodes}
         onNodesChange={onNodesChange}
@@ -157,7 +157,7 @@ function Flow() {
         fitView
         fitViewOptions={ {  padding:  0.3 }    }
       ></ReactFlow>
-    </div></>
+    </div></div>
   );
 }
 

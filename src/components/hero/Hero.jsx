@@ -39,7 +39,7 @@ function Hero() {
   }, [vantaEffect]);
 
   return (
-    <div className="hero min-h-screen bg-transparent  h-screen ">
+    <div className="hero min-h-screen bg-transparent  h-screen  overflow-hidden">
       <div className="hero-content text-center text-neutral-content z-50">
         <div className="  grid   lg:grid-cols-2 grid-cols-1  items-center align-middle p-4">
           <div>
@@ -60,8 +60,8 @@ function Hero() {
               data-aos-easing="ease-in-out"
               className="w-full col-span-1 drop-shadow-md md:px-12 sm:px-8 "
             >
-              <h1 className="text-7xl font-bold italic hero-title  text-left">Kickto</h1>
-              <p className="text-lg  text-left">A revolution in Walk 2 Earn</p>
+              <h1 className="text-7xl font-bold italic hero-title  text-left text-white">Kickto</h1>
+              <p className="text-lg  text-left text-white">A revolution in Walk 2 Earn</p>
             </div>
 
             <p

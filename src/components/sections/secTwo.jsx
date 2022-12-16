@@ -37,7 +37,7 @@ return () => {
 }, [vantaEffect]);
   return (
     
-      <div  className="hero h-screen   text-black/80  ">
+      <div  className="hero min-h-screen   text-black/80  ">
                 <div ref={myRef} className="w-screen h-screen  ">  </div>
 
         <div   className=" hero-content  grid grid-cols-2   ">

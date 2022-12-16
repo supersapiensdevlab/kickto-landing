@@ -301,7 +301,6 @@ svg.active .svg-elem-14 {
 }
 
 .social-container {
-  width: 400px;
   margin: 4vh auto;
   text-align: center;
 }
@@ -461,9 +460,15 @@ svg.active .svg-elem-14 {
 } */
 
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .hero-title {
       font-size: 10rem/* 128px */;
       line-height: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .tokonomics {
+      height: calc(100vh - 9rem) !important;
   }
 }

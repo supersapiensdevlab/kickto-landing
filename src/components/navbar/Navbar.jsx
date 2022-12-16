@@ -74,7 +74,7 @@ function navbar() {
       className="navbar  z-[200] fixed  text-black/80 bg-primary backdrop-blur bg-opacity-5   lg:px-24"
     >
       <div className="navbar-start">
-<img src={logoWhite} className="h-16 w-36  "></img>
+        <img src={logoWhite} className="h-16 w-36  "></img>
         <div className="dropdown">
           <ul
             tabIndex={0}
@@ -123,8 +123,35 @@ function navbar() {
           </li>
         </ul>
       </div>
-      <div className="navbar-end">
-        <a className="btn opacity-0">Get started</a>
+      <div className="navbar-end md:hidden">
+        <div className="dropdown  dropdown-end">
+          <button tabIndex={0} className="btn btn-square btn-ghost text-white">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              className="inline-block w-5 h-5 stroke-current"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+          <ul
+            tabIndex={0}
+            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            <li>
+              <a>Marketplace</a>
+            </li>
+            <li>
+              <a  href="https://kickto-dex.netlify.app/">DEX</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );

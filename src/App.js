@@ -113,7 +113,7 @@ function App() {
 
           <Six />
 
-          <SixHalf />
+          {/* <SixHalf /> */}
 
           <Tokenomics />
           <Footer />
