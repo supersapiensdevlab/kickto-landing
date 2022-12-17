@@ -130,7 +130,7 @@ function Roadmap() {
   return (
     <div className=" w-full ">
       <div id="roadmap" className="  w-full justify-center items-center">
-        <div className="block relative">
+        <div className="block relative hidden">
           <h3 className="text-alt bg-white px-6 py-1 absolute -top-7 sm:-top-8  right-1/2 rounded-full w-max 2xl:text-3xl shadow-mintflick  lg:text-xl md:text-lg text-lg text-center font-black -rotate-9">
             Exciting
           </h3>

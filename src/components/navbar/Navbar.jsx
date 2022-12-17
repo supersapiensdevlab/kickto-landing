@@ -74,7 +74,7 @@ function navbar() {
       className="navbar  z-[200] fixed  text-black/80 bg-primary backdrop-blur bg-opacity-5   lg:px-24"
     >
       <div className="navbar-start">
-        <img src={logoWhite} className="h-16 w-36  "></img>
+        <img src={logo} className="h-16 w-36  "></img>
         <div className="dropdown">
           <ul
             tabIndex={0}

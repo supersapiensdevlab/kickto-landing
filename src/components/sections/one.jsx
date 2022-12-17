@@ -7,9 +7,9 @@ function hero() {
   return (
     <>
       <div className="">
-        <div className="pt-6 bg-primary">
+        <div className=" bg-primary/10">
           <svg
-            class="waves"
+            class="waves  "
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
             viewBox="0 24 150 28"
