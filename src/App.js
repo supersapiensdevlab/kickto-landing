@@ -35,7 +35,7 @@ const FullpageClass = () => (
     licenseKey={"YOUR_KEY_HERE"}
     scrollBar={false}
     fadingEffect={true}
-    scrollingSpeed={1700} /* Options here */
+    scrollingSpeed={200} /* Options here */
     render={({ state, fullpageApi }) => {
       return (
         <>
