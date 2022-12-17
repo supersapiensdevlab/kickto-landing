@@ -60,7 +60,7 @@ function Hero() {
               className="w-full col-span-1 drop-shadow-md  "
             >
               <h1 className="text-3xl font-bold italic hero-title  text-left text-primary">Kickto</h1>
-              <p className="text-lg  text-left text-primary">A revolution in Walk 2 Earn</p>
+              <p className="text-lg  text-left text-primary font-semibold">A revolution in Walk 2 Earn</p>
             </div>
 
              

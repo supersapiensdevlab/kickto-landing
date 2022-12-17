@@ -27,8 +27,7 @@ import arrow from "../../assets/vectors/arrow.svg";
 
 function four() {
   const carasoleData = [
-    { image: shoe2, altImg: "img1", role: "Runners", speed: "6-10 km/hr" },
-    { image: shoe3, altImg: "img1", role: "Gamers", speed: "2-6 km/hr" },
+     { image: shoe3, altImg: "img1", role: "Gamers", speed: "2-6 km/hr" },
     { image: shoe4, altImg: "img1", role: "Joggers", speed: "6-10 km/hr" },
     { image: shoe5, altImg: "img1", role: "Joggers", speed: "6-10 km/hr" },
     { image: shoe6, altImg: "img1", role: "Joggers", speed: "6-10 km/hr" },

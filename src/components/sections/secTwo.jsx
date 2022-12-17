@@ -41,7 +41,7 @@ return () => {
                 <div ref={myRef} className="w-screen h-screen  hidden  ">  </div>
 
         <div   className=" hero-content  grid grid-cols-2   ">
-          <div  className="col-span-2 md:col-span-1 ">
+          <div  className="col-span-2 md:col-span-1  ">
             <h1 
               className="text-5xl font-bold text-primary"
             >
@@ -103,7 +103,7 @@ return () => {
           </div>
           <div
             
-            className="drop-shadow-md px-6 border bg-blur-pattern mt-20 md:mx-6 rounded-2xl h-max py-12 align-middle items-center col-span-2 md:col-span-1 flex bg-white bg-opacity-10"
+            className=" drop-shadow-md px-6 border-2 border-primary bg-blur-pattern mt-20 md:mx-6 rounded-2xl h-max py-12 align-middle items-center col-span-2 md:col-span-1 flex bg-white bg-opacity-10"
           >
             <img src={shoe} className="mx-auto " />
           </div>

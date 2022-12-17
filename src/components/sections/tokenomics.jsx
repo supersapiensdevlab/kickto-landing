@@ -147,7 +147,7 @@ function Flow() {
     <div className="w-full  tokonomics" style={{height:'30rem'}} >
       <ReactFlow
         nodes={nodes}
-        onNodesChange={onNodesChange}
+         
         edges={edges}
         zoomOnScroll={false}
         preventScrolling={false}

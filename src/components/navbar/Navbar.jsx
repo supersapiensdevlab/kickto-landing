@@ -83,7 +83,8 @@ function navbar() {
             <li tabIndex={0}>
               <ul className="p-2">
                 <li>
-                  <a className="btn bg-primary    border-none hover:scale-95 text-white ">
+                  <a                       className="btn  bg-transparent text-white gradient-border  border-none hover:scale-95 hover:text-white  btn-block "
+>
                     Marketplace
                   </a>
                 </li>
@@ -106,7 +107,8 @@ function navbar() {
       <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li className="flex align-middle items-center">
-            <a className="rounded btn-block py-4 btn bg-primary   border-none hover:scale-95 text-white ">
+            <a                 className="btn  bg-transparent text-white gradient-border  border-none hover:scale-95 hover:text-white  btn-block "
+>
               Marketplace
             </a>
           </li>{" "}
