@@ -27,7 +27,7 @@ function Hero() {
   scaleMobile: 1.00,
   color1: "#7b3fe4",
   color2: "#7b3fe4",
-  backgroundColor: "#f2ecfc",
+  backgroundColor: "#e4d7f9",
 
         })
       );
