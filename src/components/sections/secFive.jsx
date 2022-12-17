@@ -20,6 +20,11 @@ import cat from "../../assets/cat.json";
 import social from "../../assets/social.json";
 import { useState, useEffect } from "react";
 
+import orangebox from "../../assets/images/orange-box.svg"
+import bluebox from "../../assets/images/blue-box.svg"
+import purplebox from "../../assets/images/purple-box.svg"
+import shield from "../../assets/images/shield.gif"
+
 function Three() {
   const [shoeStat, setShoeStat] = useState(0);
   useEffect(() => {
@@ -60,7 +65,7 @@ function Three() {
                     shoeStat === 1 ? "bg-white text-primary" : "text-white"
                   }  hover:bg-white    hover:text-primary cursor-pointer  p-4 rounded-lg `}
                 >
-                  HIKERS
+                  Quality
                 </p>
                 <p
                   onMouseOver={() => setShoeStat(2)}
@@ -68,7 +73,7 @@ function Three() {
                     shoeStat === 2 ? "bg-white text-primary" : "text-white"
                   } hover:bg-white    hover:text-primary cursor-pointer  p-4 rounded-lg `}
                 >
-                  SPRINTERS
+                  Health Power
                 </p>
                 <p
                   onMouseOver={() => setShoeStat(3)}
@@ -76,10 +81,10 @@ function Three() {
                     shoeStat === 3 ? "bg-white text-primary" : "text-white"
                   } hover:bg-white    hover:text-primary cursor-pointer  p-4 rounded-lg `}
                 >
-                  VOYAGERS
+                  Sneaker Characteristics
                 </p>
               </div>
-              <div className="rounded-full bg-white h-10 w-10 mt-auto  bottom-0 flex align-middle items-center text-primary text-base px-4  mr-2   font-bold">
+              <div className="rounded-full bg-white h-10 w-10 mt-auto  bottom-0 flex align-middle items-center text-primary text-base px-4  ml-2   font-bold">
               <p>3</p>
             </div>
             </div>
@@ -87,19 +92,30 @@ function Three() {
               <div className="flex-col flex justify-between mb-6 p-4">
                 <div className="w-1/6 w-2/6 w-3/6 w-5/6 w-4/6 hidden w-6/6"></div>
                 <div className="grid sm:grid-cols-2 text-primary">
-                  <div></div>
-                  <div className="grid grid-cols-2 px-3">
-                    {" "}
-                    <div className="flex space-x-2 w-full ml-auto ">
-                      <div className="border bg-yellow-600 rounded-full h-6 w-6"></div>
-                      <div className="border bg-orange-600 rounded-full h-6 w-6"></div>
-                      <div className="border bg-pink-600 rounded-full h-6 w-6"></div>
-                      <div className="border bg-violet-600 rounded-full h-6 w-6"></div>
-                    </div>
-                    <div className="justify-end text-right">{shoeStat}/3 </div>
+                  <div>
+
+                  <div className="flex space-x-2 w-full ml-auto ">
+                    <div className="pt-2 pl-2 pr-3 pb-3 border drop-shadow-sm rounded-md bg-primary/30">
+                  <img src={orangebox} className={`h-12 w-12 transition-all duration-500 ${
+                  shoeStat == 1
+                    ? "opacity-100":"opacity-0"
+                }`}/>
                   </div>
-                  <div></div>
-                  <div className="flex-col mt-6">
+                  <div className="pt-2 pl-2 pr-3 pb-3 border drop-shadow-sm rounded-md bg-primary/30">
+                  <img src={bluebox} className={`h-12 w-12 transition-all duration-500 ${
+                  shoeStat == 2
+                    ?   "opacity-100":"opacity-0"
+                }`}/>
+                  </div>
+                  <div className="pt-2 pl-2 pr-3 pb-3 border drop-shadow-sm rounded-md bg-primary/30">
+                  <img src={purplebox} className={`h-12 w-12 transition-all duration-500 ${
+                  shoeStat == 3
+                    ?   "opacity-100":"opacity-0"
+                }`}/>
+                  </div>
+                    </div>
+                  </div>
+                  <div className="flex-col ">
                     <div className="flex align-middle items-center justify-between">
                       <p className="text-base">Performance </p>
                       <div
@@ -133,6 +149,22 @@ function Three() {
                       ></div>
                     </div>
                   </div>
+                  <div></div>
+                  <div className="grid grid-cols-2 pr-3 mt-1">
+                    {" "}
+                    {/* <div className="flex space-x-2 w-full ml-auto  ">
+                      <div className="border bg-yellow-600 rounded-full h-6 w-6"></div>
+                      <div className="border bg-orange-600 rounded-full h-6 w-6"></div>
+                      <div className="border bg-pink-600 rounded-full h-6 w-6"></div>
+                      <div className="border bg-violet-600 rounded-full h-6 w-6"></div>
+                    </div> */}
+                     <div></div>
+                    <div className="justify-end text-right flex align-middle ">
+                   
+                    <div className="mt-2">{shoeStat*33}/100 </div>
+                    <img src={shield} className="h-12 w-12"/></div>
+                    
+                  </div>
                 </div>
               </div>
 
@@ -148,6 +180,7 @@ function Three() {
                 }`}
                 className="w-fit h-84  "
               />
+ <div className=" text-left mx-4    text-primary  ">{shoeStat}/3 </div>
             </div>
 
           </div>
