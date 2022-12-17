@@ -1,7 +1,11 @@
-import shoe from "../../assets/images/shoe1.png";
+import shoe from "../../assets/images/shoe-nft-2.webp";
 import arrow from "../../assets/vectors/arrow.svg";
 import cloud from "../../assets/lotties/cloud.json";
-import icon from "../../assets/images/icon1.png";
+import icon from "../../assets/images/downloadIcon.png";
+import icon2 from "../../assets/images/kickto-logo-alt-shoe.png";
+import icon3 from "../../assets/images/kickto-logo-alt-shoe.png";
+import icon4 from "../../assets/images/cash-gradient.png";
+
 import { defineElement } from "lord-icon-element";
 
 function hero() {
@@ -34,10 +38,10 @@ function hero() {
         <div className="grid grid-cols-1  sm:grid-cols-5 md:grid-cols-5 lg:grid-cols-11 grid-rows-flow gap-4 col-span-2 md:col-span-1 align-middle items-center">
           <div
             
-            className="group hover:bg-purple-100 hover:text-white hover:drop-shadow-md p-6 border-gray-300/30 border rounded-xl h-full align-middle items-center sm:col-span-2 col-span-1 flex-col bg-white bg-opacity-10"
+            className="group hover:bg-purple-100 border-2 hover:text-white hover:drop-shadow-md p-6 border-primary    rounded-xl h-full align-middle items-center sm:col-span-2 col-span-1 flex-col bg-white bg-opacity-10"
           >
             <div className="w-full justify-between flex-col space-y-6">
-              <div className="rounded-full  group-hover:bg-primary group-hover:text-white group-hover:drop-shadow-md   group-hover:border-primary bg-primary h-8 w-8 group-hover:w-max flex align-middle items-center transition-transform duration-700 px-3 mr-2 -mt-10 font-bold text-white">
+              <div className="rounded-full  group-hover:bg-white group-hover:text-primary group-hover:drop-shadow-md   group-hover:border-primary bg-primary h-8 w-8 group-hover:w-max flex align-middle items-center transition-transform duration-700 px-3 mr-2 -mt-10 font-bold text-white">
                 <p className="flex">
                   <span className="group-hover:block hidden">Step&nbsp;</span>1
                 </p>
@@ -55,21 +59,21 @@ function hero() {
             className="fill-white h-16   mx-auto sm:-rotate-90"
           />
 
-          <div
-           
-            className="group hover:bg-purple-100 hover:text-white hover:drop-shadow-md p-6 border-gray-300/30 border rounded-xl h-full align-middle items-center sm:col-span-2 col-span-1 flex-col bg-white bg-opacity-10"
+<div
+            
+            className="group hover:bg-purple-100 border-2 hover:text-white hover:drop-shadow-md p-6 border-primary    rounded-xl h-full align-middle items-center sm:col-span-2 col-span-1 flex-col bg-white bg-opacity-10"
           >
             <div className="w-full justify-between flex-col space-y-6">
-              <div className="rounded-full group-hover:bg-primary group-hover:text-white group-hover:drop-shadow-md   group-hover:border-primary bg-primary h-8 w-8 group-hover:w-max flex align-middle items-center transition-transform duration-700 px-3 mr-2 -mt-10 font-bold text-white">
+              <div className="rounded-full  group-hover:bg-white group-hover:text-primary group-hover:drop-shadow-md   group-hover:border-primary bg-primary h-8 w-8 group-hover:w-max flex align-middle items-center transition-transform duration-700 px-3 mr-2 -mt-10 font-bold text-white">
                 <p className="flex">
                   <span className="group-hover:block hidden">Step&nbsp;</span>2
                 </p>
               </div>
 
               <p className="group-hover:text-primary">
-                Download Crypto exchange & Crypto Wallet App
+                Download Kickto App
               </p>
-              <img src={icon} className="h-8 w-8" />
+              <img src={icon2} className="h-8 w-8 mt-24" />
             </div>
           </div>
 
@@ -78,21 +82,23 @@ function hero() {
             className="fill-white h-16   mx-auto sm:-rotate-90 sm:hidden lg:block"
           />
 
-          <div
+<div
             
-            className="group hover:bg-purple-100 hover:text-white hover:drop-shadow-md p-6 border-gray-300/30 border rounded-xl h-full align-middle items-center sm:col-span-2 col-span-1 flex-col bg-white bg-opacity-10"
+            className="group hover:bg-purple-100 border-2 hover:text-white hover:drop-shadow-md p-6 border-primary    rounded-xl h-full align-middle items-center sm:col-span-2 col-span-1 flex-col bg-white bg-opacity-10"
           >
             <div className="w-full justify-between flex-col space-y-6">
-              <div className="rounded-full group-hover:bg-primary group-hover:text-white group-hover:drop-shadow-md   group-hover:border-primary bg-primary h-8 w-8 group-hover:w-max flex align-middle items-center transition-transform duration-700 px-3 mr-2 -mt-10 font-bold text-white">
+              <div className="rounded-full  group-hover:bg-white group-hover:text-primary group-hover:drop-shadow-md   group-hover:border-primary bg-primary h-8 w-8 group-hover:w-max flex align-middle items-center transition-transform duration-700 px-3 mr-2 -mt-10 font-bold text-white">
                 <p className="flex">
                   <span className="group-hover:block hidden">Step&nbsp;</span>3
                 </p>
               </div>
 
               <p className="group-hover:text-primary">
-                Download Crypto exchange & Crypto Wallet App
+                Buy Sneakers
+
+                <br />
               </p>
-              <img src={icon} className="h-8 w-8" />
+              <img src={shoe} className="h-8 w-8 mt-3" />
             </div>
           </div>
 
@@ -101,20 +107,21 @@ function hero() {
             className="fill-white h-16   mx-auto sm:-rotate-90"
           />
 
-          <div
+<div
             
-            className="group hover:bg-purple-100 hover:text-white hover:drop-shadow-md p-6 border-gray-300/30 border rounded-xl h-full align-middle items-center sm:col-span-2 col-span-1 flex-col bg-white bg-opacity-10"
+            className="group hover:bg-purple-100 border-2 hover:text-white hover:drop-shadow-md p-6 border-primary    rounded-xl h-full align-middle items-center sm:col-span-2 col-span-1 flex-col bg-white bg-opacity-10"
           >
             <div className="w-full justify-between flex-col space-y-6">
-              <div className="rounded-full group-hover:bg-primary group-hover:text-white group-hover:drop-shadow-md   group-hover:border-primary bg-primary h-8 w-8 group-hover:w-max flex align-middle items-center transition-transform duration-700 px-3 mr-2 -mt-10 font-bold text-white">
+              <div className="rounded-full  group-hover:bg-white group-hover:text-primary group-hover:drop-shadow-md   group-hover:border-primary bg-primary h-8 w-8 group-hover:w-max flex align-middle items-center transition-transform duration-700 px-3 mr-2 -mt-10 font-bold text-white">
                 <p className="flex">
                   <span className="group-hover:block hidden">Step&nbsp;</span>4
                 </p>
-              </div> 
+              </div>
+
               <p className="group-hover:text-primary">
-                Download Crypto exchange & Crypto Wallet App
+                Move Earn & Get Your Cash
               </p>
-              <img src={icon} className="h-8 w-8" />
+              <img src={icon4} className="h-8 w-8" />
             </div>
           </div>
         </div>

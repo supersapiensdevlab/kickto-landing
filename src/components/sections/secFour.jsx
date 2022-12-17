@@ -24,11 +24,39 @@ function Three() {
 
 
   const [shoeStat,setShoeStat] = useState(0);
+
+  function isElementInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    console.log(rect);
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+  useEffect(() => {
+    const element = document.getElementById('shoe-box');
+
+    document.addEventListener('scroll', checkScroll);
+
+    function checkScroll(){
+      console.log("Running....")
+if (isElementInViewport(element)) {
+  console.log('Element is visible in the viewport');
+} else {
+  console.log('Element is not visible in the viewport');
+}
+
+}
+  }, [])
+  
  
   return (
     <div className="hero min-h-screen   text-black/80 ">
       <div className="hero-content   grid  grid-cols-3    gap-4">
-        <div  className="p-6 w-full text-3xl font-semibold bg-blur-pattern  border-gray-300/30 border rounded-xl h-full align-middle items-center col-span-3 md:col-span-2 flex-col bg-white bg-opacity-10">
+        <div  className="p-6 w-full text-3xl font-semibold drop-shadow-lg border-primary  border-2 rounded-xl h-full align-middle items-center col-span-3 md:col-span-2 flex-col bg-white ">
  
           <div className="justify-between flex text-primary">
             <p>Get your NFT shoes to begin!</p>
@@ -41,27 +69,28 @@ function Three() {
             pick the ones you like and switch that GPS on to begin your Kickto
             Journey.
           </div>
-          <div className="grid grid-cols-2 items-center   mt-36 w-full     p-6 gap-12">
-            <div className="flex flex-col   mx-auto">
-              <img src={vector} className="md:h-32 " />
-               
+          <div id="shoe-box" className="grid grid-cols-2 items-center   mt-22 w-full     p-6 gap-12  ">
+            <div  
+               className="flex flex-col text-center  mx-auto mt-12">
+              <img   src={vector} className="md:h-32 " />
+               <h3 className=" text-primary font-bold text-base mt-4">Walker</h3>
             </div>
-            <div className="flex flex-col   mx-auto">
-              <img src={vector2} className="md:h-32 " />
-               
+            <div className="flex flex-col  text-center mx-auto mt-12">
+              <img   src={vector2} className="md:h-32 " />
+              <p className="text-primary font-bold text-base mt-4">Jogger</p>
             </div>
-            <div className="flex flex-col   mx-auto">
-              <img src={vector3} className="md:h-32 " />
-               
+            <div className="flex flex-col  text-center mx-auto mt-18">
+              <img   src={vector3} className="md:h-32 " />
+              <p className="text-primary font-bold text-base mt-4">Runner</p>
             </div>
-            <div className="flex flex-col   mx-auto">
-              <img src={vector4} className="md:h-32 " />
-               
+            <div className="flex flex-col text-center  mx-auto mt-18">
+              <img   src={vector4} className="md:h-32 " />
+              <p className="text-primary font-bold text-base mt-4">Trainer</p>
             </div>
           </div>
         </div>
 
-        <div   className="p-6 pb-0 text-3xl font-semibold  border-gray-300/30 border rounded-xl h-full align-middle items-center col-span-3 md:col-span-1  flex-col bg-white bg-opacity-10">
+        <div   className="p-6 pb-0 text-3xl font-semibold  bg-center drop-shadow-md   border-primary border-2 rounded-xl h-full align-middle items-center col-span-3 md:col-span-1  flex-col bg-white ">
           <div className="justify-between flex text-primary">
             <p>Our in-app marketplace for your perfect shoes</p>
             <div className="rounded-full bg-primary h-10 w-12 flex align-middle items-center text-white text-base px-4  mr-2   font-bold">

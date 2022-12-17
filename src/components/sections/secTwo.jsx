@@ -38,7 +38,7 @@ return () => {
   return (
     
       <div  className="hero min-h-screen   text-black/80  ">
-                <div ref={myRef} className="w-screen h-screen  ">  </div>
+                <div ref={myRef} className="w-screen h-screen  hidden  ">  </div>
 
         <div   className=" hero-content  grid grid-cols-2   ">
           <div  className="col-span-2 md:col-span-1 ">
