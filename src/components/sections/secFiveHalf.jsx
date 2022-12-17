@@ -4,6 +4,7 @@ import Lottie from "lottie-react";
 import lottie from "lottie-web";
 
 import shoe3 from "../../assets/images/shoe3.png";
+import box from "../../assets/images/box.webp";
 
 import vector from "../../assets/gif/shoes.gif";
 import vector2 from "../../assets/gif/shoes2.gif";
@@ -41,8 +42,8 @@ function Three() {
               your old shoes on the same marketplace.
             </div>
             <img
-              src={shoe3}
-              className="h-max w-max aspect-auto  translate -rotate-[30deg] mb-12 sm:mt-12 pr-4"
+              src={box}
+              className="h-max w-max aspect-auto   sm:mt-12  "
             />
           </div>
           <div className="col-span-3 md:col-span-2 ">
