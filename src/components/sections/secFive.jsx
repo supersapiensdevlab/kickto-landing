@@ -49,8 +49,8 @@ function Three() {
       <div className="hero-content animate-border  rounded-3xl inline-block bg-white from-purple-200 via-blue-500 to-purple-500 bg-[length:400%_400%] p-1  bg-gradient-to-r  grid  grid-cols-3 ">
         <div className="  text-3xl font-semibold  border-gray-300/30   rounded-3xl align-middle items-center col-span-3 flex-col bg-white  ">
           <div className="grid grid-cols-4 border-0 ">
-            <div className="col-span-4 md:col-span-1 bg-primary sm:rounded-l-3xl sm:rounded-tr-none rounded-t-3xl   pt-4 md:text-left text-center">
-              <p className="px-6 text-white text-center mt-12">
+            <div className="col-span-4 md:col-span-1 bg-primary/50 sm:rounded-l-3xl sm:rounded-tr-none rounded-t-3xl   pt-4 md:text-left text-center">
+              <p className="px-6 text-primary text-center mt-12">
                 Sneakers Details
               </p>
               <div className="flex-col text-base font-semibold md:mt-24  space-y-2 mt-4 lg:mx-4 md:mx-0 mx-12 mb-8 text-primary text-center">

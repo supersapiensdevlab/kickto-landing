@@ -1,4 +1,4 @@
-import shoes from "../../assets/images/95.webp";
+import shoes from "../../assets/images/1386.webp";
 import blurElements from "../../assets/images/blur-elements.png";
 import React, { useState, useEffect, useRef } from "react";
 import BIRDS from "vanta/dist/vanta.birds.min";
