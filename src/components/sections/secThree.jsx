@@ -71,7 +71,8 @@ function hero() {
               </div>
 
               <p className="group-hover:text-primary">
-                Download Kickto App
+                Download Kickto App <br></br><span className="text-white opacity-0">placeholder</span>
+                <span className="text-white"> </span>
               </p>
               <img src={icon3} className="h-8 w-8 mt-24" />
             </div>
@@ -95,7 +96,9 @@ function hero() {
 
               <p className="group-hover:text-primary">
                 Buy Sneakers
-
+                <br></br><span className="text-white opacity-0">placeholder</span>
+                <span className="text-white"> </span>
+                <br></br>
                 <br />
               </p>
               <img src={icon2} className="h-8 w-8 mt-3" />
@@ -120,7 +123,7 @@ function hero() {
 
               <p className="group-hover:text-primary">
                 Move Earn & Get Your Cash
-              </p>
+              </p><br></br>
               <img src={icon4} className="h-8 w-8" />
             </div>
           </div>
