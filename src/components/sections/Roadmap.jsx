@@ -142,19 +142,13 @@ function Roadmap() {
 
     var scene = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: 1300})
 						.setPin("#pin1")
-						.addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
+						//.addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
 						.addTo(controller);
   }, []);
 
   return (
     <div className=" w-full " id="roadmap" >
-      <div class="spacer s2"></div>
-<div id="trigger1" class="spacer s0"></div>
-<div id="pin1" class="box2 blue">
-	<p>Stay where you are (at least for a while).</p>
-	<a href="#" class="viewsource">view source</a>
-</div>
-<div class="spacer s2"></div>
+      
       <div id="roadmap-content" className="  w-full justify-center items-center bg-primary/30">
    
         <p className=" text-white bg-primary px-8 py-2 w-max block mx-auto rounded-full text-center 2xl:text-4xl font-black  text-xl 2xl:mt-1 lg:mt-0 ">
@@ -165,7 +159,7 @@ function Roadmap() {
           asdasd
         </div>
 
-        <div className="hidden  ">
+        <div className="hidden md:block ">
           <svg
             width="1240"
             height="351"
