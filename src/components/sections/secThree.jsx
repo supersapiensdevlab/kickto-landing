@@ -2,8 +2,8 @@ import shoe from "../../assets/images/shoe-nft-2.webp";
 import arrow from "../../assets/vectors/arrow.svg";
 import cloud from "../../assets/lotties/cloud.json";
 import icon from "../../assets/images/downloadIcon.png";
-import icon2 from "../../assets/images/kickto-logo-alt-shoe.png";
-import icon3 from "../../assets/images/kickto-logo-alt-shoe.png";
+import icon2 from "../../assets/images/shoe-icon.svg";
+import icon3 from "../../assets/images/kickto-icon.svg";
 import icon4 from "../../assets/images/cash-gradient.png";
 
 import { defineElement } from "lord-icon-element";
@@ -73,7 +73,7 @@ function hero() {
               <p className="group-hover:text-primary">
                 Download Kickto App
               </p>
-              <img src={icon2} className="h-8 w-8 mt-24" />
+              <img src={icon3} className="h-8 w-8 mt-24" />
             </div>
           </div>
 
@@ -98,7 +98,7 @@ function hero() {
 
                 <br />
               </p>
-              <img src={shoe} className="h-8 w-8 mt-3" />
+              <img src={icon2} className="h-8 w-8 mt-3" />
             </div>
           </div>
 

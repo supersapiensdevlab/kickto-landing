@@ -63,7 +63,7 @@ const initialNodes = [
     type: "custom",
     data: { name: "Buy NFT", job: "CEO", emoji: "😎", image: marketplace },
 
-    position: { x: 550, y: 400 },
+    position: { x: 540  , y: 400 },
   },
 
   {

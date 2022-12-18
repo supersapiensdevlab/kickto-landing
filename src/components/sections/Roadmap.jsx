@@ -1,14 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { gsap } from "gsap";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin.js";
 import * as ScrollMagic from "scrollmagic";
 import { ScrollMagicPluginIndicator } from "scrollmagic-plugins";
+import rocketShoe from "../../assets/images/rocket-shoe.png"
 
+ScrollMagicPluginIndicator(ScrollMagic);
 var controller = new ScrollMagic.Controller();
 
 function Roadmap() {
   var offsetFromTop, pathBB, startY, finishDistance;
   var offsetFromTop2, pathBB2, startY2, finishDistance2;
+  const elementRef = useRef(null);
 
   var requestId;
   var tween, tween2;
@@ -23,28 +26,29 @@ function Roadmap() {
     setProgress((window.scrollY - startY) / pathBB.width);
     tween.progress(value);
     tween2.progress(value2);
-
-    //console.clear();
-    // console.log("distance Travelled:", window.scrollY - startY);
-    // console.log(
-    //   "offsetFromTop",
-    //   offsetFromTop,
-    //   "window.scrollY",
-    //   window.scrollY,
-    //   "startY2",
-    //   startY2,
-    //   "pathBB2",
-    //   pathBB2,
-    //   "finishDistance2",
-    //   finishDistance2,
-    //   "value",
-    //   value2,
-    // );
+    console.clear();
+    console.log("animating");
+    console.clear();
+    console.log("distance Travelled:", window.scrollY - startY);
+    console.log(
+      "offsetFromTop",
+      offsetFromTop,
+      "window.scrollY",
+      window.scrollY,
+      "startY2",
+      startY2,
+      "pathBB2",
+      pathBB,
+      "finishDistance2",
+      finishDistance,
+      "value",
+      value,
+    );
     scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
 
     // if any scroll is attempted, set this to the previous value
-    // window.onscroll = function () {
+    // window.onscroll = function () { 
     //   if (value > 0 && value < 1) {
     //     window.scrollTo(scrollLeft, scrollTop);
     //   }
@@ -54,6 +58,13 @@ function Roadmap() {
   };
 
   useEffect(() => {
+    const element = elementRef.current;
+    const rect = element.getBoundingClientRect();
+    console.clear();
+        console.log(rect.width);  // width of the element
+    console.log(rect.height); // height of the element
+    console.log(rect.x);      // x-coordinate of the element relative to the viewport
+    console.log(rect.y);      // y-coordinate of the element relative to the viewport
     window.scrollTo(0, 0);
 
     // console.clear();
@@ -68,9 +79,9 @@ function Roadmap() {
     // });
 
     offsetFromTop = window.innerHeight * 0.5; //Vcenter of screen
-    pathBB = document.querySelector(".path2").getBoundingClientRect();
-    startY = pathBB.top + window.innerHeight - offsetFromTop;
-    finishDistance = startY + pathBB.height - offsetFromTop;
+    pathBB = element.getBoundingClientRect();
+    startY = pathBB.top   - offsetFromTop;
+    finishDistance = startY + pathBB.width - offsetFromTop;
 
     pathBB2 = document.querySelector(".path3").getBoundingClientRect();
     startY2 = pathBB2.top + window.innerHeight - offsetFromTop;
@@ -102,7 +113,7 @@ function Roadmap() {
       },
     });
 
-    document.addEventListener("scroll", function () {
+    window.addEventListener("scroll", function () {
       // Prevent the update from happening too often (throttle the scroll event)
       if (!requestId) {
         requestId = requestAnimationFrame(update);
@@ -110,38 +121,51 @@ function Roadmap() {
     });
 
     update();
-    ScrollMagicPluginIndicator(ScrollMagic);
 
     // init controller
 
-    if (window.innerWidth > 512) {
-      // create a scene
-      new ScrollMagic.Scene({
-        triggerElement: "#roadmap",
-        duration: pathBB.width + 100, // the scene should last for a scroll distance of 100px
-        offset: window.innerHeight / 4, // start this scene after scrolling for 50px
-      })
-        //.addIndicators({ name: "1 (duration: 300)" }) // add indicators (requires plugin)
-        .setPin("#roadmap") // pins the element for the the scene's duration
-        .addTo(controller); // assign the scene to the controller
-    }
+    // if (window.innerWidth > 512) {
+    //   // create a scene
+    //   new ScrollMagic.Scene({
+    //     triggerElement: "#section-one",
+    //     triggerHook: 0.25,
+    //     pushFollowers: true,
+    //       duration: 200  , // the scene should last for a scroll distance of 100px
+    //     offset: 0, // start this scene after scrolling for 50px
+    //   })
+    //      .addIndicators({ name: "1 (duration: "+pathBB.width + 100+")" }) // add indicators (requires plugin)
+    //     .setPin("#section-one") // pins the element for the the scene's duration
+    //     .addTo(controller); // assign the scene to the controller
+
+       
+    // }
+
+    var scene = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: 1300})
+						.setPin("#pin1")
+						.addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
+						.addTo(controller);
   }, []);
 
   return (
-    <div className=" w-full ">
-      <div id="roadmap" className="  w-full justify-center items-center">
-        <div className="block relative hidden">
-          <h3 className="text-alt bg-white px-6 py-1 absolute -top-7 sm:-top-8  right-1/2 rounded-full w-max 2xl:text-3xl shadow-mintflick  lg:text-xl md:text-lg text-lg text-center font-black -rotate-9">
-            Exciting
-          </h3>
-        </div>
+    <div className=" w-full " id="roadmap" >
+      <div class="spacer s2"></div>
+<div id="trigger1" class="spacer s0"></div>
+<div id="pin1" class="box2 blue">
+	<p>Stay where you are (at least for a while).</p>
+	<a href="#" class="viewsource">view source</a>
+</div>
+<div class="spacer s2"></div>
+      <div id="roadmap-content" className="  w-full justify-center items-center bg-primary/30">
+   
         <p className=" text-white bg-primary px-8 py-2 w-max block mx-auto rounded-full text-center 2xl:text-4xl font-black  text-xl 2xl:mt-1 lg:mt-0 ">
           ROADMAP
         </p>
 
-        <div className="my-5 flex "></div>
+        <div className="my-5 flex bg-red-200 h-screen">
+          asdasd
+        </div>
 
-        <div className="hidden md:block">
+        <div className="hidden  ">
           <svg
             width="1240"
             height="351"
@@ -151,6 +175,7 @@ function Roadmap() {
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
+            ref={elementRef}
               className="path2"
               d="M242 158.501C285.507 127.4 398.472 83.8596 502.278 158.501C606.083 233.142 718.539 189.601 761.791 158.501C804.014 124.105 898.707 84.6475 1021.31 158.501C1137.41 228.442 1239.62 192.897 1282.36 158.501C1321.74 121.351 1436.24 85.5901 1541.27 158.501C1638.3 225.855 1677.48 199.464 1677.48 199.464"
               stroke="#C0C0C0"

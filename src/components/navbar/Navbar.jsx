@@ -106,22 +106,21 @@ function navbar() {
       </div>
       <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-          <li className="flex align-middle items-center">
+          <li className="flex align-middle items-center mx-3">
             <a                 className="btn  bg-transparent text-white gradient-border  border-none hover:scale-95 hover:text-white  btn-block "
 >
               Marketplace
             </a>
           </li>{" "}
           <li>
-            <a>
+             
               <a
                 className="btn  bg-transparent text-white gradient-border  border-none hover:scale-95 hover:text-white  btn-block "
                 href="https://kickto-dex.netlify.app/"
                 target="_blank"
               >
                 DEX
-              </a>
-            </a>
+              </a> 
           </li>
         </ul>
       </div>

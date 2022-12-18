@@ -29,59 +29,59 @@ import { motion, useMotionValue, useSpring } from "framer-motion";
 
 const anchors = ["firstPage", "secondPage", "thirdPage"];
 
-const FullpageClass = () => (
-  <ReactFullpage
-    //fullpage options
-    licenseKey={"YOUR_KEY_HERE"}
-    scrollBar={false}
-    fadingEffect={true}
-    scrollingSpeed={200} /* Options here */
-    render={({ state, fullpageApi }) => {
-      return (
-        <>
-          <Navbar />
-          <ReactFullpage.Wrapper>
-            <div className="section  ">
-              <Hero />
-              <One />
-            </div>
+// const FullpageClass = () => (
+//   <ReactFullpage
+//     //fullpage options
+//     licenseKey={"YOUR_KEY_HERE"}
+//     scrollBar={false}
+//     fadingEffect={true}
+//     scrollingSpeed={200} /* Options here */
+//     render={({ state, fullpageApi }) => {
+//       return (
+//         <>
+//           <Navbar />
+//           <ReactFullpage.Wrapper>
+//             <div className="section  ">
+//               <Hero />
+//               <One />
+//             </div>
 
-            <div className="section">
-              <Two />
-            </div>
-            <div className="section">
-              <Three />
-            </div>
+//             <div className="section">
+//               <Two />
+//             </div>
+//             <div className="section">
+//               <Three />
+//             </div>
 
-            <div className="section">
-              <Four />
-            </div>
-            <div className="section">
-              <Five />
-            </div>
-            <div className="section">
-              <FiveHalf />
-            </div>
-            <div className="section">
-              <Six />
-            </div>
+//             <div className="section">
+//               <Four />
+//             </div>
+//             <div className="section">
+//               <Five />
+//             </div>
+//             <div className="section">
+//               <FiveHalf />
+//             </div>
+//             <div className="section">
+//               <Six />
+//             </div>
 
-            <div className="section">
-              <Tokenomics />
+//             <div className="section">
+//               <Tokenomics />
            
-            </div>
-            <div className="section">
-              <Roadmap />
-              <Footer />
-            </div>
+//             </div>
+//             <div className="section">
+//               <Roadmap />
+//               <Footer />
+//             </div>
 
          
-          </ReactFullpage.Wrapper>
-        </>
-      );
-    }}
-  />
-);
+//           </ReactFullpage.Wrapper>
+//         </>
+//       );
+//     }}
+//   />
+// );
 
 function App() {
   const size = useWindowSize();
@@ -92,9 +92,23 @@ function App() {
     }, 3000);
   }, []);
 
+
+  const handleScroll = () => {
+    console.log('Scrolling...');
+  };
+  
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll, true);
+  
+    // Remove the event listener
+    return () => {
+      window.removeEventListener('scroll', handleScroll, true);
+    };
+  }, []);
+
   return (
     <>
-      {size.width < 512 ? (
+      {size.width > 512 ? (
         <div>
           <Navbar />
 
@@ -108,19 +122,21 @@ function App() {
           <Four />
 
           <Five />
-
+          
           <FiveHalf />
-
           <Six />
 
           {/* <SixHalf /> */}
 
-          <Tokenomics />
+          {/* <Tokenomics /> */}
+             
+          <Roadmap />
+
           <Footer />
         </div>
       ) : (
         <div>
-          <FullpageClass />
+          {/* <FullpageClass /> */}
         </div>
       )}
     </>

@@ -51,7 +51,7 @@ function hero() {
           </svg>
         </div>
       </div>
-      <div className="h-screen hero">
+      <div id="section-one" className="h-screen hero">
         <div className="grid grid-cols-3 px-4 hero-content">
           <div className="bg-primary/20 align-middle items-center  lg:w-4/5 rounded-3xl mx-auto col-span-3 border border-primary   h-3/4  grid md:grid-cols-2 grid-cols-1">
             <div className="flex flex-col  mt-6 md:-mt-16  text-left">

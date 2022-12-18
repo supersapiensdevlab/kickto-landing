@@ -472,3 +472,7 @@ svg.active .svg-elem-14 {
       height: calc(100vh - 9rem) !important;
   }
 }
+
+.scrollmagic-pin-spacer {
+  vertical-align: top;
+}
