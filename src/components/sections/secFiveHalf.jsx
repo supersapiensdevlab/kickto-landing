@@ -25,7 +25,7 @@ function Three() {
   const [shoeStat, setShoeStat] = useState(0);
 
   return (
-    <div className="hero min-h-screen   text-black/80   ">
+    <div className="hero  md:my-16  text-black/80   ">
       <div className="hero-content       gap-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
           <div className="py-6 pb-0 text-3xl font-semibold bg-blur-pattern  border-2 border-primary rounded-xl   align-middle items-center col-span-3  md:col-span-1 flex-col bg-white bg-opacity-10">

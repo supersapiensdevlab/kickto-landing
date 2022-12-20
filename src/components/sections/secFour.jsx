@@ -36,25 +36,11 @@ function Three() {
     );
   }
 
-  useEffect(() => {
-    const element = document.getElementById('shoe-box');
-
-    document.addEventListener('scroll', checkScroll);
-
-    function checkScroll(){
-      console.log("Running....")
-if (isElementInViewport(element)) {
-  console.log('Element is visible in the viewport');
-} else {
-  console.log('Element is not visible in the viewport');
-}
-
-}
-  }, [])
+ 
   
  
   return (
-    <div className="hero min-h-screen   text-black/80 ">
+    <div className="hero  md:my-16   text-black/80 ">
       <div className="hero-content   grid  grid-cols-3    gap-4">
         <div  className="p-6 w-full text-3xl font-semibold drop-shadow-lg border-primary  border-2 rounded-xl h-full align-middle items-center col-span-3 md:col-span-2 flex-col bg-white ">
  

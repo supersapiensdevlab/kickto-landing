@@ -47,7 +47,7 @@ function four() {
   ];
 
   return (  
-    <div className=" flex  items-center align-middle min-h-screen w-full  text-primary/80  ">
+    <div className=" flex  items-center align-middle  w-full  text-primary/80  ">
       <p className="hidden text-5xl text-primary/80 font-semibold text-left md:text-center mt-6 mb-4 mx-4">
         Sneakers
       </p>

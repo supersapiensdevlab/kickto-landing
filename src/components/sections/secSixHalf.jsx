@@ -19,7 +19,7 @@ function four() {
   ];
 
   return (
-    <div className=" min-h-screen w-full  text-primary/80  ">
+    <div className="  w-full  text-primary/80  ">
       
       <p className="text-5xl text-primary/80 font-semibold text-left md:text-center  mb-4 mx-4">
         Roadmap

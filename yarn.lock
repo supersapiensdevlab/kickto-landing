@@ -1680,6 +1680,11 @@
     "classcat" "^5.0.3"
     "zustand" "^4.1.1"
 
+"@remix-run/router@1.1.0":
+  "integrity" "sha512-rGl+jH/7x1KBCQScz9p54p0dtPLNeKGb3e0wD2H5/oZj41bwQUnXdzbj2TbUAFhvD7cp9EyEQA4dEgpUFa1O7Q=="
+  "resolved" "https://registry.npmjs.org/@remix-run/router/-/router-1.1.0.tgz"
+  "version" "1.1.0"
+
 "@rollup/plugin-babel@^5.2.0":
   "integrity" "sha512-WFfdLWU/xVWKeRQnKmIAQULUI7Il0gZnBIH/ZFO069wYIfPu+8zrfp/KMW0atmELoRDq8FbiP3VCss9MhCut7Q=="
   "resolved" "https://registry.npmjs.org/@rollup/plugin-babel/-/plugin-babel-5.3.1.tgz"
@@ -6161,6 +6166,11 @@
     "section-matter" "^1.0.0"
     "strip-bom-string" "^1.0.0"
 
+"gsap-trial@^3.11.3":
+  "integrity" "sha512-d2KL2hKnC6/sTV34TV2EUdpY3kE346FBbKBXDkJnpexSzC5LdtmjTmdLE1uVxxOPVcEcfcS9yxIk4BsEOqg62Q=="
+  "resolved" "https://registry.npmjs.org/gsap-trial/-/gsap-trial-3.11.3.tgz"
+  "version" "3.11.3"
+
 "gsap@^3.10.4":
   "integrity" "sha512-xc/iIJy+LWiMbRa4IdMtdnnKa/7PXEK6NNzV71gdOYUVeTZN7UWnLU0fB7Hi1iwiz4ZZoYkBZPPYGg+2+zzFHA=="
   "resolved" "https://registry.npmjs.org/gsap/-/gsap-3.11.3.tgz"
@@ -9700,6 +9710,21 @@
   "integrity" "sha512-F27qZr8uUqwhWZboondsPx8tnC3Ct3SxZA3V5WyEvujRyyNv0VYPhoBg1gZ8/MV5tubQp76Trw8lTv9hzRBa+A=="
   "resolved" "https://registry.npmjs.org/react-refresh/-/react-refresh-0.11.0.tgz"
   "version" "0.11.0"
+
+"react-router-dom@^6.5.0":
+  "integrity" "sha512-/XzRc5fq80gW1ctiIGilyKFZC/j4kfe75uivMsTChFbkvrK4ZrF3P3cGIc1f/SSkQ4JiJozPrf+AwUHHWVehVg=="
+  "resolved" "https://registry.npmjs.org/react-router-dom/-/react-router-dom-6.5.0.tgz"
+  "version" "6.5.0"
+  dependencies:
+    "@remix-run/router" "1.1.0"
+    "react-router" "6.5.0"
+
+"react-router@6.5.0":
+  "integrity" "sha512-fqqUSU0NC0tSX0sZbyuxzuAzvGqbjiZItBQnyicWlOUmzhAU8YuLgRbaCL2hf3sJdtRy4LP/WBrWtARkMvdGPQ=="
+  "resolved" "https://registry.npmjs.org/react-router/-/react-router-6.5.0.tgz"
+  "version" "6.5.0"
+  dependencies:
+    "@remix-run/router" "1.1.0"
 
 "react-scripts@5.0.1":
   "integrity" "sha512-8VAmEm/ZAwQzJ+GOMLbBsTdDKOpuZh7RPs0UymvBR2vRk4iZWCskjbFnxqjrzoIvlNNRZ3QJFx6/qDSi6zSnaQ=="
