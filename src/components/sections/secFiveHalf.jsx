@@ -30,16 +30,15 @@ function Three() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
           <div className="py-6 pb-0 text-3xl font-semibold bg-blur-pattern  border-2 border-primary rounded-xl   align-middle items-center col-span-3  md:col-span-1 flex-col bg-white bg-opacity-10">
             <div className="justify-between flex px-6 text-primary">
-              <p>Our in-app marketplace for your perfect shoes</p>
+              <p>Exciting Gift Boxes</p>
               <div className="rounded-full bg-primary h-10 w-10 flex align-middle items-center  px-4  mr-2 text-white text-base font-bold">
-                <p>2</p>
+                <p>4</p>
               </div>
             </div>
             <div className="text-base font-normal pt-4 px-6">
-              Choose from our wide variety of NFT shoes, the ones best suited to
-              your routine. Each shoe helps you earn KICKTO tokens differently.
-              Own more shoes with time to grow on the platform. You can sell
-              your old shoes on the same marketplace.
+              Unlock extraordinary Shoe drops with Gift boxes.
+              High reward shoes are waiting for you to grab. 
+              <br></br> <br></br>Fuse this shoes with the ones you have to upgrade them into new ones & create unique variants.
             </div>
             <img
               src={box}
@@ -53,7 +52,7 @@ function Three() {
                   Keep track of your <br></br>daily fitness routine
                 </p>
                 <div className="rounded-full bg-primary h-10 w-10 flex align-middle items-center text-white text-base px-4 mr-2   font-bold">
-                  <p>1</p>
+                  <p>5</p>
                 </div>{" "}
               </div>
               <div className="text-base font-normal">

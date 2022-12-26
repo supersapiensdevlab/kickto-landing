@@ -2,7 +2,7 @@ import React from "react";
 
 const Card3 = (props) => {
   return (
-    <div className='bg-white text-secondary rounded-2xl md:w-96 w-full h-max p-10 block mx-auto  shadow-mintflick z-20 '>
+    <div className='bg-primary/5 text-secondary rounded-2xl md:w-96 w-full h-max p-10 block mx-auto  shadow-mintflick z-20 '>
       <h2 className='text-xl font-extrabold'>{props.headBefore}</h2>
       <h1 className='text-3xl uppercase text-primary font-bold'>
         {props.headTitle}
