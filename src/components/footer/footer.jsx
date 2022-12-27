@@ -11,19 +11,19 @@ function footer() {
           <p> Stay fit. All day, every day. </p>
           <div class="social-container   mt-5">
             <ul class="social-icons">
-              <li>
+              {/* <li>
                 <a
-                  class=" "
+                  class=" hidden"
                   href="https://www.facebook.com/pg/CryptionNetwork/"
                   target="blank"
                 >
                   <i class="fa fa-facebook"></i>
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a
                   class=" "
-                  href="https://twitter.com/CryptionNetwork"
+                  href="https://twitter.com/KicktoOfficial_"
                   target="blank"
                 >
                   <i class="fa fa-twitter"></i>
@@ -32,19 +32,19 @@ function footer() {
               <li>
                 <a
                   class=" "
-                  href="https://medium.com/cryption-digital-services"
+                  href="https://www.instagram.com/kickto.official"
                   target="blank"
                 >
-                  <i class="fa fa-medium"></i>
+                  <i class="fa fa-instagram"></i>
                 </a>
               </li>
-              <li>
-                <a class=" " href="https://discord.gg/USXYEte" target="blank">
+              {/* <li>
+                <a class="hidden " href="https://discord.gg/USXYEte" target="blank">
                   <i class="fab fa-discord"></i>
                 </a>
-              </li>
+              </li> */}
               <li>
-                <a class=" " href="https://t.me/CryptionNetwork" target="blank">
+                <a class=" " href="https://t.me/+EeMUF7D0mLIwN2Fl" target="blank">
                   <i class="fa fa-telegram"></i>
                 </a>
               </li>
