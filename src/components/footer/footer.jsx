@@ -11,15 +11,15 @@ function footer() {
           <p> Stay fit. All day, every day. </p>
           <div class="social-container   mt-5">
             <ul class="social-icons">
-              {/* <li>
+              <li>
                 <a
                   class=" hidden"
-                  href="https://www.facebook.com/pg/CryptionNetwork/"
+                  href="https://www.facebook.com/KicktoOfficial/"
                   target="blank"
                 >
                   <i class="fa fa-facebook"></i>
                 </a>
-              </li> */}
+              </li>
               <li>
                 <a
                   class=" "
