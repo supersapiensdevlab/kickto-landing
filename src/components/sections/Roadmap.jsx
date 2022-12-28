@@ -46,7 +46,7 @@ const Track = () => {
 
     offsetFromTop = window.innerHeight * 0.5; //Vcenter of screen
     pathBB = document.querySelector("#path").getBoundingClientRect();
-    startY = pathBB.top + (offsetFromTop * 2);
+    startY = pathBB.top + offsetFromTop * 2;
     finishDistance = startY + pathBB.height - offsetFromTop;
 
     // the animation to use
@@ -67,8 +67,7 @@ const Track = () => {
       if (!requestId) {
         requestId = requestAnimationFrame(update);
       }
-    });
-
+    }); 
     update();
   }, []);
 

@@ -5,7 +5,7 @@ import RoadmapCardAlt from "../Roadmap-card-alt";
 import Roadmap from "./Roadmap";
 const WhyTheyUseIt = () => {
   return (
-    <div className="h-max w-full why-background md:my-36  ">
+    <div className="h-max w-full why-background  my-36  ">
       <div className="h-full w-full">
         <div className="text-white   bg-primary rounded-full text-2xl sm:text-5xl  py-5 px-10 w-max font-bold block mx-auto  rotate-4 -mt-10">
           Roadmap

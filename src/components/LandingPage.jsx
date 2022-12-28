@@ -41,10 +41,10 @@ const LandingPage = () => {
 
       <Four />
 
-      <Five /> 
+      <Five />
       <FiveHalf />
-      <Six /> 
-      <Track/> 
+      <Six />
+      <Track/>
       <Tokenomics/>
       <Footer />
     </>
