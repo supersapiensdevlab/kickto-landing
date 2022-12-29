@@ -9,7 +9,7 @@ const Track = () => {
   function update() {
     // Update our animation
     var value = (window.scrollY - startY) / pathBB.height;
-    if (value < 1) tween.progress(value);
+    if (value < 1) tween.progress("0.23");
     //console.clear();
     console.log("distance Travelled:", window.scrollY - startY);
     console.log(
@@ -58,7 +58,7 @@ const Track = () => {
         align: "#path",
         autoRotate: false,
         alignOrigin: [0.5, 0.5],
-        start: 0.015,
+        start: 0.23,
       },
     });
 
@@ -72,7 +72,7 @@ const Track = () => {
   }, []);
 
   return (
-    <div className=" w-[1680px] h-[4000px] px-10  z-1  absolute    overflow-clip mx-auto">
+    <div className=" w-[1660px] h-[4000px] px-10  z-1  absolute  bg-red-100/30 overflow-clip">
       <svg
         className=""
         xmlns="http://www.w3.org/2000/svg"
