@@ -43,7 +43,6 @@ function Three() {
     <div className="hero  md:my-16   text-black/80 ">
       <div className="hero-content   grid  grid-cols-3    gap-4">
         <div  className="p-6 w-full text-3xl font-semibold drop-shadow-lg border-primary  border-2 rounded-xl h-full align-middle items-center col-span-3 md:col-span-2 flex-col bg-white ">
- 
           <div className="justify-between flex text-primary">
             <p>Get your NFT shoes to begin!</p>
             <div className="rounded-full bg-primary h-10 w-10 flex align-middle items-center text-white px-4 text-base   font-bold">

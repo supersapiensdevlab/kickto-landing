@@ -56,7 +56,7 @@ function hero() {
           <div className="bg-primary/20 align-middle items-center   rounded-3xl mx-auto col-span-3 border border-primary   h-3/4  grid md:grid-cols-2 grid-cols-1">
             <div className="flex flex-col  mt-6 md:-mt-16  text-left">
               <p className="text-6xl font-bold items-center text-center   text-primary">
-                Coming Soon on
+                Coming Soon
               </p>
               <p className="text-md italic items-center text-center text-black/80 hidden">
                 {" "}

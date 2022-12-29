@@ -19,16 +19,15 @@ function Hero() {
         BIRDS({
           el: myRef2.current,
           mouseControls: true,
-  touchControls: true,
-  gyroControls: false,
-  minHeight: 200.00,
-  minWidth: 200.00,
-  scale: 1.00,
-  scaleMobile: 1.00,
-  color1: "#7b3fe4",
-  color2: "#7b3fe4",
-  backgroundColor: "#e4d7f9",
-
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          scale: 1.0,
+          scaleMobile: 1.0,
+          color1: "#7b3fe4",
+          color2: "#7b3fe4",
+          backgroundColor: "#e4d7f9",
         })
       );
     }
@@ -42,9 +41,7 @@ function Hero() {
     <div className="hero min-h-screen bg-transparent  h-screen  overflow-hidden">
       <div className="hero-content text-center text-neutral-content z-50">
         <div className="  grid   lg:grid-cols-2 grid-cols-1  items-center align-middle p-4">
-           
-       
-<img
+          <img
             src={shoes}
             data-aos="fade-left"
             data-aos-duration="1000"
@@ -52,19 +49,21 @@ function Hero() {
             data-aos-easing="ease-in-out"
             className="  w-full   h-full     rotate-[30deg] col-span-1"
           />
-            <div
-              data-aos="fade-right"
-              data-aos-duration="1000"
-              data-aos-delay="1500"
-              data-aos-easing="ease-in-out"
-              className="w-full col-span-1 drop-shadow-md  "
-            >
-              <h1 className="text-3xl font-bold italic hero-title  text-left text-primary">Kickto</h1>
-              <p className="text-lg  text-left text-primary font-semibold">A revolution in Walk 2 Earn</p>
-            </div>
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="1500"
+            data-aos-easing="ease-in-out"
+            className="w-full col-span-1 drop-shadow-md  "
+          >
+            <h1 className="text-3xl font-bold italic hero-title  text-left text-primary">
+              Kickto
+            </h1>
+            <p className="text-lg  text-left text-primary font-semibold">
+              A revolution in Move 2 Earn
+            </p>
+          </div>
 
-             
-          
           {/* <div
             data-aos="fade-left"
             data-aos-duration="500"

@@ -27,31 +27,30 @@ import arrow from "../../assets/vectors/arrow.svg";
 
 function four() {
   const carasoleData = [
-     { image: shoe3, altImg: "img1", role: "Gamers", speed: "2-6 km/hr" },
-    { image: shoe4, altImg: "img1", role: "Joggers", speed: "6-10 km/hr" },
-    { image: shoe5, altImg: "img1", role: "Joggers", speed: "6-10 km/hr" },
-    { image: shoe6, altImg: "img1", role: "Joggers", speed: "6-10 km/hr" },
-    { image: shoe7, altImg: "img1", role: "Joggers", speed: "6-10 km/hr" },
-    { image: shoe8, altImg: "img1", role: "Joggers", speed: "6-10 km/hr" },
-    { image: shoe9, altImg: "img1", role: "Joggers", speed: "6-10 km/hr" },
-    { image: shoe10, altImg: "img1", role: "Joggers", speed: "6-10 km/hr" },
-    { image: shoe11, altImg: "img1", role: "Joggers", speed: "6-10 km/hr" },
-    { image: shoe12, altImg: "img1", role: "Joggers", speed: "6-10 km/hr" },
-    { image: shoe13, altImg: "img1", role: "Joggers", speed: "6-10 km/hr" },
-    { image: shoe14, altImg: "img1", role: "Joggers", speed: "6-10 km/hr" },
-    { image: shoe15, altImg: "img1", role: "Joggers", speed: "6-10 km/hr" },
-    { image: shoe16, altImg: "img1", role: "Joggers", speed: "6-10 km/hr" },
-    { image: shoe17, altImg: "img1", role: "Joggers", speed: "6-10 km/hr" },
-    { image: shoe18, altImg: "img1", role: "Joggers", speed: "6-10 km/hr" },
-
+    { image: shoe3, altImg: "img1", role: "Walker", speed: "" },
+    { image: shoe4, altImg: "img1", role: "Jogger", speed: "" },
+    { image: shoe5, altImg: "img1", role: "Runner", speed: "" },
+    { image: shoe6, altImg: "img1", role: "Trainer", speed: "" },
+    { image: shoe7, altImg: "img1", role: "Walker", speed: "" },
+    { image: shoe8, altImg: "img1", role: "Jogger", speed: "" },
+    { image: shoe9, altImg: "img1", role: "Runner", speed: "" },
+    { image: shoe10, altImg: "img1", role: "Trainer", speed: "" },
+    { image: shoe11, altImg: "img1", role: "Walker", speed: "" },
+    { image: shoe12, altImg: "img1", role: "Jogger", speed: "" },
+    { image: shoe13, altImg: "img1", role: "Runer", speed: "" },
+    { image: shoe14, altImg: "img1", role: "Trainer", speed: "" },
+    { image: shoe15, altImg: "img1", role: "Walker", speed: "" },
+    { image: shoe16, altImg: "img1", role: "Jogger", speed: "" },
+    { image: shoe17, altImg: "img1", role: "Runner", speed: "" },
+    { image: shoe18, altImg: "img1", role: "Trainer", speed: "" },
   ];
 
-  return (  
+  return (
     <div className=" flex  items-center align-middle  w-full  text-primary/80  ">
       <p className="hidden text-5xl text-primary/80 font-semibold text-left md:text-center mt-6 mb-4 mx-4">
         Sneakers
       </p>
-      
+
       <Swiper
         spaceBetween={50}
         slidesPerView={5}
@@ -94,18 +93,18 @@ function four() {
                 alt={data.altImg}
                 className="object-center  "
               />
-              <div className="justify-between flex w-full align-middle  mt-12 p-8">
-                <p className="text-black/80 text-center font-bold text-2xl caption w-fit italic capitalize ">
+              <div className="justify-between   flex w-full align-middle  mt-2 p-8 items-center text-center">
+                <p className="text-black/80 text-center font-bold text-2xl caption w-full italic capitalize ">
                   {data.role}
                 </p>
-                <p className="font-bold  align-middle  caption w-fit italic opacity-50 pt-2">
+                {/* <p className="font-bold  align-middle  caption w-fit italic opacity-50 pt-2">
                   {data.speed}
-                </p>
+                </p> */}
               </div>
             </div>
           </SwiperSlide>
         ))}
-      </Swiper> 
+      </Swiper>
     </div>
   );
 }

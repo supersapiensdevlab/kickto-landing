@@ -74,7 +74,7 @@ function navbar() {
       className="navbar  z-[200] fixed  text-black/80 bg-primary backdrop-blur bg-opacity-5   lg:px-24"
     >
       <div className="navbar-start">
-        <img src={logo} className="h-16 w-36  "></img>
+        <img src={logo} className="h-16 w-36"></img>
         <div className="dropdown">
           <ul
             tabIndex={0}
@@ -83,15 +83,11 @@ function navbar() {
             <li tabIndex={0}>
               <ul className="p-2">
                 <li>
-                  <a                       className="btn  bg-transparent text-white gradient-border  border-none hover:scale-95 hover:text-white  btn-block "
->
-                    Marketplace
-                  </a>
+                  <a className="btn  bg-transparent text-white gradient-border  border-none hover:scale-95 hover:text-white  btn-block ">Marketplace </a>
                 </li>
                 <li>
                   <a>
-                    <a
-                      className="btn  bg-transparent text-white gradient-border  border-none hover:scale-95 hover:text-white  btn-block "
+                    <a className="btn  bg-transparent text-white gradient-border  border-none hover:scale-95 hover:text-white  btn-block "
                       href="https://kickto-dex.netlify.app/"
                       target="_blank"
                     >
@@ -104,11 +100,10 @@ function navbar() {
           </ul>
         </div>
       </div>
-      <div className="navbar-end hidden lg:flex">
+      <div className="navbar-end hidden lg:flex ">
         <ul className="menu menu-horizontal px-1">
           <li className="flex align-middle items-center mx-3">
-            <a                 className="btn  bg-transparent text-white gradient-border  border-none hover:scale-95 hover:text-white  btn-block "
->
+            <a className="btn  bg-transparent text-white gradient-border  border-none hover:scale-95 hover:text-white  btn-block ">
               Marketplace
             </a>
           </li>{" "}
