@@ -72,14 +72,14 @@ const Track = () => {
   }, []);
 
   return (
-    <div className=" w-full h-[4000px] px-10  z-1  absolute   overflow-clip">
+    <div className=" w-full h-[4000px] px-10  z-1  absolute   ">
       <svg
         className=""
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1200 4000"
       >
         <svg
-          viewBox="0 0 1056 7200"
+          viewBox="0 0 1056 7500"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
