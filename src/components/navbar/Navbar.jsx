@@ -83,12 +83,19 @@ function navbar() {
             <li tabIndex={0}>
               <ul className="p-2">
                 <li>
-                  <a className="btn  bg-transparent text-white gradient-border  border-none hover:scale-95 hover:text-white  btn-block ">Marketplace </a>
+                  <a className="btn  bg-transparent text-white gradient-border  border-none hover:scale-95 hover:text-white  btn-block ">
+                    Coming soon{" "}
+                  </a>
+                </li>
+                <li>
+                  <a className="btn  bg-transparent text-white gradient-border  border-none hover:scale-95 hover:text-white  btn-block ">
+                    Marketplace{" "}
+                  </a>
                 </li>
                 <li>
                   <a>
-                    <a className="btn  bg-transparent text-white gradient-border  border-none hover:scale-95 hover:text-white  btn-block "
-                      href="https://kickto-dex.netlify.app/"
+                    <a
+                      className="btn hidden bg-transparent text-white gradient-border  border-none hover:scale-95 hover:text-white  btn-block "
                       target="_blank"
                     >
                       DEX
@@ -102,20 +109,21 @@ function navbar() {
       </div>
       <div className="navbar-end hidden lg:flex ">
         <ul className="menu menu-horizontal px-1">
+          <li>
+            <a className="  bg-transparent text-primary    ">Coming soon </a>
+          </li>
           <li className="flex align-middle items-center mx-3">
             <a className="btn  bg-transparent text-white gradient-border  border-none hover:scale-95 hover:text-white  btn-block ">
               Marketplace
             </a>
           </li>{" "}
-          <li>
-             
-              <a
-                className="btn  bg-transparent text-white gradient-border  border-none hover:scale-95 hover:text-white  btn-block "
-                href="https://kickto-dex.netlify.app/"
-                target="_blank"
-              >
-                DEX
-              </a> 
+          <li className="flex align-middle items-center mx-3">
+            <a
+              className="btn  bg-transparent text-white gradient-border  border-none hover:scale-95 hover:text-white  btn-block "
+              target="_blank"
+            >
+              DEX
+            </a>
           </li>
         </ul>
       </div>
@@ -144,7 +152,7 @@ function navbar() {
               <a>Marketplace</a>
             </li>
             <li>
-              <a  href="https://kickto-dex.netlify.app/">DEX</a>
+              <a>DEX</a>
             </li>
           </ul>
         </div>

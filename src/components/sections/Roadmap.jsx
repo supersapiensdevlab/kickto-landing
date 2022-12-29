@@ -9,7 +9,7 @@ const Track = () => {
   function update() {
     // Update our animation
     var value = (window.scrollY - startY) / pathBB.height;
-    if (value < 1) tween.progress("0.23");
+    if (value < 1 && value < 0.21) tween.progress(value);
     //console.clear();
     console.log("distance Travelled:", window.scrollY - startY);
     console.log(
@@ -58,7 +58,7 @@ const Track = () => {
         align: "#path",
         autoRotate: false,
         alignOrigin: [0.5, 0.5],
-        start: 0.23,
+        start: 0.015,
       },
     });
 
