@@ -72,7 +72,7 @@ const Track = () => {
   }, []);
 
   return (
-    <div className=" w-full h-[4000px] px-10  z-1  absolute   ">
+    <div className=" w-[1680px] h-[4000px] px-10  z-1  absolute   ">
       <svg
         className=""
         xmlns="http://www.w3.org/2000/svg"
