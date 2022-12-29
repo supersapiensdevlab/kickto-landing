@@ -58,7 +58,7 @@ const Track = () => {
         align: "#path",
         autoRotate: false,
         alignOrigin: [0.5, 0.5],
-        start: 0.007,
+        start: 0.015,
       },
     });
 
@@ -67,19 +67,19 @@ const Track = () => {
       if (!requestId) {
         requestId = requestAnimationFrame(update);
       }
-    }); 
+    });
     update();
   }, []);
 
   return (
-    <div className=" w-full h-full px-10  z-1  absolute ">
+    <div className=" w-full h-[4000px] px-10  z-1  absolute   overflow-clip">
       <svg
         className=""
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1200 4000"
       >
         <svg
-          viewBox="0 0 1056 6500"
+          viewBox="0 0 1056 7200"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
