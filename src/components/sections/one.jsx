@@ -59,7 +59,6 @@ function hero() {
                 Coming Soon
               </p>
               <p className="text-md italic items-center text-center text-black/80 hidden">
-                {" "}
                 KICKTO App
               </p>
               <div class="flex justify-center my-4">
@@ -71,8 +70,7 @@ function hero() {
                   <div class="text-left ml-3">
                     <p class="text-xs text-slate-800/80 hidden">Download on </p>
                     <p class="text-sm md:text-base text-black/80 flex block">
-                      {" "}
-                      Google Play Store{" "}
+                      Google Play Store
                     </p>
                   </div>
                 </div>
@@ -84,8 +82,7 @@ function hero() {
                   <div class="text-left ml-3">
                     <p class="text-xs text-slate-800/80 hidden">Download on </p>
                     <p class="text-sm md:text-base text-black/80">
-                      {" "}
-                      Apple Store{" "}
+                      Apple Store
                     </p>
                   </div>
                 </div>

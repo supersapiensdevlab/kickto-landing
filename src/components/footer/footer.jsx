@@ -44,7 +44,11 @@ function footer() {
                 </a>
               </li> */}
               <li>
-                <a class=" " href="https://t.me/+EeMUF7D0mLIwN2Fl" target="blank">
+                <a
+                  class=" "
+                  href="https://t.me/+EeMUF7D0mLIwN2Fl"
+                  target="blank"
+                >
                   <i class="fa fa-telegram"></i>
                 </a>
               </li>
@@ -74,11 +78,65 @@ function footer() {
           </div>
         </div>
         <div class="mt-28 flex flex-col md:flex-row md:justify-between items-center text-sm text-gray-400">
-          <p class="order-2 md:order-1 mt-8 md:mt-0"> &copy; Kickto, 2022</p>
+          <p class="order-2 md:order-1 mt-8 md:mt-0"> &copy; Kickto, 2023</p>
+          <a href="#whatiskickto" className="btn btn-ghost">
+            About us
+          </a>
           <div class="order-1 md:order-2">
-            <span class="px-2">About us</span>
-            <span class="px-2 border-l">Contact us</span>
-            <span class="px-2 border-l">Privacy Policy</span>
+            <span class="px-2 border-l"></span>
+            {/* The button to open modal */}
+            <label htmlFor="my-modal" className="btn btn-ghost">
+              Contact us
+            </label>
+
+            {/* Put this part before </body> tag */}
+            <input type="checkbox" id="my-modal" className="modal-toggle" />
+            <div className="modal bg-white/10 backdrop-blur-md">
+              <div className="modal-box bg-white">
+                <h1 className="text-primary text-3xl font-semibold   uppercase ">
+                  Have a Question
+                </h1>
+                <p className="text-primary/50  text-lg  mb-2 opacity-80">
+                  write to us
+                </p>
+                <div className="space-y-4 ">
+                  <input
+                    type="text"
+                    placeholder="Full Name"
+                    className="input input-bordered input-primary w-full  bg-opacity-5"
+                  />
+
+                  <input
+                    type="text"
+                    placeholder="E-mail ID"
+                    className="input input-bordered input-primary w-full  bg-opacity-5"
+                  />
+
+                  <input
+                    type="text"
+                    placeholder="Phone Number"
+                    className="input input-bordered input-primary w-full  bg-opacity-5"
+                  />
+
+                  <textarea
+                    className="textarea textarea-primary textarea-bordered w-full bg-opacity-5"
+                    placeholder="Type your Message"
+                  ></textarea>
+                </div>
+                <div className="modal-action">
+                  <label htmlFor="my-modal" className="btn btn-ghost">
+                    Cancel
+                  </label>
+                  <label
+                    htmlFor="my-modal"
+                    className="bg-primary rounded-lg hover:bg-primary/80 text-white cursor-pointer text-lg px-4 flex align-middle items-center text-center "
+                  >
+                    Send
+                  </label>
+                </div>
+              </div>
+            </div>
+            <span class="px-2 border-l hidden">Privacy Policy</span>
           </div>
         </div>
       </div>

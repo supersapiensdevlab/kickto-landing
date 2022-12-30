@@ -21,14 +21,12 @@ const WhyTheyUseIt = () => {
               "Roadmap Formation",
               "Creating Social Media platforms",
               "Website concept building",
-              "App Development started", 
+              "App Development started",
               "Dex, Farming , Staking Development started",
 
               "Shoes NFTs Development Started",
 
               "NFT marketplace development started",
-
-              "Private sale started",
             ]}
             headBefore="Q4 2022"
             headTitle="INCEPTION"
@@ -37,7 +35,7 @@ const WhyTheyUseIt = () => {
             tasks={[
               "Fund Raising",
               "Launching of website",
-              " Token Launch Event",
+              "Token Launch Event",
               "Dex, staking platform Launch",
 
               "5000 Shoes NFTs Launch",
@@ -53,13 +51,16 @@ const WhyTheyUseIt = () => {
               "Referral Programme for the Community",
 
               "Start of Marketing Activities",
+              "Private sale started",
             ]}
             headBefore="Q1 2023"
             headTitle="LAUNCH"
           ></RoadmapCardAlt>
           <RoadmapCard
             tasks={[
-              "Start of PR & Media Compaign",
+              "Start of PR & Media Campaign",
+
+              "Kickto App Phase - 1 Launch",
 
               "launch of Mobile and Smart Watch Application",
 
@@ -71,11 +72,8 @@ const WhyTheyUseIt = () => {
             headTitle="MARKETING"
           ></RoadmapCard>
 
-           
           <RoadmapCard
             tasks={[
-              "Kickto App Phase - 1 Launch",
-
               "Indroducing New Product for More Utility",
 
               "Launching Governance Platfrom",
@@ -91,15 +89,13 @@ const WhyTheyUseIt = () => {
             tasks={[
               "In App System Optimisation",
 
-              "in App Releasing Renting System",
+              "In App Releasing Renting System",
 
-              "Creating NFT Avators",
+              "Creating NFT Avatars",
 
               "launching More Utility Product on Governance Platforms",
 
               "More Updates Coming Soon Stay Tuned!",
-
-              "NFT Airdrop Contest Campaign",
             ]}
             headBefore="Q4 2023"
             headTitle="LFG"

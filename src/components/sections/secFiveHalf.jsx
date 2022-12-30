@@ -36,9 +36,10 @@ function Three() {
               </div>
             </div>
             <div className="text-base font-normal pt-4 px-6">
-              Unlock extraordinary Shoe drops with Gift boxes.
-              High reward shoes are waiting for you to grab. 
-              <br></br> <br></br>Fuse this shoes with the ones you have to upgrade them into new ones & create unique variants.
+              Unlock extraordinary Shoe drops with Gift boxes. High reward shoes
+              are waiting for you to grab.
+              <br></br> <br></br>Fuse this shoes with the ones you have to
+              upgrade them into new ones & create unique variants.
             </div>
             <img
               src={box}
@@ -53,12 +54,12 @@ function Three() {
                 </p>
                 <div className="rounded-full bg-primary h-10 w-10 flex align-middle items-center text-white text-base px-4 mr-2   font-bold">
                   <p>5</p>
-                </div>{" "}
+                </div>
               </div>
               <div className="text-base font-normal">
-                Your NFT shoes are crucial to earning KICKTO tokens. You have to
-                pick the ones you like and switch that GPS on to begin your
-                Kickto Journey.
+                Walking or taking a short brisk walk is beneficial to your
+                health & with Kickto it is easy to also track your journeys.
+                Helping you analyse & motivate you towards your fittest self.
               </div>
             </div>
 
@@ -66,8 +67,8 @@ function Three() {
               <div className="px-4 sm:mr-3 mb-2 sm:mb-0 col-span-3 sm:col-span-1 flex flex-col bg-primary bg-opacity-10 pt-4   sm:h-96 rounded-lg align-middle items-center ">
                 <div className="  ">
                   <p className="text-base mt-4">
-                    Share your daily fitness on social channels
-                  </p>{" "}
+                    Running Daily unlocks exciting drops & good health
+                  </p>
                   <div className="w-full h-fit">
                     <Lottie
                       className="m-4  max-w-xs"
@@ -83,21 +84,20 @@ function Three() {
                 <div className=" ">
                   <p className="text-base mt-4">
                     Invite your friends to increase your token profit
-                  </p>{" "}
-                  <Lottie animationData={cat} loop={true} />{" "}
+                  </p>
+                  <Lottie animationData={cat} loop={true} />
                 </div>
               </div>
-
               <div className="px-4 col-span-3 sm:col-span-1 flex flex-col bg-primary bg-opacity-10 pt-4   sm:h-96 rounded-lg align-middle items-center ">
-                <div className="  ">
+                <div className="">
                   <p className="text-base mt-4">
                     Share your daily fitness on social channels
                   </p>
-                  <Lottie animationData={social} loop={true} />{" "}
+                  <Lottie animationData={social} loop={true} />
                 </div>
               </div>
             </div>
-          </div>{" "}
+          </div>
         </div>
       </div>
     </div>
