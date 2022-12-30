@@ -1,6 +1,7 @@
 import shoe from "../../assets/images/shoe1.png";
 import logo from "../../assets/images/kickto-logo-text-alt.svg";
 import social from "../../assets/images/social.png";
+import { Formik, Form, Field } from "formik";
 
 function footer() {
   return (
@@ -99,7 +100,7 @@ function footer() {
                 <p className="text-primary/50  text-lg  mb-2 opacity-80">
                   write to us
                 </p>
-                <div className="space-y-4 ">
+                <div className="space-y-4 hidden">
                   <input
                     type="text"
                     placeholder="Full Name"
@@ -123,7 +124,7 @@ function footer() {
                     placeholder="Type your Message"
                   ></textarea>
                 </div>
-                <div className="modal-action">
+                <div className="modal-action hidden ">
                   <label htmlFor="my-modal" className="btn btn-ghost">
                     Cancel
                   </label>
@@ -134,6 +135,67 @@ function footer() {
                     Send
                   </label>
                 </div>
+
+                <Formik
+                  initialValues={{ name: "", email: "", message: "" }}
+                  onSubmit={(values, { setSubmitting }) => {
+                    fetch("/api/send-email", {
+                      method: "POST",
+                      headers: { "Content-Type": "application/json" },
+                      body: JSON.stringify(values),
+                    })
+                      .then((response) => response.json())
+                      .then((data) => {
+                        setSubmitting(false);
+                        alert(data.message);
+                      })
+                      .catch((error) => {
+                        setSubmitting(false);
+                        console.error(error);
+                      });
+                  }}
+                >
+                  {({ isSubmitting }) => (
+                    <Form className="space-y-4">
+                      <Field
+                        type="text"
+                        className="input input-bordered input-primary w-full  bg-opacity-5"
+                        name="name"
+                        placeholder="Name"
+                      />
+                      <Field
+                        type="email"
+                        className="input input-bordered input-primary w-full  bg-opacity-5"
+                        name="email"
+                        placeholder="Email"
+                      />
+                      <Field
+                        type="mobile"
+                        className="input input-bordered input-primary w-full  bg-opacity-5"
+                        name="mmobile"
+                        placeholder="Mobile"
+                      />
+                      <Field
+                        as="textarea"
+                        name="message"
+                        className="input input-bordered input-primary w-full  bg-opacity-5"
+                        placeholder="Type Your Message"
+                      />
+                      <div className="modal-action ">
+                        <label htmlFor="my-modal" className="btn btn-ghost">
+                          Cancel
+                        </label>
+                        <button
+                          className="bg-primary rounded-lg hover:bg-primary/80 text-white cursor-pointer text-lg px-4 flex align-middle items-center text-center "
+                          type="submit"
+                          disabled={isSubmitting}
+                        >
+                          Send
+                        </button>
+                      </div>
+                    </Form>
+                  )}
+                </Formik>
               </div>
             </div>
             <span class="px-2 border-l hidden">Privacy Policy</span>

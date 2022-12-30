@@ -33,8 +33,9 @@ const WhyTheyUseIt = () => {
           ></RoadmapCard>
           <RoadmapCardAlt
             tasks={[
-              "Fund Raising",
               "Launching of website",
+              "Private sale started",
+              "Fund Raising",
               "Token Launch Event",
               "Dex, staking platform Launch",
 
@@ -51,7 +52,6 @@ const WhyTheyUseIt = () => {
               "Referral Programme for the Community",
 
               "Start of Marketing Activities",
-              "Private sale started",
             ]}
             headBefore="Q1 2023"
             headTitle="LAUNCH"

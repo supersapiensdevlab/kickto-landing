@@ -58,8 +58,8 @@ function Three() {
               </div>
               <div className="text-base font-normal">
                 Walking or taking a short brisk walk is beneficial to your
-                health & with Kickto it is easy to also track your journeys.
-                Helping you analyse & motivate you towards your fittest self.
+                health & with Kickto it is easy to track your journeys. Helping
+                you analyse & motivate you towards your fitness.
               </div>
             </div>
 
