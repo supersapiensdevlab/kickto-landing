@@ -88,7 +88,7 @@ function Three() {
           </div>
           <img
             src={shoehalf}
-            className=" h-max w-max  mt-auto pt-16 align-bottom mx-auto"
+            className=" h-max w-max aspect-square mt-auto pt-16 align-bottom mx-auto"
           />
         </div>
       </div>

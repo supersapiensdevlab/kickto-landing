@@ -71,7 +71,7 @@ function navbar() {
       data-aos-duration="1000"
       data-aos-delay="1500"
       data-aos-easing="ease-in-out"
-      className="navbar  z-[200] fixed  text-black/80 bg-primary backdrop-blur bg-opacity-5   lg:px-24"
+      className="navbar  z-[200] fixed  text-black/80 bg-primary backdrop-blur bg-opacity-5   lg:px-24 w-full max-w-full"
     >
       <div className="navbar-start">
         <img src={logo} className="h-16 w-36"></img>

@@ -41,10 +41,7 @@ function Three() {
               <br></br> <br></br>Fuse this shoes with the ones you have to
               upgrade them into new ones & create unique variants.
             </div>
-            <img
-              src={box}
-              className="h-max w-72 mx-auto aspect-auto animate-bouncer    "
-            />
+            <img src={box} className="h-max w-72 mx-auto aspect-square    " />
           </div>
           <div className="col-span-3 md:col-span-2 ">
             <div className="p-4 text-3xl font-semibold mb-4 border-primary border-2 rounded-xl   align-middle items-center col-span-2 flex-col bg-white bg-opacity-10">
