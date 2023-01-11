@@ -42,7 +42,7 @@ function Hero() {
 
       <div className=" hero-content  grid grid-cols-2   ">
         <div className="col-span-2 md:col-span-1  ">
-          <h1 className="text-5xl font-bold text-primary">What is Kickto?</h1>
+          <h1 className="text-5xl font-bold text-primary ">What is Kickto?</h1>
           <p className="py-6">
             Kickto is a revolutionary Web 3 platform that brings together
             fitness and earning. Kickto allows you to make every step count with

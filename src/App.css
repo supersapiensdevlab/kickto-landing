@@ -424,12 +424,12 @@ svg.active .svg-elem-14 {
   }
 }
 
- 
 .react-flow__attribution {
-  display: none!important;
+  display: none !important;
 }
 
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
+  /* Code for Firefox */
   color: white;
   background: #7b3fe4;
 }
@@ -459,26 +459,22 @@ svg.active .svg-elem-14 {
   cursor: none;
 } */
 
-
 @media (min-width: 1024px) {
   .hero-title {
-      font-size: 10rem/* 128px */;
-      line-height: 1;
+    font-size: 10rem /* 128px */;
+    line-height: 1;
   }
 }
 
 @media (min-width: 768px) {
   .tokonomics {
-      height: calc(100vh - 9rem) !important;
+    height: calc(100vh - 9rem) !important;
   }
 }
- 
 
 .spacer {
   height: 50vh;
 }
-
-
 
 .pin {
   width: 100%;
@@ -491,4 +487,11 @@ svg.active .svg-elem-14 {
   background-color: #28a92b;
   font-weight: 600;
   color: #fff;
+}
+
+#magicPointer {
+  background: #7b3fe4 !important;
+}
+#magicMouseCursor {
+  border: 2px solid #7b3fe4 !important;
 }

@@ -16,6 +16,7 @@
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css" />
 
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
@@ -62,23 +63,19 @@
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
-
-  <script>
-    //   window.addEventListener('load', function() {
-    //     var setVanta = ()=>{
-    //   if (window.VANTA) window.VANTA.TRUNK({
-    //     el: ".s-page-1",
-    //     minHeight: 200.00,
-    //   minWidth: 200.00,
-    //   scale: 1.00,
-    //   scaleMobile: 1.00,
-    //   color: 0x7e00d7,
-    //   backgroundColor: 0xffffff,
-    //   spacing: 9.50,
-    //   chaos: 5.00
-    //   })
-    //   }
-    //     setVanta();
-    // })
+  <script
+    type="text/javascript"
+    src="https://res.cloudinary.com/veseylab/raw/upload/v1636192990/magicmouse/magic_mouse-1.2.1.cdn.min.js"
+  ></script>
+  <script type="text/javascript">
+    options = {
+      cursorOuter: "circle-basic",
+      hoverEffect: "circle-move",
+      hoverItemMove: false,
+      defaultCursor: false,
+      outerWidth: 30,
+      outerHeight: 30,
+    };
+    magicMouse(options);
   </script>
 </html>
