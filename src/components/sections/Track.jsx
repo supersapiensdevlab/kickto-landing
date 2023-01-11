@@ -10,7 +10,7 @@ const WhyTheyUseIt = () => {
         <div className="text-white   bg-primary rounded-full text-2xl sm:text-5xl  py-5 px-10 w-max font-bold block mx-auto  rotate-4 -mt-10">
           Roadmap
         </div>
-        <div className="hidden lg:block h-full">
+        <div className="hidden xl:block h-full">
           <Roadmap />
         </div>
         <div className="w-full z-10">
