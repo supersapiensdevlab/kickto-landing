@@ -37,7 +37,7 @@ function four() {
     { image: shoe10, altImg: "img1", role: "Trainer", speed: "" },
     { image: shoe11, altImg: "img1", role: "Walker", speed: "" },
     { image: shoe12, altImg: "img1", role: "Jogger", speed: "" },
-    { image: shoe13, altImg: "img1", role: "Runer", speed: "" },
+    { image: shoe13, altImg: "img1", role: "Runner", speed: "" },
     { image: shoe14, altImg: "img1", role: "Trainer", speed: "" },
     { image: shoe15, altImg: "img1", role: "Walker", speed: "" },
     { image: shoe16, altImg: "img1", role: "Jogger", speed: "" },
