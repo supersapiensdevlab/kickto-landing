@@ -497,3 +497,92 @@ svg.active .svg-elem-14 {
 #magicMouseCursor {
   border: 2px solid #7b3fe4 !important;
 }
+
+.switch-color {
+  animation-name: backgroundChange;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.switch-color2 {
+  animation-name: backgroundChange;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+}
+
+.switch-color3 {
+  animation-name: backgroundChange;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+}
+
+.switch-color4 {
+  animation-name: backgroundChange;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-delay: 3s;
+}
+
+@keyframes backgroundChange {
+  0% {
+    background-color: rgba(123, 63, 228, 0.2);
+  }
+
+  100% {
+    background-color: transparent;
+  }
+}
+
+.switch-text {
+  animation-name: revealHide;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  filter: drop-shadow(2px);
+  animation-delay: 1s;
+}
+
+.switch-text2 {
+  animation-name: revealHide;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  filter: drop-shadow(2px);
+  animation-delay: 2s;
+}
+
+.switch-text3 {
+  animation-name: revealHide;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  filter: drop-shadow(2px);
+  animation-delay: 3s;
+}
+
+.switch-text4 {
+  animation-name: revealHide;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  filter: drop-shadow(2px);
+  animation-delay: 4s;
+}
+
+@keyframes revealHide {
+  0% {
+    background-color: white;
+    color: rgb(123, 63, 228);
+  }
+  95% {
+    background-color: white;
+    color: rgb(123, 63, 228);
+  }
+  98% {
+    background-color: rgb(123, 63, 228);
+    color: white;
+  }
+
+  100% {
+    background-color: rgb(123, 63, 228);
+    color: white;
+  }
+}

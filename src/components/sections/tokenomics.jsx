@@ -5,13 +5,13 @@ import ReactFlow, {
   applyNodeChanges,
   applyEdgeChanges,
 } from "reactflow";
-import "reactflow/dist/base.css"; 
+import "reactflow/dist/base.css";
 import CustomNode from "./CustomNode";
-import tractor from "../../assets/icons/Farming.png"
-import coin from "../../assets/icons/coin.png"
-import marketplace from "../../assets/icons/marketplace.png"
-import staking from "../../assets/icons/staking.png"
-import user from "../../assets/icons/user.png"
+import tractor from "../../assets/icons/Farming.png";
+import coin from "../../assets/icons/coin.png";
+import marketplace from "../../assets/icons/marketplace.png";
+import staking from "../../assets/icons/staking.png";
+import user from "../../assets/icons/user.png";
 
 const nodeTypes = {
   custom: CustomNode,
@@ -54,8 +54,13 @@ const initialNodes = [
   {
     id: "6",
     type: "custom",
-    data: { name: "NFT Marketplace", job: "CEO", emoji: "😎", image: marketplace }, 
-    position: { x: 600 , y: 200 },
+    data: {
+      name: "NFT Marketplace",
+      job: "CEO",
+      emoji: "😎",
+      image: marketplace,
+    },
+    position: { x: 600, y: 200 },
   },
 
   {
@@ -63,7 +68,7 @@ const initialNodes = [
     type: "custom",
     data: { name: "Buy NFT", job: "CEO", emoji: "😎", image: marketplace },
 
-    position: { x: 540  , y: 400 },
+    position: { x: 540, y: 400 },
   },
 
   {
@@ -140,24 +145,25 @@ function Flow() {
     []
   );
 
-  return (<div className=" md:h-screen">
-  <p className="text-5xl text-primary font-semibold text-center   mt-24  mx-4">
-          Tokenomics
-        </p>
-    <div className="w-full  tokonomics" style={{height:'30rem'}} >
-      <ReactFlow
-        nodes={nodes}
-         
-        edges={edges}
-        zoomOnScroll={false}
-        preventScrolling={false}
-        panOnDrag={false}
-        onEdgesChange={onEdgesChange}
-        nodeTypes={nodeTypes}
-        fitView
-        fitViewOptions={ {  padding:  0.3 }    }
-      ></ReactFlow>
-    </div></div>
+  return (
+    <div className=" md:h-screen">
+      <div className="text-white bg-primary rounded-full text-2xl sm:text-5xl  py-5 px-10 w-max font-bold block mx-auto  rotate-4 -mt-10">
+        Tokenomics
+      </div>
+      <div className="w-full  tokonomics" style={{ height: "30rem" }}>
+        <ReactFlow
+          nodes={nodes}
+          edges={edges}
+          zoomOnScroll={false}
+          preventScrolling={false}
+          panOnDrag={false}
+          onEdgesChange={onEdgesChange}
+          nodeTypes={nodeTypes}
+          fitView
+          fitViewOptions={{ padding: 0.3 }}
+        ></ReactFlow>
+      </div>
+    </div>
   );
 }
 

@@ -80,6 +80,22 @@ function Hero() {
               healthy while becoming wealthy.
             </p>
           </div>
+          <div className="grid  md:grid-cols-2 gap-6">
+            <div className="text-left">
+              <div className="font-bold text-primary">Mission</div>
+              Our mission is to empower individuals to break free from a
+              sedentary, screen-bound lifestyle and replace it with a dynamic,
+              active one through our innovative Move-2-Earn program. We aim to
+              make fitness accessible, enjoyable, and rewarding for everyone,
+              ultimately fostering a healthier and happier society.
+            </div>
+            <div className="text-left">
+              <div className="font-bold text-primary">Vision</div> Our vision is
+              to revolutionize the way people think about fitness and health by
+              creating a movement that inspires individuals to prioritize their
+              well-being and actively earn rewards through physical activity.
+            </div>
+          </div>
         </div>
         <div className=" drop-shadow-md px-6 border-2 border-primary bg-blur-pattern mt-20 md:mx-6 rounded-2xl h-max py-12 align-middle items-center col-span-2 md:col-span-1 flex bg-white bg-opacity-10">
           <img src={shoe} className="mx-auto " />

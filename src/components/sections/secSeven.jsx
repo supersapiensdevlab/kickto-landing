@@ -10,19 +10,18 @@ import "swiper/css";
 import { Keyboard, Autoplay, Pagination, Navigation } from "swiper";
 import roadmap from "../../assets/vectors/roadmap-alt.svg";
 import arrow from "../../assets/vectors/arrow.svg";
-import 'reactflow/dist/style.css';
-import ReactFlow, { Background, Controls } from 'reactflow';
+import "reactflow/dist/style.css";
+import ReactFlow, { Background, Controls } from "reactflow";
 
 import Tokenomics from "./tokenomics";
 
 function four() {
   return (
     <div className=" min-h-screen w-full  text-primary/80  ">
-        
       <div className="">
-        <p className="text-5xl text-primary font-semibold text-left md:text-center    mx-4">
+        <div className="text-white bg-primary rounded-full text-2xl sm:text-5xl  py-5 px-10 w-max font-bold block mx-auto  rotate-4 -mt-10">
           Tokenomics
-        </p>
+        </div>
         <div className="w-full py-6 lg:px-12">
           <img src={tokenomics} className="w-full" />
         </div>

@@ -27,11 +27,11 @@ function hero() {
           </button>
         </div>
         <div className="grid grid-cols-1  sm:grid-cols-5 md:grid-cols-5 lg:grid-cols-11 grid-rows-flow gap-4 col-span-2 md:col-span-1 align-middle items-center">
-          <div className="aspect-video md:aspect-auto group hover:bg-purple-100 border-2 hover:text-white hover:drop-shadow-md p-6 border-primary    rounded-xl h-max align-middle items-center sm:col-span-2 col-span-1 flex-col bg-white bg-opacity-10">
+          <div className="switch-color aspect-video md:aspect-auto group hover:bg-purple-100 border-2 hover:text-white hover:drop-shadow-md p-6 border-primary    rounded-xl h-max align-middle items-center sm:col-span-2 col-span-1 flex-col bg-white bg-opacity-10">
             <div className="w-full justify-between flex-col space-y-6">
-              <div className="rounded-full  group-hover:bg-white group-hover:text-primary group-hover:drop-shadow-md   group-hover:border-primary bg-primary h-8 w-8 group-hover:w-max flex align-middle items-center transition-transform duration-700 px-3 mr-2 -mt-10 font-bold text-white">
+              <div className="rounded-full     group-hover:drop-shadow-md   group-hover:border-primary bg-primary h-8  w-max flex align-middle items-center transition-transform duration-700 px-3 mr-2 -mt-10 font-bold text-white">
                 <p className="flex">
-                  <span className="group-hover:block hidden">Step&nbsp;</span>1
+                  <span className=" ">Step&nbsp;</span>1
                 </p>
               </div>
 
@@ -47,11 +47,11 @@ function hero() {
             className="fill-white h-16   mx-auto sm:-rotate-90"
           />
 
-          <div className="aspect-video md:aspect-auto group hover:bg-purple-100 border-2 hover:text-white hover:drop-shadow-md p-6 border-primary    rounded-xl h-max align-middle items-center sm:col-span-2 col-span-1 flex-col bg-white bg-opacity-10">
+          <div className="switch-color2 aspect-video md:aspect-auto group hover:bg-purple-100 border-2 hover:text-white hover:drop-shadow-md p-6 border-primary    rounded-xl h-max align-middle items-center sm:col-span-2 col-span-1 flex-col bg-white bg-opacity-10">
             <div className="w-full justify-between flex-col space-y-6">
-              <div className="rounded-full  group-hover:bg-white group-hover:text-primary group-hover:drop-shadow-md   group-hover:border-primary bg-primary h-8 w-8 group-hover:w-max flex align-middle items-center transition-transform duration-700 px-3 mr-2 -mt-10 font-bold text-white">
+              <div className="rounded-full     group-hover:drop-shadow-md   group-hover:border-primary bg-primary h-8 w-max flex align-middle items-center transition-transform duration-700 px-3 mr-2 -mt-10 font-bold text-white">
                 <p className="flex">
-                  <span className="group-hover:block hidden">Step&nbsp;</span>2
+                  <span className=" ">Step&nbsp;</span>2
                 </p>
               </div>
 
@@ -69,11 +69,11 @@ function hero() {
             className="fill-white h-16   mx-auto sm:-rotate-90 sm:hidden lg:block"
           />
 
-          <div className="aspect-video md:aspect-auto group hover:bg-purple-100 border-2 hover:text-white hover:drop-shadow-md p-6 border-primary    rounded-xl h-max align-middle items-center sm:col-span-2 col-span-1 flex-col bg-white bg-opacity-10">
+          <div className="switch-color3 aspect-video md:aspect-auto group hover:bg-purple-100 border-2 hover:text-white hover:drop-shadow-md p-6 border-primary    rounded-xl h-max align-middle items-center sm:col-span-2 col-span-1 flex-col bg-white bg-opacity-10">
             <div className="w-full justify-between flex-col space-y-6">
-              <div className="rounded-full  group-hover:bg-white group-hover:text-primary group-hover:drop-shadow-md   group-hover:border-primary bg-primary h-8 w-8 group-hover:w-max flex align-middle items-center transition-transform duration-700 px-3 mr-2 -mt-10 font-bold text-white">
+              <div className="rounded-full     group-hover:drop-shadow-md   group-hover:border-primary bg-primary h-8 w-max flex align-middle items-center transition-transform duration-700 px-3 mr-2 -mt-10 font-bold text-white">
                 <p className="flex">
-                  <span className="group-hover:block hidden">Step&nbsp;</span>3
+                  <span className=" ">Step&nbsp;</span>3
                 </p>
               </div>
 
@@ -94,11 +94,11 @@ function hero() {
             className="fill-white h-16   mx-auto sm:-rotate-90"
           />
 
-          <div className="aspect-video md:aspect-auto group hover:bg-purple-100 border-2 hover:text-white hover:drop-shadow-md p-6 border-primary    rounded-xl h-max align-middle items-center sm:col-span-2 col-span-1 flex-col bg-white bg-opacity-10">
+          <div className="switch-color4 aspect-video md:aspect-auto group hover:bg-purple-100 border-2 hover:text-white hover:drop-shadow-md p-6 border-primary    rounded-xl h-max align-middle items-center sm:col-span-2 col-span-1 flex-col bg-white bg-opacity-10">
             <div className="w-full justify-between flex-col space-y-6">
-              <div className="rounded-full  group-hover:bg-white group-hover:text-primary group-hover:drop-shadow-md   group-hover:border-primary bg-primary h-8 w-8 group-hover:w-max flex align-middle items-center transition-transform duration-700 px-3 mr-2 -mt-10 font-bold text-white">
+              <div className="rounded-full     group-hover:drop-shadow-md   group-hover:border-primary bg-primary h-8 w-max flex align-middle items-center transition-transform duration-700 px-3 mr-2 -mt-10 font-bold text-white">
                 <p className="flex">
-                  <span className="group-hover:block hidden">Step&nbsp;</span>4
+                  <span className=" ">Step&nbsp;</span>4
                 </p>
               </div>
 
