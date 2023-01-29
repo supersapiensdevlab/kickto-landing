@@ -82,11 +82,11 @@ function navbar() {
           >
             <li tabIndex={0}>
               <ul className="p-2">
-                <li>
+                {/* <li>
                   <a className="btn  bg-transparent text-white gradient-border  border-none hover:scale-95 hover:text-white  btn-block ">
                     Coming Soon{" "}
                   </a>
-                </li>
+                </li> */}
                 {/* <li>
                   <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeA05_4Tv09vuD4ZKhpr7EhLorvUqHibRSXV7sgBLzhE8HNLQ/viewform?usp=sf_link" className="btn  bg-transparent text-white gradient-border  border-none hover:scale-95 hover:text-white  btn-block ">
                     Public Sale{" "}
@@ -102,6 +102,7 @@ function navbar() {
                     <a
                       className="btn hidden bg-transparent text-white gradient-border  border-none hover:scale-95 hover:text-white  btn-block "
                       target="_blank"
+                      href="https://swap.kickto.app/#/swap?chain=polygon&outputCurrency=ETH&inputCurrency=0x13A5FB6ec4a10C3a25615F2631057277b2bC712C"
                     >
                       DEX
                     </a>
@@ -115,7 +116,7 @@ function navbar() {
       <div className="navbar-end hidden lg:flex ">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a className="  bg-transparent text-primary    ">Coming Soon </a>
+            {/* <a className="  bg-transparent text-primary    ">Coming Soon </a> */}
           </li>
           {/* <li className="flex align-middle items-center mx-3">
             <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeA05_4Tv09vuD4ZKhpr7EhLorvUqHibRSXV7sgBLzhE8HNLQ/viewform?usp=sf_link" className="btn  bg-transparent text-white gradient-border  border-none hover:scale-95 hover:text-white  btn-block ">
@@ -130,6 +131,7 @@ function navbar() {
           <li className="flex align-middle items-center mx-3">
             <a
               className="btn  bg-transparent text-white gradient-border  border-none hover:scale-95 hover:text-white  btn-block "
+              href="https://swap.kickto.app/#/swap?chain=polygon&outputCurrency=ETH&inputCurrency=0x13A5FB6ec4a10C3a25615F2631057277b2bC712C"
               target="_blank"
             >
               DEX
@@ -165,7 +167,7 @@ function navbar() {
               <a>Marketplace</a>
             </li>
             <li>
-              <a>DEX</a>
+              <a target="_blank" href="https://swap.kickto.app/#/swap?chain=polygon&outputCurrency=ETH&inputCurrency=0x13A5FB6ec4a10C3a25615F2631057277b2bC712C">DEX</a>
             </li>
           </ul>
         </div>
