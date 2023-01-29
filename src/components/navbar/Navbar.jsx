@@ -84,7 +84,7 @@ function navbar() {
               <ul className="p-2">
                 <li>
                   <a className="btn  bg-transparent text-white gradient-border  border-none hover:scale-95 hover:text-white  btn-block ">
-                    Live{" "}
+                    Coming Soon{" "}
                   </a>
                 </li>
                 {/* <li>
@@ -115,7 +115,7 @@ function navbar() {
       <div className="navbar-end hidden lg:flex ">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a className="  bg-transparent text-primary    ">Live </a>
+            <a className="  bg-transparent text-primary    ">Coming Soon </a>
           </li>
           {/* <li className="flex align-middle items-center mx-3">
             <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeA05_4Tv09vuD4ZKhpr7EhLorvUqHibRSXV7sgBLzhE8HNLQ/viewform?usp=sf_link" className="btn  bg-transparent text-white gradient-border  border-none hover:scale-95 hover:text-white  btn-block ">
