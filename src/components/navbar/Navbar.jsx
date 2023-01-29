@@ -88,6 +88,11 @@ function navbar() {
                   </a>
                 </li>
                 <li>
+                  <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeA05_4Tv09vuD4ZKhpr7EhLorvUqHibRSXV7sgBLzhE8HNLQ/viewform?usp=sf_link" className="btn  bg-transparent text-white gradient-border  border-none hover:scale-95 hover:text-white  btn-block ">
+                    Public Sale{" "}
+                  </a>
+                </li>
+                <li>
                   <a className="btn  bg-transparent text-white gradient-border  border-none hover:scale-95 hover:text-white  btn-block ">
                     Marketplace{" "}
                   </a>
@@ -112,6 +117,11 @@ function navbar() {
           <li>
             <a className="  bg-transparent text-primary    ">Coming soon </a>
           </li>
+          <li className="flex align-middle items-center mx-3">
+            <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeA05_4Tv09vuD4ZKhpr7EhLorvUqHibRSXV7sgBLzhE8HNLQ/viewform?usp=sf_link" className="btn  bg-transparent text-white gradient-border  border-none hover:scale-95 hover:text-white  btn-block ">
+              Public Sale
+            </a>
+          </li>{" "}
           <li className="flex align-middle items-center mx-3">
             <a className="btn  bg-transparent text-white gradient-border  border-none hover:scale-95 hover:text-white  btn-block ">
               Marketplace
