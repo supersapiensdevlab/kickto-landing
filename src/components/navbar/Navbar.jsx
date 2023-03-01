@@ -139,7 +139,7 @@ function navbar() {
           </li>
         </ul>
       </div>
-      <div className="navbar-end md:hidden">
+      <div className="navbar-end md:hidden ">
         <div className="dropdown  dropdown-end">
           <button tabIndex={0} className="btn btn-square btn-ghost text-white">
             <svg
@@ -158,7 +158,7 @@ function navbar() {
           </button>
           <ul
             tabIndex={0}
-            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-compact  dropdown-content mt-3 p-2 shadow bg-white rounded-box w-52"
           >
             {/* <li>
               <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeA05_4Tv09vuD4ZKhpr7EhLorvUqHibRSXV7sgBLzhE8HNLQ/viewform?usp=sf_link" >Public Sale</a>

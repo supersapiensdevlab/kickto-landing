@@ -16,6 +16,9 @@ function hero() {
           <h1 className="text-5xl font-bold text-primary">
             Start Your Fitness Journey
           </h1>
+          <h2 className="  font-semibold text-left text-primary">
+            Boost Your Earnings and Fitness with Cutting-Edge NFT Sneakers
+          </h2>
           <p className="py-6">
             Your journey to beneficial fitness is just a few clicks away. With
             four simple steps, you can start earning KICKTO tokens by simply
