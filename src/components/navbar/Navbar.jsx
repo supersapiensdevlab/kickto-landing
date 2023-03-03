@@ -40,7 +40,7 @@ function navbar() {
                     <a
                       className="btn hidden bg-transparent text-white gradient-border  border-none hover:scale-95 hover:text-white  btn-block "
                       target="_blank"
-                      href="https://swap.kickto.app/#/swap?chain=polygon&outputCurrency=ETH&inputCurrency=0x13A5FB6ec4a10C3a25615F2631057277b2bC712C"
+                      href="https://swap.kickto.app/#/swap?chain=polygon&outputCurrency=0x13A5FB6ec4a10C3a25615F2631057277b2bC712C&inputCurrency=0xc2132D05D31c914a87C6611C10748AEb04B58e8F"
                     >
                       DEX
                     </a>
@@ -69,7 +69,7 @@ function navbar() {
           <li className="flex align-middle items-center mx-3">
             <a
               className="btn  bg-transparent text-white gradient-border  border-none hover:scale-95 hover:text-white  btn-block "
-              href="https://swap.kickto.app/#/swap?chain=polygon&outputCurrency=ETH&inputCurrency=0x13A5FB6ec4a10C3a25615F2631057277b2bC712C"
+              href="https://swap.kickto.app/#/swap?chain=polygon&outputCurrency=0x13A5FB6ec4a10C3a25615F2631057277b2bC712C&inputCurrency=0xc2132D05D31c914a87C6611C10748AEb04B58e8F"
               target="_blank"
             >
               DEX
@@ -105,12 +105,16 @@ function navbar() {
               <a>Marketplace</a>
             </li>
             <li>
+<<<<<<< HEAD
               <a
                 target="_blank"
                 href="https://swap.kickto.app/#/swap?chain=polygon&outputCurrency=ETH&inputCurrency=0x13A5FB6ec4a10C3a25615F2631057277b2bC712C"
               >
                 DEX
               </a>
+=======
+              <a target="_blank" href="https://swap.kickto.app/#/swap?chain=polygon&outputCurrency=0x13A5FB6ec4a10C3a25615F2631057277b2bC712C&inputCurrency=0xc2132D05D31c914a87C6611C10748AEb04B58e8F">DEX</a>
+>>>>>>> b3a6a7249bce89bee947bccf8bf4edf4644666d8
             </li>
           </ul>
         </div>
