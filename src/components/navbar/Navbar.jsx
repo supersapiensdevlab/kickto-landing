@@ -105,16 +105,12 @@ function navbar() {
               <a>Marketplace</a>
             </li>
             <li>
-<<<<<<< HEAD
               <a
                 target="_blank"
                 href="https://swap.kickto.app/#/swap?chain=polygon&outputCurrency=ETH&inputCurrency=0x13A5FB6ec4a10C3a25615F2631057277b2bC712C"
               >
                 DEX
               </a>
-=======
-              <a target="_blank" href="https://swap.kickto.app/#/swap?chain=polygon&outputCurrency=0x13A5FB6ec4a10C3a25615F2631057277b2bC712C&inputCurrency=0xc2132D05D31c914a87C6611C10748AEb04B58e8F">DEX</a>
->>>>>>> b3a6a7249bce89bee947bccf8bf4edf4644666d8
             </li>
           </ul>
         </div>
