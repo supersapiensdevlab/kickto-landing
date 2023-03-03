@@ -21,6 +21,8 @@ import AnimatedCursor from "react-animated-cursor";
 import Roadmap from "./sections/Roadmap-back";
 import Track from "./sections/Track.jsx";
 import Partners from "./sections/Partners";
+import NavbarAlt from "../components/navbar/Navbar-alt";
+
 const LandingPage = () => {
   const [showElement, setShowElement] = useState(true);
   useEffect(() => {
@@ -31,7 +33,7 @@ const LandingPage = () => {
 
   return (
     <>
-      <Navbar />
+      <NavbarAlt />
 
       <Hero />
       <One />

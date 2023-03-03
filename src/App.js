@@ -3,28 +3,26 @@ import "./App.css";
 import "@splidejs/react-splide/css";
 import React from "react";
 import Navbar from "./components/navbar/Navbar";
+
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
- import anim from "./assets/videos/anim.m4v"; 
- import LandingPage from "./components/LandingPage";
+import anim from "./assets/videos/anim.m4v";
+import LandingPage from "./components/LandingPage";
 
-function App() {  
+function App() {
   return (
     <>
-       
-       <Router>
-        <div className='h-full w-full'>
-          <Navbar />
+      <Router>
+        <div className="h-full w-full">
           <Routes>
-            <Route exact path='/' element={<LandingPage />}></Route>
- 
+            <Route exact path="/" element={<LandingPage />}></Route>
           </Routes>
         </div>
       </Router>
     </>
   );
 }
- 
+
 // Component for Splash Screen
 class SplashScreen extends React.Component {
   render() {
