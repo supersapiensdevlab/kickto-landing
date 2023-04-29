@@ -16,29 +16,33 @@ function navbar() {
         <div className="dropdown">
           <ul
             tabIndex={0}
-            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+            className="p-2 mt-3 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52"
           >
             <li tabIndex={0}>
               <ul className="p-2">
                 {/* <li>
-                  <a className="btn  bg-transparent text-white gradient-border  border-none hover:scale-95 hover:text-white  btn-block ">
+                  <a className="text-white bg-transparent border-none btn gradient-border hover:scale-95 hover:text-white btn-block ">
                     Coming Soon{" "}
                   </a>
                 </li> */}
                 {/* <li>
-                  <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeA05_4Tv09vuD4ZKhpr7EhLorvUqHibRSXV7sgBLzhE8HNLQ/viewform?usp=sf_link" className="btn  bg-transparent text-white gradient-border  border-none hover:scale-95 hover:text-white  btn-block ">
+                  <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeA05_4Tv09vuD4ZKhpr7EhLorvUqHibRSXV7sgBLzhE8HNLQ/viewform?usp=sf_link" className="text-white bg-transparent border-none btn gradient-border hover:scale-95 hover:text-white btn-block ">
                     Public Sale{" "}
                   </a>
                 </li> */}
                 <li>
-                  <a className="btn  bg-transparent text-white gradient-border  border-none hover:scale-95 hover:text-white  btn-block ">
+                  <a
+                    target="_blank"
+                    href="https://nftmarketplace.kickto.app"
+                    className="text-white bg-transparent border-none btn gradient-border hover:scale-95 hover:text-white btn-block "
+                  >
                     Marketplace{" "}
                   </a>
                 </li>
                 <li>
                   <a>
                     <a
-                      className="btn hidden bg-transparent text-white gradient-border  border-none hover:scale-95 hover:text-white  btn-block "
+                      className="hidden text-white bg-transparent border-none btn gradient-border hover:scale-95 hover:text-white btn-block "
                       target="_blank"
                       href="https://swap.kickto.app/#/swap?chain=polygon&outputCurrency=0x13A5FB6ec4a10C3a25615F2631057277b2bC712C&inputCurrency=0xc2132D05D31c914a87C6611C10748AEb04B58e8F"
                     >
@@ -51,24 +55,28 @@ function navbar() {
           </ul>
         </div>
       </div>
-      <div className="navbar-end hidden lg:flex ">
-        <ul className="menu menu-horizontal px-1">
+      <div className="hidden navbar-end lg:flex ">
+        <ul className="px-1 menu menu-horizontal">
           <li>
-            {/* <a className="  bg-transparent text-primary    ">Coming Soon </a> */}
+            {/* <a className="bg-transparent text-primary">Coming Soon </a> */}
           </li>
-          {/* <li className="flex align-middle items-center mx-3">
-            <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeA05_4Tv09vuD4ZKhpr7EhLorvUqHibRSXV7sgBLzhE8HNLQ/viewform?usp=sf_link" className="btn  bg-transparent text-white gradient-border  border-none hover:scale-95 hover:text-white  btn-block ">
+          {/* <li className="flex items-center mx-3 align-middle">
+            <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeA05_4Tv09vuD4ZKhpr7EhLorvUqHibRSXV7sgBLzhE8HNLQ/viewform?usp=sf_link" className="text-white bg-transparent border-none btn gradient-border hover:scale-95 hover:text-white btn-block ">
               Public Sale
             </a>
           </li>{" "} */}
-          <li className="flex align-middle items-center mx-3">
-            <a className="btn  bg-transparent text-white gradient-border  border-none hover:scale-95 hover:text-white  btn-block ">
+          <li className="flex items-center mx-3 align-middle">
+            <a
+              target="_blank"
+              href="https://nftmarketplace.kickto.app"
+              className="text-white bg-transparent border-none btn gradient-border hover:scale-95 hover:text-white btn-block "
+            >
               Marketplace
             </a>
           </li>{" "}
-          <li className="flex align-middle items-center mx-3">
+          <li className="flex items-center mx-3 align-middle">
             <a
-              className="btn  bg-transparent text-white gradient-border  border-none hover:scale-95 hover:text-white  btn-block "
+              className="text-white bg-transparent border-none btn gradient-border hover:scale-95 hover:text-white btn-block "
               href="https://swap.kickto.app/#/swap?chain=polygon&outputCurrency=0x13A5FB6ec4a10C3a25615F2631057277b2bC712C&inputCurrency=0xc2132D05D31c914a87C6611C10748AEb04B58e8F"
               target="_blank"
             >
@@ -78,8 +86,8 @@ function navbar() {
         </ul>
       </div>
       <div className="navbar-end md:hidden ">
-        <div className="dropdown  dropdown-end">
-          <button tabIndex={0} className="btn btn-square btn-ghost text-white">
+        <div className="dropdown dropdown-end">
+          <button tabIndex={0} className="text-white btn btn-square btn-ghost">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -96,13 +104,15 @@ function navbar() {
           </button>
           <ul
             tabIndex={0}
-            className="menu menu-compact  dropdown-content mt-3 p-2 shadow bg-white rounded-box w-52"
+            className="p-2 mt-3 bg-white shadow menu menu-compact dropdown-content rounded-box w-52"
           >
             {/* <li>
               <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeA05_4Tv09vuD4ZKhpr7EhLorvUqHibRSXV7sgBLzhE8HNLQ/viewform?usp=sf_link" >Public Sale</a>
             </li> */}
             <li>
-              <a>Marketplace</a>
+              <a target="_blank" href="https://nftmarketplace.kickto.app">
+                Marketplace
+              </a>
             </li>
             <li>
               <a
