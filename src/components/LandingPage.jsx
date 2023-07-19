@@ -35,7 +35,7 @@ const LandingPage = () => {
 
       <Hero />
       <One />
-      <Partners />
+      {/* <Partners /> */}
       <Two />
 
       <Three />
